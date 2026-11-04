@@ -1,29 +1,27 @@
 {
   "project_name": "Tomato-Novel-2026-Engine",
+  "novel_title": "大唐：从曲江惊蛰到天可汗",
   "target_platform": "番茄小说 (2026最新标准)",
-  "signing_strategy": "20万至30万字精品中短篇完本签约",
+  "target_word_count": 800000,
+  "signing_strategy": "80万字历史巨著完本签约长线爆款",
   "daily_target_words": 4400,
   "daily_target_chapters": 2,
   "chapter_target_words": 2200,
+  "genre": "历史架空 / 盛唐穿越 / 工科科技与实利博弈",
   "formatting_rules": {
     "no_asterisks": true,
     "short_paragraphs": true,
-    "description": "严禁在正文中使用任何星号字符，统一使用中文标点与方括号"
+    "description": "严禁在正文与任何文档中使用星号字符，统一使用中文标点与方括号"
   },
   "content_safeguards": {
     "no_superstition": true,
     "no_horror_gore": true,
     "no_societal_panic": true,
-    "preferred_genres": [
-      "现实悬疑反杀",
-      "都市神豪脑洞",
-      "商战高智商博弈",
-      "科幻安全沙盒"
-    ]
+    "era": "大唐贞观初年"
   },
   "writing_dynamics": {
     "sensory_sexual_tension": true,
     "meme_integration": true,
-    "golden_ratio_4_acts": true
+    "golden_ratio_5_volumes": true
   }
 }
