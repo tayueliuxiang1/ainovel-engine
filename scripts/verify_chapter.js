@@ -22,7 +22,16 @@ function verifyChapter(filePath) {
     errors.push('【铁律暴雷】文本中存在星号字符 (0x2A)，违反绝对零星号铁律！');
   }
 
-  // 2. 历史称谓硬伤检查 (贞观元年严禁称李世民为天可汗)
+  // 2. 标题规范检查 (严禁八股二段对仗标题，如：xxxx，xxxx)
+  const titleLine = lines[0] || '';
+  if (titleLine.indexOf('，') !== -1) {
+    const parts = titleLine.replace(/^#\s*/, '').split(' ')[1] || '';
+    if (parts.indexOf('，') !== -1) {
+      errors.push('【标题八股病】标题使用了二段式对仗（' + parts + '）！网文严禁四字对四字，必须单核直白、一句话或单个核心动作！');
+    }
+  }
+
+  // 3. 历史称谓硬伤检查 (贞观元年严禁称李世民为天可汗)
   if (content.indexOf('天可汗') !== -1) {
     errors.push('【历史硬伤】文中出现了“天可汗”！贞观四年灭颉利后方有此尊号，当前时间线严禁使用！');
   }
