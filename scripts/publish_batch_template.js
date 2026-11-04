@@ -2,13 +2,19 @@ const { chromium } = require('../tools/auto-fanqie/node_modules/playwright');
 const path = require('path');
 const os = require('os');
 const fs = require('fs');
+const { humanRandomSleep, applyStealthEvasions, simulateHumanMouseMove } = require('./stealth_utils');
 
 const userDataDir = path.join(os.homedir(), '.playwright', 'fanqie-profile');
 
 async function publishSingleChapter(page, bookId, chap) {
-    console.log('[顺序发布] 第 ' + chap.num + ' 章: 《' + chap.title + '》');
+    console.log('\n==================================================');
+    console.log('[拟人化防倒挂发布] 第 ' + chap.num + ' 章: 《' + chap.title + '》');
+    console.log('==================================================');
+
+    await applyStealthEvasions(page);
     await page.goto('https://fanqienovel.com/main/writer/' + bookId + '/publish/?enter_from=newchapter_1', { waitUntil: 'networkidle' });
     await page.waitForTimeout(3000);
+    await simulateHumanMouseMove(page);
 
     const inputs = page.locator('input');
     await inputs.nth(0).fill(chap.num.toString());
@@ -32,7 +38,27 @@ async function publishSingleChapter(page, bookId, chap) {
         el.dispatchEvent(new Event('change', { bubbles: true }));
     }, html);
 
+    console.log('注入正文完成 (' + paragraphs.length + ' 段)');
     await page.waitForTimeout(2000);
+
+    for (let w = 0; w < 10; w++) {
+        const hasSaved = await page.locator('text=已保存').isVisible().catch(() => false);
+        if (hasSaved) {
+            console.log('草稿已自动同步完毕！');
+            break;
+        }
+        await page.waitForTimeout(1000);
+    }
+
+    await page.evaluate(() => {
+        const wrappers = document.querySelectorAll('.byte-modal-wrapper, .arco-modal-wrapper');
+        wrappers.forEach(w => {
+            if (!w.innerText.includes('发布设置') && !w.innerText.includes('检测') && !w.innerText.includes('错别字') && !w.innerText.includes('发布提示')) {
+                w.remove();
+            }
+        });
+    });
+
     const nextBtn = page.locator('button.auto-editor-next, button:has-text("下一步")').first();
     await nextBtn.evaluate(el => el.click());
 
@@ -62,13 +88,17 @@ async function publishSingleChapter(page, bookId, chap) {
             }
             const confirmBtn = pubModal.locator('button:has-text("确认提交"), button:has-text("确认发布"), button:has-text("提交")').first();
             await confirmBtn.click().catch(() => {});
+            console.log('点击提交完成，等待网络结算...');
             await page.waitForTimeout(6000);
             isDone = true;
             break;
         }
     }
     if (!isDone) throw new Error('第 ' + chap.num + ' 章发布未完成');
-    console.log('第 ' + chap.num + ' 章入库成功！');
+    console.log('第 ' + chap.num + ' 章严格顺序入库成功！');
+
+    // 拟人化随机平滑等待 8 到 14 秒以沉淀时间戳
+    await humanRandomSleep(page, 8, 14);
 }
 
 module.exports = { publishSingleChapter };
