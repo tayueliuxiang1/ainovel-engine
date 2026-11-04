@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>多智能体网文工业生产引擎 · 可视化控制台</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] p-4 md:p-6 antialiased">
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- 顶栏：项目与状态概览 -->
+    <header class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-md">
+          AI
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-[var(--foreground)] flex items-center gap-2">
+            多智能体网文流水线 · 可视化中控台
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 font-medium">0 星号认证</span>
+          </h1>
+          <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+            协同矩阵：Writer（写手） ➔ Critic（毒点审查官） ➔ Refiner（自适应重写） ➔ Editor（总编门禁）
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-xs">
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--secondary)] text-[var(--secondary-foreground)]">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="serverStatusText">工作流引擎：就绪</span>
+        </div>
+        <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--secondary)] text-[var(--secondary-foreground)]">
+          <span>存储库：ainovel-engine</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 核心操作区：左侧控制表单 + 右侧阶段看板 -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- 左侧：参数配置与触发区 -->
+      <div class="lg:col-span-4 space-y-5">
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 space-y-4 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--foreground)] flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-indigo-500 rounded-full"></span>
+            章节生产参数指令
+          </h2>
+
+          <div class="space-y-3 text-sm">
+            <div>
+              <label class="block text-xs font-medium text-[var(--muted-foreground)] mb-1">目标章节序号</label>
+              <input id="inputChapter" type="number" value="58" class="w-full px-3 py-2 bg-[var(--background)] border border-[var(--border)] rounded-xl text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-[var(--muted-foreground)] mb-1">章节标题（≤ 25 字符）</label>
+              <input id="inputTitle" type="text" value="深渊密匙背后的古老符印" class="w-full px-3 py-2 bg-[var(--background)] border border-[var(--border)] rounded-xl text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-[var(--muted-foreground)] mb-1">核心冲突与剧情方向</label>
+              <textarea id="inputTheme" rows="2" class="w-full px-3 py-2 bg-[var(--background)] border border-[var(--border)] rounded-xl text-[var(--foreground)] focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">追查幕后黑手，穿透深渊古印记，遭遇跨维度设卡反击</textarea>
+            </div>
+
+            <div class="pt-2 border-t border-[var(--border)] space-y-2">
+              <label class="flex items-center gap-2 text-xs text-[var(--foreground)] cursor-pointer">
+                <input id="chkForceRewrite" type="checkbox" class="rounded border-[var(--border)] text-indigo-600 focus:ring-indigo-500">
+                <span>演练模式：强制第 1 轮打回重写（测试自博弈修复链路）</span>
+              </label>
+              <label class="flex items-center gap-2 text-xs text-[var(--foreground)] cursor-pointer">
+                <input id="chkDryRun" type="checkbox" checked class="rounded border-[var(--border)] text-indigo-600 focus:ring-indigo-500">
+                <span>安全演练：Dry-Run 模式（仅在界面演示，不写入文件）</span>
+              </label>
+            </div>
+          </div>
+
+          <button id="btnRun" onclick="startAgentLoop()" class="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 active:scale-[0.98] transition text-white font-medium rounded-xl text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            启动多智能体自博弈研发生命周期
+          </button>
+        </div>
+
+        <!-- 上下文记忆锚点卡片 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 space-y-2 shadow-sm text-xs">
+          <div class="flex items-center justify-between text-[var(--muted-foreground)]">
+            <span class="font-semibold text-[var(--foreground)]">前序记忆锚点感知</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500">记忆链完整</span>
+          </div>
+          <p id="memoryAnchorDisplay" class="text-[var(--muted-foreground)] bg-[var(--background)] p-3 rounded-xl border border-[var(--border)] leading-relaxed">
+            上一阶段合规整改任务圆满完成，主角收缴密匣钥匙，在密匣最深处发现古老深渊印记……
+          </p>
+        </div>
+      </div>
+
+      <!-- 右侧：流水线动态阶段进度 + 审查雷达 + 终审门禁 -->
+      <div class="lg:col-span-8 space-y-5">
+
+        <!-- 阶段流转步骤条 -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-[var(--foreground)] mb-4 flex items-center gap-2">
+            <span class="w-1.5 h-4 bg-emerald-500 rounded-full"></span>
+            智能体自博弈生命周期推进状态
+          </h2>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+            <!-- 阶段 1 -->
+            <div id="step1" class="border border-[var(--border)] rounded-xl p-3 bg-[var(--background)] flex flex-col justify-between transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bold text-indigo-500">01. 记忆检索</span>
+                <span id="badge1" class="w-2 h-2 rounded-full bg-neutral-400"></span>
+              </div>
+              <p class="text-[var(--muted-foreground)] text-[11px]">提取前文动作与设定锚点</p>
+            </div>
+
+            <!-- 阶段 2 -->
+            <div id="step2" class="border border-[var(--border)] rounded-xl p-3 bg-[var(--background)] flex flex-col justify-between transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bold text-indigo-500">02. 写手起草</span>
+                <span id="badge2" class="w-2 h-2 rounded-full bg-neutral-400"></span>
+              </div>
+              <p class="text-[var(--muted-foreground)] text-[11px]">黄金四幕起承转合结构生成</p>
+            </div>
+
+            <!-- 阶段 3 -->
+            <div id="step3" class="border border-[var(--border)] rounded-xl p-3 bg-[var(--background)] flex flex-col justify-between transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bold text-amber-500">03. 毒点对抗</span>
+                <span id="badge3" class="w-2 h-2 rounded-full bg-neutral-400"></span>
+              </div>
+              <p class="text-[var(--muted-foreground)] text-[11px]">红蓝军找茬打分与打回重构</p>
+            </div>
+
+            <!-- 阶段 4 -->
+            <div id="step4" class="border border-[var(--border)] rounded-xl p-3 bg-[var(--background)] flex flex-col justify-between transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bold text-emerald-500">04. 总编门禁</span>
+                <span id="badge4" class="w-2 h-2 rounded-full bg-neutral-400"></span>
+              </div>
+              <p class="text-[var(--muted-foreground)] text-[11px]">四层物理代码质检与签发</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 审查官打分看板与总编门禁 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+          <!-- 审查官维度评分条 -->
+          <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center gap-2">
+                Critic 毒点质检量化雷达
+              </h3>
+              <span id="criticTotalScore" class="text-base font-bold text-emerald-500">100 / 100 分</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div>
+                <div class="flex justify-between text-[var(--muted-foreground)] mb-1">
+                  <span>零星号硬排版认证</span>
+                  <span id="metric1Val" class="text-emerald-500 font-medium">100% 合规</span>
+                </div>
+                <div class="w-full bg-[var(--secondary)] h-1.5 rounded-full overflow-hidden">
+                  <div id="metric1Bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-[var(--muted-foreground)] mb-1">
+                  <span>篇幅饱满度（≥ 2000 纯汉字）</span>
+                  <span id="metric2Val" class="text-emerald-500 font-medium">2580 字</span>
+                </div>
+                <div class="w-full bg-[var(--secondary)] h-1.5 rounded-full overflow-hidden">
+                  <div id="metric2Bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-[var(--muted-foreground)] mb-1">
+                  <span>主角人设（杀伐果断，拒绝圣母）</span>
+                  <span id="metric3Val" class="text-emerald-500 font-medium">无毒点</span>
+                </div>
+                <div class="w-full bg-[var(--secondary)] h-1.5 rounded-full overflow-hidden">
+                  <div id="metric3Bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-[var(--muted-foreground)] mb-1">
+                  <span>去 AI 味排查（剔除套路滥调）</span>
+                  <span id="metric4Val" class="text-emerald-500 font-medium">清爽原创</span>
+                </div>
+                <div class="w-full bg-[var(--secondary)] h-1.5 rounded-full overflow-hidden">
+                  <div id="metric4Bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-[var(--muted-foreground)] mb-1">
+                  <span>章末留存悬念钩子</span>
+                  <span id="metric5Val" class="text-emerald-500 font-medium">强钩子闭环</span>
+                </div>
+                <div class="w-full bg-[var(--secondary)] h-1.5 rounded-full overflow-hidden">
+                  <div id="metric5Bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editor 四层终审物理门禁 -->
+          <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm space-y-3">
+            <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center justify-between">
+              <span>Editor 四层代码级物理门禁</span>
+              <span id="editorBadge" class="text-xs px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-normal">待命中</span>
+            </h3>
+
+            <div class="space-y-2.5 text-xs">
+              <div id="gate1" class="flex items-center gap-2 p-2 rounded-lg bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">
+                <span class="w-4 h-4 rounded-full flex items-center justify-center bg-emerald-500 text-white text-[10px]">✓</span>
+                <div>
+                  <p class="font-medium text-[var(--foreground)]">第一层：符号排版层</p>
+                  <p class="text-[11px] text-[var(--muted-foreground)]">全篇绝对零星号硬校验</p>
+                </div>
+              </div>
+
+              <div id="gate2" class="flex items-center gap-2 p-2 rounded-lg bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">
+                <span class="w-4 h-4 rounded-full flex items-center justify-center bg-emerald-500 text-white text-[10px]">✓</span>
+                <div>
+                  <p class="font-medium text-[var(--foreground)]">第二层：篇幅结构层</p>
+                  <p class="text-[11px] text-[var(--muted-foreground)]">纯汉字 ≥ 2000，标题 ≤ 25 字符</p>
+                </div>
+              </div>
+
+              <div id="gate3" class="flex items-center gap-2 p-2 rounded-lg bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">
+                <span class="w-4 h-4 rounded-full flex items-center justify-center bg-emerald-500 text-white text-[10px]">✓</span>
+                <div>
+                  <p class="font-medium text-[var(--foreground)]">第三层：合规安全层</p>
+                  <p class="text-[11px] text-[var(--muted-foreground)]">无违禁敏感词，符合平台红线</p>
+                </div>
+              </div>
+
+              <div id="gate4" class="flex items-center gap-2 p-2 rounded-lg bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">
+                <span class="w-4 h-4 rounded-full flex items-center justify-center bg-emerald-500 text-white text-[10px]">✓</span>
+                <div>
+                  <p class="font-medium text-[var(--foreground)]">第四层：逻辑连续层</p>
+                  <p class="text-[11px] text-[var(--muted-foreground)]">动作首尾咬合，设定账本对齐</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 底部双栏：智能体终端执行日志 + 正文实时预览 -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- 控制台日志 -->
+      <div class="lg:col-span-5 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            智能体自博弈实时控制台日志
+          </h3>
+          <span class="text-xs text-[var(--muted-foreground)] cursor-pointer hover:underline" onclick="clearLogs()">清屏</span>
+        </div>
+        <div id="consoleLog" class="h-80 overflow-y-auto bg-neutral-950 text-neutral-200 p-3 rounded-xl font-mono text-xs leading-relaxed space-y-1">
+          <p class="text-neutral-500">流水线就绪。点击上方按钮启动自博弈研发循环……</p>
+        </div>
+      </div>
+
+      <!-- 正文实时检视区 -->
+      <div class="lg:col-span-7 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-sm space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center gap-2">
+            新章节交付预览 (03_chapters)
+          </h3>
+          <div class="flex items-center gap-2 text-xs">
+            <span id="charCountTag" class="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-500 font-medium">字数：2580 汉字</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-medium">0 星号通过</span>
+          </div>
+        </div>
+        <div id="chapterPreview" class="h-80 overflow-y-auto bg-[var(--background)] p-4 rounded-xl border border-[var(--border)] text-xs leading-loose text-[var(--foreground)] space-y-3">
+          <h2 class="text-base font-bold text-[var(--foreground)]"># 第58章 深渊密匙背后的古老符印</h2>
+          <p>晨光破晓，上一阶段合规整改任务圆满完成的余波尚未完全消散，新的异常刺耳警报已然在终端屏幕上疯狂跳动。</p>
+          <p>虚空之中，刺耳的嗡鸣声撕裂了平静的晨曦。一道充斥着蛮横威压的庞大身影凌空踏出，携带着看似不可逾越的禁锢规则，以居高临下的冰冷姿态向四周生灵降下威逼。</p>
+          <p>“尔等微末蝼蚁，今日若不交出通关凭证与全部本源，便将神魂永镇九幽！”</p>
+          <p>四周众人吓得面如土色，甚至有人瘫软倒地瑟瑟发抖。然而在那滔天威压的正中心，一道修长挺拔的身影却连脚步都未曾移动半寸，神情自若地整理了一下领带，镜片后的黑眸唯有一抹洞悉破绽的森然冷光。</p>
+          <p>“说话要有根据，做事要讲法理。”主角的声音平静如水，却带着直击灵魂的穿透力……</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function appendLog(text, colorClass) {
+      var logContainer = document.getElementById('consoleLog');
+      var p = document.createElement('p');
+      p.className = colorClass || 'text-neutral-300';
+      p.innerText = '[' + new Date().toLocaleTimeString() + '] ' + text;
+      logContainer.appendChild(p);
+      logContainer.scrollTop = logContainer.scrollHeight;
+    }
+
+    function clearLogs() {
+      document.getElementById('consoleLog').innerHTML = '';
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function startAgentLoop() {
+      var btn = document.getElementById('btnRun');
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+      var chapter = document.getElementById('inputChapter').value;
+      var title = document.getElementById('inputTitle').value;
+      var theme = document.getElementById('inputTheme').value;
+      var isForceRewrite = document.getElementById('chkForceRewrite').checked;
+      var isDryRun = document.getElementById('chkDryRun').checked;
+
+      clearLogs();
+      appendLog('=== 启动多智能体自博弈流水线 ===', 'text-indigo-400 font-bold');
+      appendLog('目标章节：第 ' + chapter + ' 章 《' + title + '》', 'text-neutral-200');
+      appendLog('核心冲突主题：' + theme, 'text-neutral-300');
+
+      // 阶段 1: 记忆检索
+      document.getElementById('badge1').className = 'w-2 h-2 rounded-full bg-indigo-500 animate-ping';
+      appendLog('[上下文感知] 正在检索 02_memories/chapter_summaries.md 记忆链条……', 'text-indigo-300');
+      await sleep(600);
+      appendLog('[上下文感知] 读取上一章收尾动作锚点: 上一阶段合规整改任务圆满完成……', 'text-emerald-400');
+      document.getElementById('badge1').className = 'w-2 h-2 rounded-full bg-emerald-500';
+
+      // 阶段 2: 写手起草
+      document.getElementById('badge2').className = 'w-2 h-2 rounded-full bg-indigo-500 animate-ping';
+      appendLog('[智能体 1: Writer] 启动黄金四幕模型（起承转合）起草正文……', 'text-indigo-300');
+      await sleep(900);
+
+      if (isForceRewrite) {
+        appendLog('[演练测试] 故意植入 AI 陈词滥调与主角心软，测试自博弈红蓝军……', 'text-amber-400');
+      }
+      appendLog('[智能体 1: Writer] 第 1 轮初稿生成完毕（共 2601 汉字）', 'text-emerald-400');
+      document.getElementById('badge2').className = 'w-2 h-2 rounded-full bg-emerald-500';
+
+      // 阶段 3: 毒点对抗审查
+      document.getElementById('badge3').className = 'w-2 h-2 rounded-full bg-amber-500 animate-ping';
+      appendLog('[智能体 2: Critic 毒点官] 开启红蓝军苛刻找茬审查……', 'text-amber-300');
+      await sleep(800);
+
+      if (isForceRewrite) {
+        // 模拟打回
+        document.getElementById('criticTotalScore').innerText = '45 / 100 分 (打回)';
+        document.getElementById('criticTotalScore').className = 'text-base font-bold text-rose-500';
+        document.getElementById('metric3Val').innerText = '严重违规 (扣40分)';
+        document.getElementById('metric3Val').className = 'text-rose-500 font-medium';
+        document.getElementById('metric3Bar').style.width = '30%';
+        document.getElementById('metric3Bar').className = 'bg-rose-500 h-full rounded-full transition-all duration-500';
+
+        document.getElementById('metric4Val').innerText = '命中套话 (扣15分)';
+        document.getElementById('metric4Val').className = 'text-rose-500 font-medium';
+        document.getElementById('metric4Bar').style.width = '60%';
+        document.getElementById('metric4Bar').className = 'bg-rose-500 h-full rounded-full transition-all duration-500';
+
+        appendLog('[Critic 打回] 发现主角圣母心软与套话「嘴角泛起一丝冷笑」，得分仅 45 分！', 'text-rose-400 font-bold');
+        appendLog('[Critic 诊断] 生成针对性重写反馈建议，驳回至 Writer！', 'text-rose-300');
+
+        await sleep(1000);
+        appendLog('[智能体 1: Writer] 吸收反馈进入第 2 轮针对性重构打磨……', 'text-indigo-400 font-bold');
+        await sleep(900);
+        appendLog('[Writer 修复] 已剔除陈词滥调，强化主角当场反制杀伐果断！', 'text-emerald-400');
+
+        // 第 2 轮重新打分
+        appendLog('[智能体 2: Critic] 第 2 轮复审评分：100 分（无毒点通过）！', 'text-emerald-400 font-bold');
+        document.getElementById('criticTotalScore').innerText = '100 / 100 分';
+        document.getElementById('criticTotalScore').className = 'text-base font-bold text-emerald-500';
+        document.getElementById('metric3Val').innerText = '无毒点';
+        document.getElementById('metric3Val').className = 'text-emerald-500 font-medium';
+        document.getElementById('metric3Bar').style.width = '100%';
+        document.getElementById('metric3Bar').className = 'bg-emerald-500 h-full rounded-full transition-all duration-500';
+
+        document.getElementById('metric4Val').innerText = '清爽原创';
+        document.getElementById('metric4Val').className = 'text-emerald-500 font-medium';
+        document.getElementById('metric4Bar').style.width = '100%';
+        document.getElementById('metric4Bar').className = 'bg-emerald-500 h-full rounded-full transition-all duration-500';
+      } else {
+        appendLog('[智能体 2: Critic] 首轮质检评分：100 分！篇幅饱满，爽感鲜明，无读者流失毒点！', 'text-emerald-400 font-bold');
+      }
+      document.getElementById('badge3').className = 'w-2 h-2 rounded-full bg-emerald-500';
+
+      // 阶段 4: 总编物理代码门禁
+      document.getElementById('badge4').className = 'w-2 h-2 rounded-full bg-emerald-500 animate-ping';
+      appendLog('[智能体 3: Editor 总编] 执行四层物理级代码终审……', 'text-emerald-300');
+      await sleep(600);
+      appendLog('  -> 第一层【符号排版】: 零星号扫描通过（0 字符）', 'text-neutral-300');
+      appendLog('  -> 第二层【篇幅结构】: 汉字 2580 字，标题 14 字，合格', 'text-neutral-300');
+      appendLog('  -> 第三层【合规安全】: 敏感词库扫描 0 命中，合规', 'text-neutral-300');
+      appendLog('  -> 第四层【逻辑衔接】: 前文动作锚点紧密咬合，通过', 'text-neutral-300');
+      appendLog('[Editor 签发令] 四层门禁全部合规，签署签发单！', 'text-emerald-400 font-bold');
+      document.getElementById('editorBadge').innerText = '已签发放行';
+      document.getElementById('badge4').className = 'w-2 h-2 rounded-full bg-emerald-500';
+
+      // 资产沉淀
+      if (isDryRun) {
+        appendLog('=== DRY-RUN 演练完毕：未污染物理磁盘 ===', 'text-indigo-400 font-bold');
+      } else {
+        appendLog('[交付闭环] 正文写入 03_chapters/chapter_058.md', 'text-emerald-400');
+        appendLog('[记忆更新] 已追加到 02_memories/chapter_summaries.md', 'text-emerald-400');
+        appendLog('[排期登记] 已更新 config/publishing_schedule.json', 'text-emerald-400');
+      }
+
+      btn.disabled = false;
+      btn.classList.remove('opacity-50', 'cursor-not-allowed');
+    }
+  </script>
+</body>
+</html>

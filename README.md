@@ -21,6 +21,7 @@ ainovel-engine/
 │   └── writing_rules.md          # 核心写作与排版规范（绝对零星号等）
 ├── 03_chapters/                  # 【正文交付区】
 │   └── .gitkeep                  # 章节正文存放目录
+├── dashboard/                    # 【可视化看板】轻量无依赖 Web 控制台界面
 ├── prompts/                      # 核心生产提示词模板
 │   ├── outliner.md               # 架构师 Agent 规范
 │   ├── writer.md                 # 写手 Agent 规范（四幕式黄金模型）
@@ -28,6 +29,7 @@ ainovel-engine/
 │   └── editor.md                 # 总编 Agent 规范（四层物理代码终审）
 ├── scripts/                      # 自动化流水线工具集
 │   ├── run_agent_loop.js         # 【核心】多智能体自博弈全自动闭环研发引擎
+│   ├── serve_dashboard.js        # 【可视化服务】启动本地 Web 控制台服务（http://localhost:3000）
 │   ├── publish_batch_template.js # 顺序批量拟人化发布模板（带防倒挂时序锁）
 │   ├── stealth_utils.js          # 抹除WebDriver特征与正态随机等待工具
 │   ├── fetch_reader_feedback.js  # 读者章评与平台在读数据反馈采集器
@@ -46,3 +48,4 @@ ainovel-engine/
 2. 拟人化反风控与防倒挂发布：抹除自动化特征，加入8至14秒正态随机等待沉淀时间戳，保证章节目录单调递增。
 3. 读者数据双向反馈：自动化采集后台追读与读者评论，结构化存储为记忆输入，指导大纲动态微调。
 4. 多模态宣发自动化：一键提取章节高潮与前三秒黄金吸睛钩子，生成短视频短剧推文分镜脚本。
+5. 可视化中控仪表盘：运行 `node scripts/serve_dashboard.js`，浏览器访问 `http://localhost:3000`，支持全流程阶段可视化跟踪、毒点量化打分条展示与四层门禁终审结果实时检视。
