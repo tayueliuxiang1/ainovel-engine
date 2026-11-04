@@ -1,10 +1,29 @@
 {
-  "project_name": "My-Novel-Project",
-  "target_platform": "番茄小说 / 免费阅读",
-  "chapter_target_words": 2000,
-  "daily_target_chapters": 3,
+  "project_name": "Tomato-Novel-2026-Engine",
+  "target_platform": "番茄小说 (2026最新标准)",
+  "signing_strategy": "20万至30万字精品中短篇完本签约",
+  "daily_target_words": 4400,
+  "daily_target_chapters": 2,
+  "chapter_target_words": 2200,
   "formatting_rules": {
     "no_asterisks": true,
+    "short_paragraphs": true,
     "description": "严禁在正文中使用任何星号字符，统一使用中文标点与方括号"
+  },
+  "content_safeguards": {
+    "no_superstition": true,
+    "no_horror_gore": true,
+    "no_societal_panic": true,
+    "preferred_genres": [
+      "现实悬疑反杀",
+      "都市神豪脑洞",
+      "商战高智商博弈",
+      "科幻安全沙盒"
+    ]
+  },
+  "writing_dynamics": {
+    "sensory_sexual_tension": true,
+    "meme_integration": true,
+    "golden_ratio_4_acts": true
   }
 }

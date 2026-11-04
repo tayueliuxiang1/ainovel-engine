@@ -131,6 +131,15 @@ function runCriticAgent(draftText) {
         defects.push('【致命毒点】检测到非法星号字符存在，严重违反排版公理！');
     }
 
+    // 检查维度 1.5: 2026 番茄合规高危违禁词（吸取上一本诡异小说教训）
+    const bannedWords = ['厉鬼', '索命', '死咒', '剥皮', '碎尸', '尸油', '鬼怪附身'];
+    for (let b of bannedWords) {
+        if (draftText.includes(b)) {
+            score -= 50;
+            defects.push('【合规致命毒点】命中高危涉恐涉迷信词汇「' + b + '」，被番茄机审一票否决！');
+        }
+    }
+
     // 检查维度 2: 篇幅饱满度
     if (hanCount < 2000) {
         score -= 30;
