@@ -1,4 +1,4 @@
-# AINovel-Engine (通用工业化网文创作与自动化发布引擎)
+工业级多智能体网文创作与排期发布引擎 | Industrial multi-agent web novel generation and automated publishing engine.
 
 基于软件工程CI/CD思想与Playwright自动化流水线的全生命周期网文工业化创作引擎与合规交付系统。
 
