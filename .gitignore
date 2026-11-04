@@ -1,0 +1,9 @@
+node_modules/
+tools/auto-fanqie/node_modules/
+tools/auto-fanqie/fanqie-test/node_modules/
+tools/auto-fanqie/tmp/
+tools/auto-fanqie/fanqie-go/main
+.playwright/
+.vscode/
+.idea/
+.DS_Store
