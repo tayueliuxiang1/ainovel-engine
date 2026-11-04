@@ -22,7 +22,7 @@ function verifyChapter(filePath) {
     errors.push('【铁律暴雷】文本中存在星号字符 (0x2A)，违反绝对零星号铁律！');
   }
 
-  // 2. 标题规范检查 (严禁八股二段对仗标题，如：xxxx，xxxx)
+  // 2. 标题规范检查 (严禁八股二段对仗标题，严禁行政公文式标题)
   const titleLine = lines[0] || '';
   if (titleLine.indexOf('，') !== -1) {
     const parts = titleLine.replace(/^#\s*/, '').split(' ')[1] || '';
@@ -30,6 +30,12 @@ function verifyChapter(filePath) {
       errors.push('【标题八股病】标题使用了二段式对仗（' + parts + '）！网文严禁四字对四字，必须单核直白、一句话或单个核心动作！');
     }
   }
+  const bureaucraticTitleWords = ['依据', '调研', '汇报', '调查', '规划', '研究', '报告'];
+  bureaucraticTitleWords.forEach(function(bw) {
+    if (titleLine.indexOf(bw) !== -1) {
+      errors.push('【标题行政病】标题含有不适合小说的行政公文词汇（' + bw + '）！必须紧扣正文核心戏剧动作或关键意象！');
+    }
+  });
 
   // 3. 历史称谓硬伤检查 (贞观元年严禁称李世民为天可汗)
   if (content.indexOf('天可汗') !== -1) {
