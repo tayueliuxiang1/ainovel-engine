@@ -1,15 +1,10 @@
 {
-  "project_name": "让你遵守规则，你把诡异逼疯了？",
-  "alt_name": "诡异降临：我能看到规则漏洞",
+  "project_name": "My-Novel-Project",
   "target_platform": "番茄小说 / 免费阅读",
-  "genre": "悬疑脑洞 / 规则怪谈 / 黑色幽默 / 无敌卡Bug流",
-  "tone": "快节奏、轻喜剧解压、智商碾压、反差打脸、全员震惊",
-  "chapter_target_words": 2500,
+  "chapter_target_words": 2000,
   "daily_target_chapters": 3,
-  "current_status": "正文连载阶段 (Serialized Writing Phase)",
   "formatting_rules": {
     "no_asterisks": true,
-    "description": "严禁在正文中使用任何星号（*），禁止使用Markdown粗体**或列表*，统一使用中文标点与括号【】《》"
-  },
-  "cover_image": "assets/cover.jpg"
+    "description": "严禁在正文中使用任何星号字符，统一使用中文标点与方括号"
+  }
 }

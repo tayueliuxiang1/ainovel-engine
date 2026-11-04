@@ -1,0 +1,74 @@
+const { chromium } = require('../tools/auto-fanqie/node_modules/playwright');
+const path = require('path');
+const os = require('os');
+const fs = require('fs');
+
+const userDataDir = path.join(os.homedir(), '.playwright', 'fanqie-profile');
+
+async function publishSingleChapter(page, bookId, chap) {
+    console.log('[顺序发布] 第 ' + chap.num + ' 章: 《' + chap.title + '》');
+    await page.goto('https://fanqienovel.com/main/writer/' + bookId + '/publish/?enter_from=newchapter_1', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(3000);
+
+    const inputs = page.locator('input');
+    await inputs.nth(0).fill(chap.num.toString());
+    await inputs.nth(0).blur();
+    await inputs.nth(1).fill(chap.title);
+    await inputs.nth(1).blur();
+
+    const editor = page.locator('.serial-editor-content .ProseMirror, .ProseMirror').first();
+    await editor.click();
+    const rawContent = fs.readFileSync(path.resolve(__dirname, '..', chap.file), 'utf8');
+
+    if (rawContent.includes(String.fromCharCode(42))) {
+        throw new Error('检测到星号违规，拒绝发布！');
+    }
+
+    const paragraphs = rawContent.split(/\r?\n/).map(p => p.trim()).filter(p => !p.startsWith('# ') && !p.includes('---') && p !== '');
+    const html = paragraphs.map(p => '<p>' + p + '</p>').join('');
+    await editor.evaluate((el, htmlContent) => {
+        el.innerHTML = htmlContent;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        el.dispatchEvent(new Event('change', { bubbles: true }));
+    }, html);
+
+    await page.waitForTimeout(2000);
+    const nextBtn = page.locator('button.auto-editor-next, button:has-text("下一步")').first();
+    await nextBtn.evaluate(el => el.click());
+
+    let isDone = false;
+    for (let step = 1; step <= 30; step++) {
+        await page.waitForTimeout(1500);
+        const typoModal = page.locator('.arco-modal:has-text("发布提示"), .arco-modal:has-text("错别字")').first();
+        if (await typoModal.isVisible().catch(() => false)) {
+            const btn = typoModal.locator('button.arco-btn-primary, button:has-text("提交")').first();
+            await btn.click().catch(() => {});
+            await page.waitForTimeout(1500);
+        }
+        const riskModal = page.locator('.arco-modal:has-text("检测"), [role="dialog"]:has-text("检测")').first();
+        if (await riskModal.isVisible().catch(() => false)) {
+            const btn = riskModal.locator('button:has-text("仅基础检测"), button:has-text("基础检测"), button:has-text("确定")').first();
+            if (await btn.isVisible().catch(() => false)) {
+                await btn.click().catch(() => {});
+                await page.waitForTimeout(1500);
+            }
+        }
+        const pubModal = page.locator('.arco-modal:has-text("发布设置"), [role="dialog"]:has-text("发布设置")').first();
+        if (await pubModal.isVisible().catch(() => false)) {
+            const noAi = pubModal.locator('.arco-radio:has-text("否"), label:has-text("否")').first();
+            if (await noAi.isVisible().catch(() => false)) {
+                await noAi.click().catch(() => {});
+                await page.waitForTimeout(500);
+            }
+            const confirmBtn = pubModal.locator('button:has-text("确认提交"), button:has-text("确认发布"), button:has-text("提交")').first();
+            await confirmBtn.click().catch(() => {});
+            await page.waitForTimeout(6000);
+            isDone = true;
+            break;
+        }
+    }
+    if (!isDone) throw new Error('第 ' + chap.num + ' 章发布未完成');
+    console.log('第 ' + chap.num + ' 章入库成功！');
+}
+
+module.exports = { publishSingleChapter };

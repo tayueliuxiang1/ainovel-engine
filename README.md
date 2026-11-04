@@ -1,33 +1,42 @@
-# AINovel-Engine (Antigravity 本地原生版)
+# AINovel-Engine (通用工业化网文创作与自动化发布引擎)
 
-基于多 Agent（架构师、写手、编辑、记忆归档）协同的高效长篇网文创作引擎。
+基于软件工程CI/CD思想与Playwright自动化流水线的全生命周期网文工业化创作引擎与合规交付系统。
 
 ## 目录结构说明
 
 ```text
 ainovel-engine/
 ├── config/
-│   └── project.json              # 项目全局配置（书名、平台、受众目标）
-├── 00_settings/                  # 【架构师资产：全局设定】
-│   ├── world_rules.md            # 世界观规则、灾变机制、基础法则
-│   ├── characters.md             # 角色档案卡（人设、语言习惯、心理动机构架）
-│   └── gold_finger.md            # 主角金手指底层逻辑与数值/权限成长树
-├── 01_outlines/                  # 【大纲层：剧情骨架】
-│   ├── volume_1_outline.md       # 第一卷核心主线与副本高潮设计
-│   └── chapter_plans.md          # 分章细纲（前三章爆款钩子与后续章节计划）
-├── 02_memories/                  # 【记忆层：长篇防失忆与防崩盘】
-│   ├── chapter_summaries.md      # 滚动式单章50字极简摘要（提供给Writer的局部上下文）
-│   └── plot_tracker.md           # 伏笔与道具追踪表（已埋下/待解决/人物状态变化）
-├── 03_chapters/                  # 【成品正文】
-│   └── chapter_001.md            # 生成的章节正文与评审批注
-└── prompts/                      # 【各角色 Agent 标准提示词模板】
-    ├── writer.md                 # 写手扩写提示词规范
-    └── editor.md                 # 毒舌编辑质检与打分规范
+│   ├── project.json              # 项目全局配置（书名模板、目标字数、格式约束）
+│   └── publishing_schedule.json  # 自动化发布排期表与状态跟踪
+├── 00_settings/                  # 【架构师资产：全局设定模板】
+│   ├── world_rules.md            # 世界观底层规则、战力公理
+│   ├── characters.md             # 角色档案卡（人设、行为范式）
+│   └── gold_finger.md            # 核心机制与特殊能力设定
+├── 01_outlines/                  # 【总编资产：分卷与章节大纲】
+│   └── master_outline.md         # 全书宏观分卷规划
+├── 02_memories/                  # 【记忆库：状态机与上下文追踪】
+│   ├── chapter_summaries.md      # 动态章节摘要
+│   ├── plot_tracker.md           # 伏笔与实体状态追踪
+│   └── writing_rules.md          # 核心写作与排版规范（绝对零星号等）
+├── 03_chapters/                  # 【正文交付区】
+│   └── .gitkeep                  # 章节正文存放目录
+├── prompts/                      # 核心生产提示词模板（架构师、写手、审稿）
+├── scripts/                      # 自动化流水线工具集
+│   ├── login.js                  # 平台会话维持
+│   ├── publish.js                # 通用单章发布引擎
+│   ├── publish_batch_template.js # 顺序批量发布模板
+│   ├── master_scheduler.js       # 排期定时调度引擎
+│   ├── list_exact_chapters.js    # 线上目录实时回显核验
+│   ├── clean_all_asterisks.js    # 格式符号自动化清洗
+│   └── count_asterisks.js        # 零星号合规质检工具
+├── tools/                        # 核心自动化工具包（Playwright自动化驱动）
+└── assets/                       # 封面与媒体资产目录
 ```
 
-## 核心运行流水线 (SOP)
+## 核心特性
 
-1. **Step 1 (架构师)**：确认 `00_settings` 与 `01_outlines/chapter_plans.md`（细纲是小说的灵魂缰绳）。
-2. **Step 2 (写手 Writer)**：读取【角色卡 + 本章细纲 + 上一章摘要】，单章扩写 2500 字，禁止自由发挥。
-3. **Step 3 (编辑 Editor)**：依据番茄留存标准，从“人设、打脸爽点、黄金钩子、去AI味”四个维度评审。
-4. **Step 4 (记忆归档 Archivist)**：合格章节入库 `03_chapters/`，自动提取 50 字摘要追加至 `02_memories/`。
+1. 软件工程化叙事：将传统小说创作转变为可量化、可测试、可迭代的工业流水线。
+2. 四层代码审计保障：语法与符号过滤、字数与结构校验、语义安全审查、逻辑与上下文咬合。
+3. 自动化平台履约：基于Playwright保持登录会话，DOM富文本精准注入，穿透各类交互弹窗。
+4. 绝对单调递增发布：章节强制串行并设置安全时间戳沉淀，彻底杜绝目录乱序倒挂。
