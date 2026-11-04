@@ -39,7 +39,16 @@ function verifyChapter(filePath) {
     errors.push('【科技越界】文中出现了现代工业名词（机油/轴承）！必须使用釭、轴瓦、猪膏润脂！');
   }
 
-  // 3. 文青病与自嗨注水词汇黑名单
+  // 4. 标点符号规范检查 (严禁连续感叹号与咆哮体)
+  if (content.indexOf('！！') !== -1 || content.indexOf('？！') !== -1 || content.indexOf('！？') !== -1) {
+    errors.push('【标点暴雷】文中存在连续感叹号（！！或？！），严禁使用咆哮体标点！');
+  }
+  const exclamationCount = content.split('！').length - 1;
+  if (exclamationCount > 10) {
+    warnings.push('【感叹号超标】全文感叹号高达 ' + exclamationCount + ' 个！严重缺乏克制感，建议改为沉稳句号，控制在10个以内！');
+  }
+
+  // 5. 文青病与自嗨注水词汇黑名单
   const literaryBlacklist = [
     '小灯笼',
     '雀儿',
@@ -79,7 +88,7 @@ function verifyChapter(filePath) {
   const nonEmptyLines = lines.map(function(l) { return l.trim(); }).filter(function(l) { return l.length > 0; });
   if (nonEmptyLines.length > 0) {
     const lastLine = nonEmptyLines[nonEmptyLines.length - 1];
-    const hookPunctuation = ['！', '？', '……', '——', '！"', '！”', '？”'];
+    const hookPunctuation = ['！', '？', '……', '——', '！"', '！”', '？”', '……”'];
     let hasHookEnding = false;
     hookPunctuation.forEach(function(p) {
       if (lastLine.endsWith(p)) {
