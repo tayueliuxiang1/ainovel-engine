@@ -1,6 +1,6 @@
 import os
 import operator
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 mul = operator.mul
 
@@ -10,7 +10,7 @@ def create_gradient_mask(width, height, start_alpha, end_alpha, is_vertical=True
     if is_vertical:
         for y in range(height):
             ratio = y / float(height) if height > 0 else 0
-            alpha = int(start_alpha + ratio * (end_alpha - start_alpha) if False else start_alpha + mul(ratio, (end_alpha - start_alpha)))
+            alpha = int(start_alpha + mul(ratio, (end_alpha - start_alpha)))
             draw.line([(0, y), (width, y)], fill=max(0, min(255, alpha)))
     return mask
 
@@ -24,8 +24,8 @@ def main():
     w, h = img.size
     
     # 1. 顶部与底部半透明渐变暗场，确保文字绝对清晰
-    top_overlay_h = 360
-    top_mask = create_gradient_mask(w, top_overlay_h, 215, 0)
+    top_overlay_h = 390
+    top_mask = create_gradient_mask(w, top_overlay_h, 220, 0)
     top_dark = Image.new("RGBA", (w, top_overlay_h), (8, 12, 22, 255))
     img.paste(top_dark, (0, 0), top_mask)
     
@@ -43,8 +43,9 @@ def main():
     if not os.path.exists(font_kaiti):
         font_kaiti = r"C:\Windows\Fonts\simkai.ttf"
         
-    font_title = ImageFont.truetype(font_hei, 82)
-    font_slogan = ImageFont.truetype(font_yahei, 22)
+    font_title_line1 = ImageFont.truetype(font_hei, 54)
+    font_title_line2 = ImageFont.truetype(font_hei, 62)
+    font_slogan = ImageFont.truetype(font_yahei, 21)
     font_tagline = ImageFont.truetype(font_yahei, 20)
     font_badge = ImageFont.truetype(font_yahei, 18)
     font_author_name = ImageFont.truetype(font_yahei, 34)
@@ -57,66 +58,78 @@ def main():
     b1_text = "番茄官方签约"
     b1_bbox = font_badge.getbbox(b1_text)
     b1_w = b1_bbox[2] - b1_bbox[0] + 32
-    b1_h = 38
+    b1_h = 36
     b1_x = 180
-    b1_y = 38
+    b1_y = 32
     draw.rounded_rectangle([b1_x, b1_y, b1_x + b1_w, b1_y + b1_h], radius=6, fill=(168, 28, 28, 230), outline=(255, 180, 180, 200), width=1)
-    draw.text((b1_x + 16, b1_y + 8), b1_text, font=font_badge, fill=(255, 245, 245))
+    draw.text((b1_x + 16, b1_y + 7), b1_text, font=font_badge, fill=(255, 245, 245))
     
     # 徽章2：无系统 · 硬核大唐工业
     b2_text = "无系统 · 硬核大唐工业"
     b2_bbox = font_badge.getbbox(b2_text)
     b2_w = b2_bbox[2] - b2_bbox[0] + 32
-    b2_h = 38
+    b2_h = 36
     b2_x = b1_x + b1_w + 16
-    b2_y = 38
+    b2_y = 32
     draw.rounded_rectangle([b2_x, b2_y, b2_x + b2_w, b2_y + b2_h], radius=6, fill=(18, 26, 46, 230), outline=(255, 215, 0, 180), width=1)
-    draw.text((b2_x + 16, b2_y + 8), b2_text, font=font_badge, fill=(255, 225, 100))
+    draw.text((b2_x + 16, b2_y + 7), b2_text, font=font_badge, fill=(255, 225, 100))
     
     # 3. 副标宣法语
     slogan_text = "一柄规尺度乾坤 · 万吨渭水逆天流"
     s_bbox = font_slogan.getbbox(slogan_text)
     s_w = s_bbox[2] - s_bbox[0]
     s_x = int((w - s_w) / 2)
-    s_y = 102
-    # 阴影
+    s_y = 82
     draw.text((s_x + 2, s_y + 2), slogan_text, font=font_slogan, fill=(0, 0, 0, 220))
     draw.text((s_x, s_y), slogan_text, font=font_slogan, fill=(225, 235, 245))
     
-    # 4. 核心主书名《大唐第一工科生》
-    title_text = "大唐第一工科生"
-    t_bbox = font_title.getbbox(title_text)
-    t_w = t_bbox[2] - t_bbox[0]
-    t_x = int((w - t_w) / 2)
-    t_y = 142
+    # 4. 核心主书名（分两行排版，极其醒目霸气）
+    # 第一行：大唐：盗我抗旱图？
+    t1_text = "大唐：盗我抗旱图？"
+    t1_bbox = font_title_line1.getbbox(t1_text)
+    t1_w = t1_bbox[2] - t1_bbox[0]
+    t1_x = int((w - t1_w) / 2)
+    t1_y = 120
     
-    # 厚重立体阴影 (8个方向扩散)
+    for dx in range(-3, 4):
+        for dy in range(-3, 4):
+            if abs(dx) + abs(dy) > 0:
+                draw.text((t1_x + dx, t1_y + dy), t1_text, font=font_title_line1, fill=(10, 5, 0, 255))
+    for dy in range(1, 7):
+        draw.text((t1_x, t1_y + dy), t1_text, font=font_title_line1, fill=(20, 10, 2, 255))
+    for dx in range(-2, 3):
+        for dy in range(-2, 3):
+            draw.text((t1_x + dx, t1_y + dy), t1_text, font=font_title_line1, fill=(180, 120, 20, 255))
+    draw.text((t1_x, t1_y), t1_text, font=font_title_line1, fill=(255, 242, 170, 255))
+    draw.text((t1_x, t1_y - 1), t1_text, font=font_title_line1, fill=(255, 255, 245, 180))
+    
+    # 第二行：我造神车诛你九族！
+    t2_text = "我造神车诛你九族！"
+    t2_bbox = font_title_line2.getbbox(t2_text)
+    t2_w = t2_bbox[2] - t2_bbox[0]
+    t2_x = int((w - t2_w) / 2)
+    t2_y = 188
+    
     for dx in range(-4, 5):
         for dy in range(-4, 5):
             if abs(dx) + abs(dy) > 0:
-                draw.text((t_x + dx, t_y + dy), title_text, font=font_title, fill=(10, 5, 0, 255))
-    for dy in range(1, 9):
-        draw.text((t_x, t_y + dy), title_text, font=font_title, fill=(20, 10, 2, 255))
-        
-    # 金色描边
+                draw.text((t2_x + dx, t2_y + dy), t2_text, font=font_title_line2, fill=(12, 4, 0, 255))
+    for dy in range(1, 8):
+        draw.text((t2_x, t2_y + dy), t2_text, font=font_title_line2, fill=(25, 8, 2, 255))
     for dx in range(-2, 3):
         for dy in range(-2, 3):
-            draw.text((t_x + dx, t_y + dy), title_text, font=font_title, fill=(180, 120, 20, 255))
-            
-    # 正文金黄填色
-    draw.text((t_x, t_y), title_text, font=font_title, fill=(255, 238, 140, 255))
-    # 上半截高光
-    draw.text((t_x, t_y - 1), title_text, font=font_title, fill=(255, 255, 240, 180))
+            draw.text((t2_x + dx, t2_y + dy), t2_text, font=font_title_line2, fill=(210, 90, 20, 255))
+    draw.text((t2_x, t2_y), t2_text, font=font_title_line2, fill=(255, 215, 60, 255))
+    draw.text((t2_x, t2_y - 1), t2_text, font=font_title_line2, fill=(255, 245, 200, 200))
     
     # 5. 书名下方装饰金线与标签
     tag_sub = "手搓盛唐第一工业帝国"
     ts_bbox = font_tagline.getbbox(tag_sub)
     ts_w = ts_bbox[2] - ts_bbox[0]
     ts_x = int((w - ts_w) / 2)
-    ts_y = 246
+    ts_y = 270
     
-    # 装饰线
-    line_w = 120
+    line_w = 110
     draw.line([(ts_x - line_w - 20, ts_y + 12), (ts_x - 20, ts_y + 12)], fill=(255, 215, 0, 180), width=2)
     draw.line([(ts_x + ts_w + 20, ts_y + 12), (ts_x + ts_w + line_w + 20, ts_y + 12)], fill=(255, 215, 0, 180), width=2)
     
@@ -157,28 +170,23 @@ def main():
     start_ax = int((w - total_author_w) / 2)
     author_y = h - 90
     
-    # 绘制作者名
     draw.text((start_ax + 2, author_y + 2), author_name, font=font_author_name, fill=(0, 0, 0, 230))
     draw.text((start_ax, author_y), author_name, font=font_author_name, fill=(255, 255, 255))
     
-    # 绘制“著”字
     sub_x = start_ax + an_w + gap1
     draw.text((sub_x + 1, author_y + 8), author_sub, font=font_author_sub, fill=(0, 0, 0, 200))
     draw.text((sub_x, author_y + 7), author_sub, font=font_author_sub, fill=(203, 213, 225))
     
-    # 绘制朱砂印章
     seal_x = sub_x + as_w + gap2
     seal_y = author_y - 3
     draw.rounded_rectangle([seal_x, seal_y, seal_x + seal_size, seal_y + seal_size], radius=4, fill=(153, 27, 27, 240), outline=(239, 68, 68, 220), width=2)
-    # 印章文字两行：踏留 / 月香
     draw.text((seal_x + 7, seal_y + 5), "踏留", font=font_seal, fill=(254, 242, 242))
     draw.text((seal_x + 7, seal_y + 23), "月香", font=font_seal, fill=(254, 242, 242))
     
-    # 保存结果 (高质量 JPG 与 PNG)
     final_rgb = img.convert("RGB")
     final_rgb.save(output_cover, "JPEG", quality=95)
     img.save(output_png, "PNG")
-    print(f"Success! Saved to {output_cover} and {output_png}")
+    print(f"Success! Updated cover to: {output_cover}")
 
 if __name__ == "__main__":
     main()
