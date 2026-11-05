@@ -14,7 +14,8 @@ const CHAPTERS = [
     { num: 4, title: '开炉', file: '03_chapters/chapter_004.md' },
     { num: 5, title: '试机', file: '03_chapters/chapter_005.md' },
     { num: 6, title: '问车', file: '03_chapters/chapter_006.md' },
-    { num: 7, title: '备战', file: '03_chapters/chapter_007.md' }
+    { num: 7, title: '备战', file: '03_chapters/chapter_007.md' },
+    { num: 8, title: '御试', file: '03_chapters/chapter_008.md' }
 ];
 
 async function publishChapterDirect(page, chapNum, chapTitle, chapFile) {
