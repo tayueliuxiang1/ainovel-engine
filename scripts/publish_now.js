@@ -12,7 +12,9 @@ const CHAPTERS = [
     { num: 2, title: '县衙火签', file: '03_chapters/chapter_002.md' },
     { num: 3, title: '谁给你的狗胆', file: '03_chapters/chapter_003.md' },
     { num: 4, title: '开炉', file: '03_chapters/chapter_004.md' },
-    { num: 5, title: '试机', file: '03_chapters/chapter_005.md' }
+    { num: 5, title: '试机', file: '03_chapters/chapter_005.md' },
+    { num: 6, title: '问车', file: '03_chapters/chapter_006.md' },
+    { num: 7, title: '备战', file: '03_chapters/chapter_007.md' }
 ];
 
 async function publishChapterDirect(page, chapNum, chapTitle, chapFile) {
@@ -129,8 +131,8 @@ async function publishChapterDirect(page, chapNum, chapTitle, chapFile) {
 
 (async () => {
     const args = process.argv.slice(2);
-    let start = 4;
-    let end = 5;
+    let start = 6;
+    let end = 6;
 
     for (let i = 0; i < args.length; i++) {
         if (args[i] === '--start' && args[i + 1]) {
