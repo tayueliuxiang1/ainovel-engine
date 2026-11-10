@@ -6,7 +6,51 @@ const { chromium } = require('../tools/auto-fanqie/node_modules/playwright');
 const path = require('path');
 const os = require('os');
 const fs = require('fs');
+const crypto = require('crypto');
 const { applyStealthEvasions, simulateHumanMouseMove } = require('./stealth_utils');
+const { analyzeChapter, GATE_DIR } = require('./verify_chapter');
+
+function enforceChapterGate(chapNum, chapFile, strictMtimeOnly) {
+    const fullPath = path.resolve(__dirname, '..', chapFile);
+    if (!fs.existsSync(fullPath)) {
+        throw new Error('第 ' + chapNum + ' 章文件不存在：' + fullPath);
+    }
+    const stat = fs.statSync(fullPath);
+    const sha256 = crypto.createHash('sha256').update(fs.readFileSync(fullPath)).digest('hex');
+    const gatePath = path.join(GATE_DIR, path.basename(fullPath, '.md') + '.gate.json');
+
+    let needReverify = false;
+    if (!fs.existsSync(gatePath)) {
+        if (strictMtimeOnly) {
+            throw new Error('第 ' + chapNum + ' 章缺少前置质检门禁文件（' + gatePath + '），请先运行 node scripts/verify_chapter.js！');
+        }
+        console.log('⚠️ 第 ' + chapNum + ' 章尚未生成门禁凭据，正在执行发布前强制终审...');
+        needReverify = true;
+    } else {
+        const gate = JSON.parse(fs.readFileSync(gatePath, 'utf8'));
+        const mtimeChanged = Math.abs((gate.file_mtime_ms || 0) - stat.mtimeMs) > 1;
+        const hashChanged = gate.file_sha256 !== sha256;
+        if (mtimeChanged || hashChanged) {
+            if (strictMtimeOnly) {
+                throw new Error('第 ' + chapNum + ' 章自上次质检后发生修改（mtime/SHA256 失配），请重跑 verify_chapter.js 后再发布！');
+            }
+            console.log('⚠️ 检测到第 ' + chapNum + ' 章在上次质检后曾有修改，旧门禁已自动作废，正在重跑全量终审...');
+            needReverify = true;
+        } else if (!gate.passed) {
+            throw new Error('第 ' + chapNum + ' 章门禁状态为未通过，阻断发布！请先修复 errors：' + (gate.errors || []).join(' ; '));
+        } else {
+            console.log('🔒 第 ' + chapNum + ' 章 mtime/SHA256 门禁校验通过（预警 ' + ((gate.warnings || []).length) + ' 项）。');
+        }
+    }
+
+    if (needReverify) {
+        const report = analyzeChapter(fullPath, { emitGate: true });
+        if (!report.passed) {
+            throw new Error('第 ' + chapNum + ' 章未能通过发布前强制终审，阻断发布：\n  ' + report.errors.join('\n  '));
+        }
+        console.log('🔒 第 ' + chapNum + ' 章现场终审通过并刷新门禁凭据（预警 ' + report.warnings.length + ' 项）。');
+    }
+}
 
 const BOOK_ID = '7704518175408278552';
 const userDataDir = path.join(os.homedir(), '.playwright', 'fanqie-profile');
@@ -283,10 +327,23 @@ async function publishNewChapter(page, chapNum, chapFile) {
 }
 
 (async () => {
-    const startArg = process.argv[2] ? parseInt(process.argv[2], 10) : 24;
-    const endArg = process.argv[3] ? parseInt(process.argv[3], 10) : 26;
+    const numArgs = process.argv.slice(2).filter(a => !a.startsWith('--'));
+    const strictMtimeOnly = process.argv.includes('--strict-pregate');
+    const checkOnly = process.argv.includes('--check-only');
+    const startArg = numArgs[0] ? parseInt(numArgs[0], 10) : 24;
+    const endArg = numArgs[1] ? parseInt(numArgs[1], 10) : 26;
 
-    console.log('启动新建章节发布队列: 第 ' + startArg + ' 至 ' + endArg + ' 章...');
+    console.log('启动新建章节发布队列预检: 第 ' + startArg + ' 至 ' + endArg + ' 章...');
+    for (let i = startArg; i <= endArg; i++) {
+        const pad = String(i).padStart(3, '0');
+        const chapFile = '03_chapters/chapter_' + pad + '.md';
+        enforceChapterGate(i, chapFile, strictMtimeOnly);
+    }
+    if (checkOnly) {
+        console.log('✅ 发布前置门禁预检全部通过（--check-only 模式，未启动浏览器）。');
+        return;
+    }
+
     const context = await chromium.launchPersistentContext(userDataDir, {
         headless: true,
         channel: 'chrome',

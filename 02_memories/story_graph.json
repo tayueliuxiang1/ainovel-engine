@@ -1,0 +1,412 @@
+{
+  "version": "1.0",
+  "last_updated_chapter": 35,
+  "updated_at": "2026-11-10T11:36:00+08:00",
+  "nodes": [
+    {
+      "id": "char_subai",
+      "type": "character",
+      "name": "苏白",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "正八品上少府监右尚署署令",
+      "faction": "云阳苏氏",
+      "first_chapter": 1,
+      "last_updated": 35,
+      "notes": "十六岁青衣少年，掌握标准化通止卡规、水力框锯、渗碳冷淬及百工外包统筹"
+    },
+    {
+      "id": "char_suchenghai",
+      "type": "character",
+      "name": "苏成海",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "从五品勋官上骑都尉/云阳庄庄主",
+      "faction": "云阳苏氏",
+      "first_chapter": 1,
+      "last_updated": 35
+    },
+    {
+      "id": "char_lushi",
+      "type": "character",
+      "name": "陆氏",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "云阳主母/大总管",
+      "faction": "云阳苏氏",
+      "first_chapter": 1,
+      "last_updated": 35
+    },
+    {
+      "id": "char_zhouaniu",
+      "type": "character",
+      "name": "周阿牛",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "工坊核心木作工头",
+      "faction": "云阳苏氏",
+      "first_chapter": 21,
+      "last_updated": 35
+    },
+    {
+      "id": "char_wangshifu",
+      "type": "character",
+      "name": "王木匠",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "元老技术身股木匠",
+      "faction": "云阳苏氏",
+      "first_chapter": 3,
+      "last_updated": 35
+    },
+    {
+      "id": "char_zhaoershu",
+      "type": "character",
+      "name": "赵二叔",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "元老技术身股铁匠",
+      "faction": "云阳苏氏",
+      "first_chapter": 4,
+      "last_updated": 35
+    },
+    {
+      "id": "char_peixingyan",
+      "type": "character",
+      "name": "裴行严",
+      "location": "长安兴庆里/蓝田往返",
+      "status": "active",
+      "rank": "从四品淮安郡王府长史",
+      "faction": "淮安郡王府",
+      "first_chapter": 24,
+      "last_updated": 35
+    },
+    {
+      "id": "char_gaoquan",
+      "type": "character",
+      "name": "高全",
+      "location": "长安崇仁坊",
+      "status": "active",
+      "rank": "齐国公府总管事",
+      "faction": "齐国公府",
+      "first_chapter": 30,
+      "last_updated": 35,
+      "notes": "第35章留下一百五十贯现钱定金预订五架大叶斗水车"
+    },
+    {
+      "id": "char_qinan",
+      "type": "character",
+      "name": "秦安",
+      "location": "长安怀德坊",
+      "status": "active",
+      "rank": "翼国公府大庄头",
+      "faction": "翼国公府",
+      "first_chapter": 30,
+      "last_updated": 35,
+      "notes": "第35章交割二百贯白银官宝钞预付十架高坡翻车头款"
+    },
+    {
+      "id": "char_liuyuanli",
+      "type": "character",
+      "name": "柳元礼",
+      "location": "长安门下省",
+      "status": "active",
+      "rank": "正五品上门下省给事中",
+      "faction": "大唐朝廷中枢",
+      "first_chapter": 34,
+      "last_updated": 35,
+      "notes": "奉太极殿卯正封驳明旨实授苏白正八品上少府监右尚署署令"
+    },
+    {
+      "id": "char_shencongjing",
+      "type": "character",
+      "name": "沈从敬",
+      "location": "长安御史台",
+      "status": "active",
+      "rank": "从六品下御史台侍御史",
+      "faction": "大唐朝廷御史台",
+      "first_chapter": 34,
+      "last_updated": 35,
+      "notes": "现场核账零虚并锁拿崔明哲押回御史台"
+    },
+    {
+      "id": "char_mingfu",
+      "type": "character",
+      "name": "蓝田明府相公",
+      "location": "蓝田县署",
+      "status": "active",
+      "rank": "正六品下/从六品上蓝田县令",
+      "faction": "蓝田县衙",
+      "first_chapter": 12,
+      "last_updated": 35
+    },
+    {
+      "id": "char_xuwen",
+      "type": "character",
+      "name": "许文",
+      "location": "蓝田县署",
+      "status": "active",
+      "rank": "蓝田户曹",
+      "faction": "蓝田县衙",
+      "first_chapter": 21,
+      "last_updated": 35
+    },
+    {
+      "id": "char_lizongyuan",
+      "type": "character",
+      "name": "李宗元",
+      "location": "蓝田/长安东市",
+      "status": "active",
+      "rank": "聚丰绸缎庄大东家",
+      "faction": "商业同盟",
+      "first_chapter": 20,
+      "last_updated": 35
+    },
+    {
+      "id": "char_hushouli",
+      "type": "character",
+      "name": "胡守礼",
+      "location": "白鹿原西麓皇庄",
+      "status": "active",
+      "rank": "淮安郡王府老庄头",
+      "faction": "淮安郡王府",
+      "first_chapter": 29,
+      "last_updated": 33
+    },
+    {
+      "id": "char_zhangtiejiang",
+      "type": "character",
+      "name": "张老铁匠",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "渭南十二家分包铁匠领头",
+      "faction": "关中百工分包联盟",
+      "first_chapter": 35,
+      "last_updated": 35
+    },
+    {
+      "id": "char_limuzuo",
+      "type": "character",
+      "name": "李木作",
+      "location": "蓝田县云阳庄工坊",
+      "status": "active",
+      "rank": "渭南分包木作匠头",
+      "faction": "关中百工分包联盟",
+      "first_chapter": 35,
+      "last_updated": 35
+    },
+    {
+      "id": "char_wulaojiang",
+      "type": "character",
+      "name": "吴老匠师",
+      "location": "长安将作监左校署",
+      "status": "active",
+      "rank": "将作监左校署资深官匠",
+      "faction": "将作监",
+      "first_chapter": 33,
+      "last_updated": 35,
+      "notes": "第34-35章亲历通止卡规与学徒拼框后彻底折服"
+    },
+    {
+      "id": "char_cuimingzhe",
+      "type": "character",
+      "name": "崔明哲",
+      "location": "长安御史台大牢",
+      "status": "imprisoned",
+      "removed_after_chapter": 35,
+      "imprisoned_chapter": 35,
+      "rank": "原正五品下工部水部司员外郎(已拔袍夺印)",
+      "faction": "博陵崔氏",
+      "first_chapter": 21,
+      "last_updated": 35,
+      "notes": "第35章因擅行未决之牒及牵涉旧案贪墨被侍御史沈从敬拔除绯袍锁押入御史台大牢"
+    },
+    {
+      "id": "char_cuifu",
+      "type": "character",
+      "name": "崔福",
+      "location": "蓝田县衙大牢",
+      "status": "imprisoned",
+      "removed_after_chapter": 19,
+      "imprisoned_chapter": 19,
+      "rank": "原崔府管事恶奴",
+      "faction": "博陵崔氏",
+      "first_chapter": 2,
+      "last_updated": 19,
+      "notes": "第17-19章雇凶锉缆纵火人赃俱获已被县丞锁拿"
+    },
+    {
+      "id": "char_liusanlai",
+      "type": "character",
+      "name": "刘三癞",
+      "location": "蓝田县衙大牢",
+      "status": "imprisoned",
+      "removed_after_chapter": 19,
+      "imprisoned_chapter": 19,
+      "rank": "受雇地痞",
+      "faction": "博陵崔氏",
+      "first_chapter": 17,
+      "last_updated": 19
+    },
+    {
+      "id": "char_cuihao",
+      "type": "character",
+      "name": "崔浩",
+      "location": "长安博陵崔氏别院",
+      "status": "detached",
+      "removed_after_chapter": 22,
+      "rank": "博陵崔氏旁系子弟",
+      "faction": "博陵崔氏",
+      "first_chapter": 1,
+      "last_updated": 22
+    },
+    {
+      "id": "char_zhengsili",
+      "type": "character",
+      "name": "郑思礼",
+      "location": "长安都水监",
+      "status": "retreated",
+      "removed_after_chapter": 32,
+      "rank": "从七品都水丞",
+      "faction": "工部都水监",
+      "first_chapter": 30,
+      "last_updated": 32
+    },
+    {
+      "id": "char_cuiyong",
+      "type": "character",
+      "name": "崔永",
+      "location": "长安博陵崔氏",
+      "status": "retreated",
+      "removed_after_chapter": 32,
+      "rank": "博陵崔氏东崖庄头",
+      "faction": "博陵崔氏",
+      "first_chapter": 30,
+      "last_updated": 32
+    },
+    {
+      "id": "loc_yunyang_workshop",
+      "type": "location",
+      "name": "云阳庄晒谷场工坊",
+      "last_updated": 35
+    },
+    {
+      "id": "loc_nanyuan_cliff",
+      "type": "location",
+      "name": "南原小官渠绝壁",
+      "last_updated": 25
+    },
+    {
+      "id": "loc_dongya_ferry",
+      "type": "location",
+      "name": "白鹿原皇庄东崖渡口",
+      "last_updated": 32
+    },
+    {
+      "id": "loc_zhongnan_coal",
+      "type": "location",
+      "name": "终南山北麓废石炭矿窑",
+      "last_updated": 35
+    },
+    {
+      "id": "fs_fb007_coal",
+      "type": "foreshadow",
+      "name": "FB-007 终南山毒石炭脱毒破炭荒",
+      "planted_chapter": 35,
+      "target_chapter": 39,
+      "resolved": false,
+      "status": "active",
+      "description": "关中木炭一夜暴涨三倍断供，须亲探终南山北麓废石炭矿窑以生石灰粘合固硫脱毒手搓无烟石炭饼保住分包铁箍兼顾关中取暖"
+    },
+    {
+      "id": "fs_eighty_carts_quota",
+      "type": "foreshadow",
+      "name": "少府监八十架抗旱水车官单交付",
+      "planted_chapter": 35,
+      "target_chapter": 50,
+      "resolved": false,
+      "status": "active",
+      "description": "三日内凭勘合赴太府寺拨付首期五千贯定银，惊蛰前首批四十架双龙车必须落地转水，另附齐国公府5架与翼国公府10架预订"
+    },
+    {
+      "id": "fs_cui_court_trial",
+      "type": "foreshadow",
+      "name": "崔明哲御史台审讯与政事堂崔氏宗老余震",
+      "planted_chapter": 35,
+      "target_chapter": 45,
+      "resolved": false,
+      "status": "active",
+      "description": "沈从敬押走崔明哲核查185贯与500两废车旧账，同时参奏政事堂宗老失察；雪夜囤炭疑有残余门阀或炭行势力反扑"
+    },
+    {
+      "id": "fs_fb006_glass",
+      "type": "foreshadow",
+      "name": "FB-006 西市石英砂与高温无色玻璃望远镜",
+      "planted_chapter": 12,
+      "target_chapter": 85,
+      "resolved": false,
+      "status": "planned",
+      "description": "卷二解锁1300度高温熔炼无色玻璃与大漠望远镜长线"
+    },
+    {
+      "id": "fs_fsd004_cavalry",
+      "type": "foreshadow",
+      "name": "FSD-004 一体式马蹄铁与转向辎重车",
+      "planted_chapter": 20,
+      "target_chapter": 121,
+      "resolved": false,
+      "status": "planned",
+      "description": "北征突厥军工后勤线远期伏笔"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ally_subai_peixingyan",
+      "type": "ally",
+      "source": "char_subai",
+      "target": "char_peixingyan",
+      "since_chapter": 24,
+      "description": "淮安郡王府深盟兼皇庄东崖水利主客合作"
+    },
+    {
+      "id": "ally_subai_gaoquan",
+      "type": "ally",
+      "source": "char_subai",
+      "target": "char_gaoquan",
+      "since_chapter": 32,
+      "description": "永利总闸水涨复现后结盟，Ch35预付150贯订五架水车"
+    },
+    {
+      "id": "ally_subai_qinan",
+      "type": "ally",
+      "source": "char_subai",
+      "target": "char_qinan",
+      "since_chapter": 32,
+      "description": "翼国公府千亩麦田水车联保，Ch35预付200贯宝钞订十架"
+    },
+    {
+      "id": "subordinate_zhouaniu_subai",
+      "type": "subordinate",
+      "source": "char_zhouaniu",
+      "target": "char_subai",
+      "since_chapter": 21,
+      "description": "死心塌地负责卡规校验与工坊调度"
+    },
+    {
+      "id": "ally_zhangtiejiang_subai",
+      "type": "ally",
+      "source": "char_zhangtiejiang",
+      "target": "char_subai",
+      "since_chapter": 35,
+      "description": "渭南十二家标准铁箍分包同盟"
+    },
+    {
+      "id": "enemy_cuimingzhe_subai",
+      "type": "enemy",
+      "source": "char_cuimingzhe",
+      "target": "char_subai",
+      "since_chapter": 21,
+      "description": "工部旧利集团与门阀打压代表，Ch35已倒台下狱"
+    }
+  ]
+}

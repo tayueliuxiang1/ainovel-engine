@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-11-10T03:38:06.653Z",
+  "config": {
+    "cooldowns": {
+      "conflict_thrill": 2,
+      "bond_deepening": 1,
+      "faction_building": 2,
+      "world_painting": 3,
+      "tension_escalation": 2
+    },
+    "gentle_window_size": 5,
+    "max_consecutive_conflict": 2
+  },
+  "style_baseline": {
+    "computed_at": "2026-11-10T03:38:06.652Z",
+    "chapters_analyzed": 35,
+    "golden_window": "Ch21-Ch35",
+    "avg_cjk_per_chapter": 5265.47,
+    "avg_paragraphs": 80,
+    "avg_sentence_cjk": 53.6,
+    "avg_paragraph_cjk": 66.12,
+    "avg_dialogue_ratio": 0.38,
+    "avg_ai_vocab_per_1k": 0.27,
+    "avg_weak_adverb_per_1k": 1.16
+  },
+  "history": [
+    {
+      "chapter": 21,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "晒谷场立通止卡规与收服周阿牛"
+    },
+    {
+      "chapter": 22,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "崔明哲查坊以预完税凭契击破两罪"
+    },
+    {
+      "chapter": 23,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill"
+      ],
+      "note": "南原背《水部式》总纲与裴行严救驾"
+    },
+    {
+      "chapter": 24,
+      "tier": "medium",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "认旗底下接下四百五十贯皇庄单"
+    },
+    {
+      "chapter": 25,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill"
+      ],
+      "note": "少府监断尺朱批附注剥皮逐走崔明哲"
+    },
+    {
+      "chapter": 26,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "分喜钱研水锯遇十三家断供"
+    },
+    {
+      "chapter": 27,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "world_painting"
+      ],
+      "note": "山野漆蜡换废农铁水锯初卡"
+    },
+    {
+      "chapter": 28,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "拨料滴水成素香胰遇灞桥扣货"
+    },
+    {
+      "chapter": 29,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "灞桥反擒泼皮东市崩溃接东崖伏流危机"
+    },
+    {
+      "chapter": 30,
+      "tier": "fast",
+      "event_types": [
+        "tension_escalation"
+      ],
+      "note": "皇庄东崖浮子测水浓石灰现白泉"
+    },
+    {
+      "chapter": 31,
+      "tier": "fast",
+      "event_types": [
+        "tension_escalation",
+        "conflict_thrill"
+      ],
+      "note": "两时辰赌局遇塌方木杩槎救急"
+    },
+    {
+      "chapter": 32,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "涨水一寸二分半大胜接政事堂收图急变"
+    },
+    {
+      "chapter": 33,
+      "tier": "medium",
+      "event_types": [
+        "tension_escalation",
+        "bond_deepening"
+      ],
+      "note": "陆氏算死退路与连夜三府联保堵门亮卡规"
+    },
+    {
+      "chapter": 34,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill"
+      ],
+      "note": "左校署吴匠老折尺验卡规丢人暨太极殿封驳到达"
+    },
+    {
+      "chapter": 35,
+      "tier": "medium",
+      "event_types": [
+        "conflict_thrill",
+        "bond_deepening",
+        "tension_escalation"
+      ],
+      "note": "85贯现场核账抄官授印、双薪饮酒庆功、雪夜迎炭荒危机"
+    }
+  ]
+}
