@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-10T03:38:06.653Z",
+  "updated_at": "2026-11-10T05:34:38.610Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-10T03:38:06.652Z",
-    "chapters_analyzed": 35,
-    "golden_window": "Ch21-Ch35",
-    "avg_cjk_per_chapter": 5265.47,
-    "avg_paragraphs": 80,
-    "avg_sentence_cjk": 53.6,
-    "avg_paragraph_cjk": 66.12,
+    "computed_at": "2026-11-10T05:34:38.610Z",
+    "chapters_analyzed": 38,
+    "golden_window": "Ch21-Ch38",
+    "avg_cjk_per_chapter": 5130.67,
+    "avg_paragraphs": 76.39,
+    "avg_sentence_cjk": 53.52,
+    "avg_paragraph_cjk": 67.86,
     "avg_dialogue_ratio": 0.38,
-    "avg_ai_vocab_per_1k": 0.27,
-    "avg_weak_adverb_per_1k": 1.16
+    "avg_ai_vocab_per_1k": 0.23,
+    "avg_weak_adverb_per_1k": 1.1
   },
   "history": [
     {
@@ -156,6 +156,34 @@
         "tension_escalation"
       ],
       "note": "85贯现场核账抄官授印、双薪饮酒庆功、雪夜迎炭荒危机"
+    },
+    {
+      "chapter": 36,
+      "tier": "slow",
+      "event_types": [
+        "world_painting",
+        "faction_building"
+      ],
+      "note": "雪村探矿遇朱砂封山与石灰窑筹划"
+    },
+    {
+      "chapter": 37,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "十二孔蜂窝煤与烟囱暖炉制出"
+    },
+    {
+      "chapter": 38,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "闷窑炼焦破铁箍难兼查明赵元福囤炭并备车杀向明德门草市"
     }
   ]
 }

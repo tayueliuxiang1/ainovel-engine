@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 35,
-  "updated_at": "2026-11-10T11:36:00+08:00",
+  "last_updated_chapter": 38,
+  "updated_at": "2026-11-10T13:34:00+08:00",
   "nodes": [
     {
       "id": "char_subai",
@@ -12,8 +12,8 @@
       "rank": "正八品上少府监右尚署署令",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 35,
-      "notes": "十六岁青衣少年，掌握标准化通止卡规、水力框锯、渗碳冷淬及百工外包统筹"
+      "last_updated": 38,
+      "notes": "十六岁青衣少年，已攻克终南山石炭脱毒十二孔蜂窝煤配拔火烟囱炉与闷窑焦炭两道绝技，整备赴长安明德门外草市迎战东市炭霸赵元福"
     },
     {
       "id": "char_suchenghai",
@@ -24,7 +24,7 @@
       "rank": "从五品勋官上骑都尉/云阳庄庄主",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 35
+      "last_updated": 38
     },
     {
       "id": "char_lushi",
@@ -35,7 +35,8 @@
       "rank": "云阳主母/大总管",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 35
+      "last_updated": 37,
+      "notes": "算出十二孔蜂窝煤枚死成本不足半文"
     },
     {
       "id": "char_zhouaniu",
@@ -46,7 +47,8 @@
       "rank": "工坊核心木作工头",
       "faction": "云阳苏氏",
       "first_chapter": 21,
-      "last_updated": 35
+      "last_updated": 38,
+      "notes": "制出十二台枣木包铁脚踩杠杆压饼机日压数千枚煤饼"
     },
     {
       "id": "char_wangshifu",
@@ -57,7 +59,7 @@
       "rank": "元老技术身股木匠",
       "faction": "云阳苏氏",
       "first_chapter": 3,
-      "last_updated": 35
+      "last_updated": 38
     },
     {
       "id": "char_zhaoershu",
@@ -68,7 +70,7 @@
       "rank": "元老技术身股铁匠",
       "faction": "云阳苏氏",
       "first_chapter": 4,
-      "last_updated": 35
+      "last_updated": 38
     },
     {
       "id": "char_peixingyan",
@@ -149,7 +151,8 @@
       "rank": "蓝田户曹",
       "faction": "蓝田县衙",
       "first_chapter": 21,
-      "last_updated": 35
+      "last_updated": 38,
+      "notes": "第38章押送太府寺五印首期500贯现铜及1500贯门下省飞钞归入蓝田县库专簿"
     },
     {
       "id": "char_lizongyuan",
@@ -166,12 +169,13 @@
       "id": "char_hushouli",
       "type": "character",
       "name": "胡守礼",
-      "location": "白鹿原西麓皇庄",
+      "location": "长安/蓝田往返",
       "status": "active",
       "rank": "淮安郡王府老庄头",
       "faction": "淮安郡王府",
       "first_chapter": 29,
-      "last_updated": 33
+      "last_updated": 38,
+      "notes": "核兑太府寺定银勘合、查明赵元福囤炭黑账，连夜赶往长安代订明德门外草市"
     },
     {
       "id": "char_zhangtiejiang",
@@ -182,7 +186,8 @@
       "rank": "渭南十二家分包铁匠领头",
       "faction": "关中百工分包联盟",
       "first_chapter": 35,
-      "last_updated": 35
+      "last_updated": 38,
+      "notes": "亲验炼焦熟炭锻造五寸半水车大包箍不裂且韧性超柞木炭，订购30文/百斤焦炭"
     },
     {
       "id": "char_limuzuo",
@@ -193,7 +198,32 @@
       "rank": "渭南分包木作匠头",
       "faction": "关中百工分包联盟",
       "first_chapter": 35,
-      "last_updated": 35
+      "last_updated": 38,
+      "notes": "立约只要每天供足两车银灰焦炭，元宵前交齐80架全套四千余件精钢铁箍与夹片"
+    },
+    {
+      "id": "char_liulaohan",
+      "type": "character",
+      "name": "刘老汉",
+      "location": "终南山山神庙青白石崖石灰窑",
+      "status": "active",
+      "rank": "山神庙老石灰窑主",
+      "faction": "终南山乡邻",
+      "first_chapter": 36,
+      "last_updated": 38,
+      "notes": "按七成窑脚底价供生石灰块并组织大峪口青壮按3文/筐运煤下山"
+    },
+    {
+      "id": "char_zhaoyuanfu",
+      "type": "character",
+      "name": "赵元福",
+      "location": "长安东市聚义大炭行",
+      "status": "active",
+      "rank": "长安东市炭市霸王/聚义大炭行大东家",
+      "faction": "长安东市炭帮与博陵崔氏姻亲暗线",
+      "first_chapter": 38,
+      "last_updated": 38,
+      "notes": "平妻为崔氏旁房嫁女，抽十万贯联合五家包山炭庄囤断秦岭七成窑炭抬价至一贯半一石卡死云阳铁铺"
     },
     {
       "id": "char_wulaojiang",
@@ -305,18 +335,40 @@
     {
       "id": "loc_zhongnan_coal",
       "type": "location",
-      "name": "终南山北麓废石炭矿窑",
-      "last_updated": 35
+      "name": "终南山北麓大峪口前朝废石炭矿窑",
+      "last_updated": 38
+    },
+    {
+      "id": "loc_shanshen_limekiln",
+      "type": "location",
+      "name": "终南山山神庙青白石崖石灰窑",
+      "last_updated": 38
+    },
+    {
+      "id": "loc_mingde_grass_market",
+      "type": "location",
+      "name": "长安明德门外朱雀大街南段草市宽坪",
+      "last_updated": 38
     },
     {
       "id": "fs_fb007_coal",
       "type": "foreshadow",
       "name": "FB-007 终南山毒石炭脱毒破炭荒",
       "planted_chapter": 35,
-      "target_chapter": 39,
+      "target_chapter": 40,
       "resolved": false,
       "status": "active",
-      "description": "关中木炭一夜暴涨三倍断供，须亲探终南山北麓废石炭矿窑以生石灰粘合固硫脱毒手搓无烟石炭饼保住分包铁箍兼顾关中取暖"
+      "description": "技术与产能部分已在Ch36-38圆满破局（制出不足半文成本十二孔蜂窝煤+烟囱泥炉及百斤三十文闷窑焦炭），剩余长安商战对撞待Ch39明德门草市彻底清算"
+    },
+    {
+      "id": "fs_changan_coal_war",
+      "type": "foreshadow",
+      "name": "长安明德门外草市摆炉斗炭破局战",
+      "planted_chapter": 38,
+      "target_chapter": 41,
+      "resolved": false,
+      "status": "active",
+      "description": "苏白拟于次日辰时携三十只带烟囱暖泥炉与五千枚一文价无烟蜂窝煤直抵明德门外朱雀大街南段草市免费炖十锅白菜大肉汤烤火认门，正面对杀赵元福聚义大炭行十万贯高价囤炭"
     },
     {
       "id": "fs_eighty_carts_quota",
@@ -407,6 +459,30 @@
       "target": "char_subai",
       "since_chapter": 21,
       "description": "工部旧利集团与门阀打压代表，Ch35已倒台下狱"
+    },
+    {
+      "id": "enemy_zhaoyuanfu_subai",
+      "type": "enemy",
+      "source": "char_zhaoyuanfu",
+      "target": "char_subai",
+      "since_chapter": 38,
+      "description": "聚义大炭行东家联手五家包山炭庄十万贯囤断木炭企图卡死云阳铁铺与惊蛰死期"
+    },
+    {
+      "id": "ally_liulaohan_subai",
+      "type": "ally",
+      "source": "char_liulaohan",
+      "target": "char_subai",
+      "since_chapter": 36,
+      "description": "七成底价供生石灰并组织山民背运煤渣脱贫过冬"
+    },
+    {
+      "id": "kin_zhaoyuanfu_cuimingzhe",
+      "type": "kin",
+      "source": "char_zhaoyuanfu",
+      "target": "char_cuimingzhe",
+      "since_chapter": 38,
+      "description": "赵元福平妻乃崔氏旁房嫁女，与崔明哲系远房连襟利益捆绑"
     }
   ]
 }
