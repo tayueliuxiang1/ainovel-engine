@@ -1,0 +1,42 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_016.md",
+  "chapter_name": "chapter_016.md",
+  "chapter_number": 16,
+  "checked_at": "2026-11-10T08:29:34.292Z",
+  "file_mtime_ms": 1794299326549.617,
+  "file_sha256": "dd4a98aed4aaa81c11755d4de7743edff8426699a1d00bf4e37b0e783bdfc14e",
+  "total_chars": 3664,
+  "line_count": 181,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 2,
+    "weak_adverb_density_per_1k": 0.58,
+    "weak_adverb_hits": [
+      {
+        "adverb": "静静",
+        "count": 1
+      },
+      {
+        "adverb": "渐渐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 3144,
+    "paragraph_count": 90,
+    "sentence_count": 93,
+    "avg_sentence_cjk": 33.81,
+    "avg_paragraph_cjk": 34.93,
+    "dialogue_ratio": 0.1374
+  }
+}

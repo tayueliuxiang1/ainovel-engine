@@ -1,0 +1,66 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_032.md",
+  "chapter_name": "chapter_032.md",
+  "chapter_number": 32,
+  "checked_at": "2026-11-10T08:31:47.739Z",
+  "file_mtime_ms": 1794280423884.3496,
+  "file_sha256": "f310661643f4dbdadff6f69ae479c3440a73b8a05f905e77ab2cb98314e434f6",
+  "total_chars": 4966,
+  "line_count": 128,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [
+    "去AI高频词轻微命中 1 处：只见"
+  ],
+  "ai_trace": {
+    "ai_vocab_count": 1,
+    "ai_vocab_density_per_1k": 0.21,
+    "ai_vocab_hits": [
+      {
+        "phrase": "只见",
+        "count": 1,
+        "reason": "高频场景过渡套话，建议直接以物象或动作切入"
+      }
+    ],
+    "weak_adverb_count": 7,
+    "weak_adverb_density_per_1k": 1.45,
+    "weak_adverb_hits": [
+      {
+        "adverb": "悄悄",
+        "count": 2
+      },
+      {
+        "adverb": "微微",
+        "count": 1
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "深深",
+        "count": 1
+      },
+      {
+        "adverb": "静静",
+        "count": 1
+      },
+      {
+        "adverb": "慢慢",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 4488,
+    "paragraph_count": 63,
+    "sentence_count": 74,
+    "avg_sentence_cjk": 60.65,
+    "avg_paragraph_cjk": 71.24,
+    "dialogue_ratio": 0.3215
+  }
+}

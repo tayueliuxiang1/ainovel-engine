@@ -1,0 +1,50 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_031.md",
+  "chapter_name": "chapter_031.md",
+  "chapter_number": 31,
+  "checked_at": "2026-11-10T08:31:47.613Z",
+  "file_mtime_ms": 1794280243143.674,
+  "file_sha256": "2e6256fdf2566d9bae17807c80570d3dc6cff8750a0343fdfc3445d7a199f3a0",
+  "total_chars": 5048,
+  "line_count": 138,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [
+    "去AI高频词轻微命中 1 处：只见"
+  ],
+  "ai_trace": {
+    "ai_vocab_count": 1,
+    "ai_vocab_density_per_1k": 0.2,
+    "ai_vocab_hits": [
+      {
+        "phrase": "只见",
+        "count": 1,
+        "reason": "高频场景过渡套话，建议直接以物象或动作切入"
+      }
+    ],
+    "weak_adverb_count": 2,
+    "weak_adverb_density_per_1k": 0.41,
+    "weak_adverb_hits": [
+      {
+        "adverb": "悄悄",
+        "count": 1
+      },
+      {
+        "adverb": "悄然",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 4505,
+    "paragraph_count": 68,
+    "sentence_count": 81,
+    "avg_sentence_cjk": 55.62,
+    "avg_paragraph_cjk": 66.25,
+    "dialogue_ratio": 0.3525
+  }
+}

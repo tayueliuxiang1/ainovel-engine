@@ -1,0 +1,70 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_001.md",
+  "chapter_name": "chapter_001.md",
+  "chapter_number": 1,
+  "checked_at": "2026-11-10T08:27:14.854Z",
+  "file_mtime_ms": 1794042381010.905,
+  "file_sha256": "f4998f32e7eaf5d9dc8631f44ef993354f1c91266a8af815f38133a5cf70c61a",
+  "total_chars": 2907,
+  "line_count": 112,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [
+    "去AI高频词轻微命中 1 处：宛如"
+  ],
+  "ai_trace": {
+    "ai_vocab_count": 1,
+    "ai_vocab_density_per_1k": 0.36,
+    "ai_vocab_hits": [
+      {
+        "phrase": "宛如",
+        "count": 1,
+        "reason": "过度比喻词"
+      }
+    ],
+    "weak_adverb_count": 8,
+    "weak_adverb_density_per_1k": 2.87,
+    "weak_adverb_hits": [
+      {
+        "adverb": "慢慢",
+        "count": 2
+      },
+      {
+        "adverb": "微微",
+        "count": 1
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "深深",
+        "count": 1
+      },
+      {
+        "adverb": "默默",
+        "count": 1
+      },
+      {
+        "adverb": "渐渐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2482,
+    "paragraph_count": 55,
+    "sentence_count": 79,
+    "avg_sentence_cjk": 31.42,
+    "avg_paragraph_cjk": 45.13,
+    "dialogue_ratio": 0.4303
+  }
+}

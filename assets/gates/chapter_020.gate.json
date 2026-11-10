@@ -1,0 +1,33 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_020.md",
+  "chapter_name": "chapter_020.md",
+  "chapter_number": 20,
+  "checked_at": "2026-11-10T08:31:46.256Z",
+  "file_mtime_ms": 1794299414068.9463,
+  "file_sha256": "26823b08b922df21043a78ad5248b4a8861778201c9826a034d93a28068366f2",
+  "total_chars": 5735,
+  "line_count": 191,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 0,
+    "weak_adverb_density_per_1k": 0,
+    "weak_adverb_hits": [],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 5021,
+    "paragraph_count": 95,
+    "sentence_count": 127,
+    "avg_sentence_cjk": 39.54,
+    "avg_paragraph_cjk": 52.85,
+    "dialogue_ratio": 0.3105
+  }
+}

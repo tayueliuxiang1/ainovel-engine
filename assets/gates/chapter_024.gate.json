@@ -1,0 +1,58 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_024.md",
+  "chapter_name": "chapter_024.md",
+  "chapter_number": 24,
+  "checked_at": "2026-11-10T08:31:46.760Z",
+  "file_mtime_ms": 1794299441023.76,
+  "file_sha256": "e503925afa904eddbed36bdd7ae42317505f5e2c726f9f2d179ef5b68e62aa70",
+  "total_chars": 5628,
+  "line_count": 162,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 8,
+    "weak_adverb_density_per_1k": 1.47,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 2
+      },
+      {
+        "adverb": "悄悄",
+        "count": 2
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "静静",
+        "count": 1
+      },
+      {
+        "adverb": "慢慢",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 5015,
+    "paragraph_count": 80,
+    "sentence_count": 95,
+    "avg_sentence_cjk": 52.79,
+    "avg_paragraph_cjk": 62.69,
+    "dialogue_ratio": 0.2985
+  }
+}

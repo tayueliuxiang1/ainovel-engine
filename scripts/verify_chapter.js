@@ -182,8 +182,9 @@ function analyzeChapter(filePath, options) {
   }
   if (titleLine.indexOf('，') !== -1) {
     const parts = titleLine.replace(/^#\s{0,}/, '').split(/\s+/)[1] || '';
-    if (parts.indexOf('，') !== -1) {
-      errors.push('【标题八股病】标题使用了二段式对仗（' + parts + '）！网文严禁四字对四字，必须单核直白！');
+    // 仅拦截四字对四字公文对仗八股（排除口语短句如“图没了，人还在”“爹，您去一趟”）
+    if (/^[\u4e00-\u9fff]{4}，[\u4e00-\u9fff]{4}$/.test(parts) && !/[了吗呢吧啊爹娘你我他]/.test(parts)) {
+      errors.push('【标题八股病】标题使用了四字对仗（' + parts + '）！网文严禁四字对四字，必须单核直白！');
     }
   }
   const bureaucraticTitleWords = ['依据', '调研', '汇报', '调查', '规划', '研究', '报告'];

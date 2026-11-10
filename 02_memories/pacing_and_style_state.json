@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-10T05:34:38.610Z",
+  "updated_at": "2026-11-10T08:33:20.136Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,18 +13,202 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-10T05:34:38.610Z",
+    "computed_at": "2026-11-10T08:33:20.135Z",
     "chapters_analyzed": 38,
     "golden_window": "Ch21-Ch38",
-    "avg_cjk_per_chapter": 5130.67,
+    "avg_cjk_per_chapter": 5124.89,
     "avg_paragraphs": 76.39,
-    "avg_sentence_cjk": 53.52,
-    "avg_paragraph_cjk": 67.86,
+    "avg_sentence_cjk": 53.47,
+    "avg_paragraph_cjk": 67.79,
     "avg_dialogue_ratio": 0.38,
-    "avg_ai_vocab_per_1k": 0.23,
-    "avg_weak_adverb_per_1k": 1.1
+    "avg_ai_vocab_per_1k": 0.02,
+    "avg_weak_adverb_per_1k": 0.83
   },
   "history": [
+    {
+      "chapter": 1,
+      "tier": "medium",
+      "event_types": [
+        "bond_deepening",
+        "tension_escalation"
+      ],
+      "note": "苏醒劝父翻出武德凭契迎差役叩门"
+    },
+    {
+      "chapter": 2,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "引唐律阻退崔福抢产查见车架暗裂"
+    },
+    {
+      "chapter": 3,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "确立枣木轴瓦自润滑法井口试摇卡死"
+    },
+    {
+      "chapter": 4,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "world_painting"
+      ],
+      "note": "铅垂校平轴架制月牙舌板消除溅水"
+    },
+    {
+      "chapter": 5,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening",
+        "tension_escalation"
+      ],
+      "note": "推行彩布快拆防呆迎清晨提前试车急报"
+    },
+    {
+      "chapter": 6,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "风雪陷车绝境抢路半炷香拼装注满三桶水"
+    },
+    {
+      "chapter": 7,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "聚乡邻筑三级折返竹笼消能槽迎正午终试"
+    },
+    {
+      "chapter": 8,
+      "tier": "fast",
+      "event_types": [
+        "tension_escalation",
+        "conflict_thrill"
+      ],
+      "note": "识破崔车共振隐患力劝众人后撤主轴崩裂"
+    },
+    {
+      "chapter": 9,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "崔车碎瘫主轴苏车遇急流形变水泼荒滩"
+    },
+    {
+      "chapter": 10,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "bond_deepening"
+      ],
+      "note": "降速移槽精准入渠三十贯定银到手破死局"
+    },
+    {
+      "chapter": 11,
+      "tier": "slow",
+      "event_types": [
+        "faction_building",
+        "bond_deepening",
+        "world_painting"
+      ],
+      "note": "还债立身股吃热汤面夜迎县衙传票"
+    },
+    {
+      "chapter": 12,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill"
+      ],
+      "note": "二堂以直角应力死穴及玄天墨完胜反坐崔氏"
+    },
+    {
+      "chapter": 13,
+      "tier": "slow",
+      "event_types": [
+        "bond_deepening",
+        "world_painting",
+        "tension_escalation"
+      ],
+      "note": "制盐析羊脂胰愈母手接南原绝壁高坎军令"
+    },
+    {
+      "chapter": 14,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "绝壁勘水测石英砂定双级铁瓦与三叠沉沙策"
+    },
+    {
+      "chapter": 15,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening",
+        "world_painting"
+      ],
+      "note": "千度固体渗碳炼排渣铁瓦引出聚丰号脂胰暗线"
+    },
+    {
+      "chapter": 16,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "双缆索道凌空渡大梁装抑风翼板悬壁合体"
+    },
+    {
+      "chapter": 17,
+      "tier": "fast",
+      "event_types": [
+        "faction_building",
+        "conflict_thrill"
+      ],
+      "note": "糯米石灰封裂堰四更暗哨反擒锉缆纵火贼"
+    },
+    {
+      "chapter": 18,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "三叠沉沙显威遇水锤反冲碎岩瘤碧水上原"
+    },
+    {
+      "chapter": 19,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "当众呈供查封崔院授九品官印迎聚丰马车登门"
+    },
+    {
+      "chapter": 20,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "world_painting",
+        "tension_escalation"
+      ],
+      "note": "亮云阳玉脂匣定五贯轻奢斩获五十贯订长安油料"
+    },
     {
       "chapter": 21,
       "tier": "medium",

@@ -1,0 +1,54 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_014.md",
+  "chapter_name": "chapter_014.md",
+  "chapter_number": 14,
+  "checked_at": "2026-11-10T08:29:34.035Z",
+  "file_mtime_ms": 1794299326375.047,
+  "file_sha256": "58a6228d6909971cdaa440b9020a6fc157c5848b4649d76541a7ac180efe1384",
+  "total_chars": 4734,
+  "line_count": 241,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 6,
+    "weak_adverb_density_per_1k": 1.34,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 2
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "深深",
+        "count": 1
+      },
+      {
+        "adverb": "静静",
+        "count": 1
+      },
+      {
+        "adverb": "渐渐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 3960,
+    "paragraph_count": 120,
+    "sentence_count": 146,
+    "avg_sentence_cjk": 27.12,
+    "avg_paragraph_cjk": 33,
+    "dialogue_ratio": 0.3667
+  }
+}
