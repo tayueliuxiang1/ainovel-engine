@@ -25,7 +25,7 @@ function verifyChapter(filePath) {
   // 2. 标题规范检查 (严禁八股二段对仗标题，严禁行政公文式标题)
   const titleLine = lines[0] || '';
   if (titleLine.indexOf('，') !== -1) {
-    const parts = titleLine.replace(/^#\s*/, '').split(' ')[1] || '';
+    const parts = titleLine.replace(/^#\s{0,}/, '').split(' ')[1] || '';
     if (parts.indexOf('，') !== -1) {
       errors.push('【标题八股病】标题使用了二段式对仗（' + parts + '）！网文严禁四字对四字，必须单核直白、一句话或单个核心动作！');
     }
