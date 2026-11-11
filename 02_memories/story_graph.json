@@ -1,19 +1,19 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 38,
-  "updated_at": "2026-11-10T13:34:00+08:00",
+  "last_updated_chapter": 41,
+  "updated_at": "2026-11-11T09:55:00+08:00",
   "nodes": [
     {
       "id": "char_subai",
       "type": "character",
       "name": "苏白",
-      "location": "蓝田县云阳庄工坊",
+      "location": "蓝田县云阳庄工坊（大明纸大暖棚）",
       "status": "active",
       "rank": "正八品上少府监右尚署署令",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 38,
-      "notes": "十六岁青衣少年，已攻克终南山石炭脱毒十二孔蜂窝煤配拔火烟囱炉与闷窑焦炭两道绝技，整备赴长安明德门外草市迎战东市炭霸赵元福"
+      "last_updated": 41,
+      "notes": "十六岁青衣少年，第39至41章明德门外摆十锅肉汤、牛皮帐银针公鸡破毒谣、凭少府监正印与武德令震退东市市丞、携手聚丰李清晏七三合营破34家车行封锁及十万贯伪局，三日净分32贯200文兼兑两府百贯现钱定金，入主东市总栈并夜邀李清晏主婢留宿云阳，同时准备应对工部与将作监追查熟焦炭"
     },
     {
       "id": "char_suchenghai",
@@ -24,7 +24,8 @@
       "rank": "从五品勋官上骑都尉/云阳庄庄主",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 38
+      "last_updated": 41,
+      "notes": "明德门外亮免征木牌与旧横刀震退聚义打手，入主总账欢庆三坛西市新丰春酒"
     },
     {
       "id": "char_lushi",
@@ -35,8 +36,8 @@
       "rank": "云阳主母/大总管",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 37,
-      "notes": "算出十二孔蜂窝煤枚死成本不足半文"
+      "last_updated": 41,
+      "notes": "核算出三日总营收93贯500文、全口径支出47贯500文、云阳七成净利32贯200文；获苏白赠江南湖州上等紫纹细绫两匹与紫檀嵌铜珠小算盘，妥善拾掇东厢女客房备留李清晏主婢过夜"
     },
     {
       "id": "char_zhouaniu",
@@ -47,8 +48,8 @@
       "rank": "工坊核心木作工头",
       "faction": "云阳苏氏",
       "first_chapter": 21,
-      "last_updated": 38,
-      "notes": "制出十二台枣木包铁脚踩杠杆压饼机日压数千枚煤饼"
+      "last_updated": 41,
+      "notes": "统筹大峪口百余山民轮班石碾、苇席煤热烘干暖房、冷剪冷铆旧油桶铁箍与樊川陶管陶箅子，3天产出640套炉具，后坡焦炉扩砌至4座轮烧"
     },
     {
       "id": "char_wangshifu",
@@ -59,7 +60,7 @@
       "rank": "元老技术身股木匠",
       "faction": "云阳苏氏",
       "first_chapter": 3,
-      "last_updated": 38
+      "last_updated": 41
     },
     {
       "id": "char_zhaoershu",
@@ -70,7 +71,7 @@
       "rank": "元老技术身股铁匠",
       "faction": "云阳苏氏",
       "first_chapter": 4,
-      "last_updated": 38
+      "last_updated": 41
     },
     {
       "id": "char_peixingyan",
@@ -81,7 +82,7 @@
       "rank": "从四品淮安郡王府长史",
       "faction": "淮安郡王府",
       "first_chapter": 24,
-      "last_updated": 35
+      "last_updated": 38
     },
     {
       "id": "char_gaoquan",
@@ -92,8 +93,8 @@
       "rank": "齐国公府总管事",
       "faction": "齐国公府",
       "first_chapter": 30,
-      "last_updated": 35,
-      "notes": "第35章留下一百五十贯现钱定金预订五架大叶斗水车"
+      "last_updated": 41,
+      "notes": "Ch39入明德门牛皮帐亲自坐镇破毒谣并订200加厚双灶大暖炉及5万枚煤饼（合100贯总契，先甩1贯压桌），Ch41派公府田庄大车提走首批25炉加5千饼验火后先兑现五成备料定钱50贯"
     },
     {
       "id": "char_qinan",
@@ -104,8 +105,8 @@
       "rank": "翼国公府大庄头",
       "faction": "翼国公府",
       "first_chapter": 30,
-      "last_updated": 35,
-      "notes": "第35章交割二百贯白银官宝钞预付十架高坡翻车头款"
+      "last_updated": 41,
+      "notes": "Ch39入明德门牛皮帐亲自坐镇下双陆棋破毒谣并订200加厚双灶大暖炉及5万枚煤饼（合100贯总契，先甩1贯压桌），Ch41派公府田庄大车提走首批25炉加5千饼验火后先兑现五成备料定钱50贯"
     },
     {
       "id": "char_liuyuanli",
@@ -128,8 +129,8 @@
       "rank": "从六品下御史台侍御史",
       "faction": "大唐朝廷御史台",
       "first_chapter": 34,
-      "last_updated": 35,
-      "notes": "现场核账零虚并锁拿崔明哲押回御史台"
+      "last_updated": 41,
+      "notes": "正顺着原水部员外郎崔明哲旧案清查长安东市连襟姻亲线"
     },
     {
       "id": "char_mingfu",
@@ -140,7 +141,8 @@
       "rank": "正六品下/从六品上蓝田县令",
       "faction": "蓝田县衙",
       "first_chapter": 12,
-      "last_updated": 35
+      "last_updated": 40,
+      "notes": "Ch40出具免税公文过所放行云阳济民煤车入京"
     },
     {
       "id": "char_xuwen",
@@ -158,12 +160,49 @@
       "id": "char_lizongyuan",
       "type": "character",
       "name": "李宗元",
-      "location": "蓝田/长安东市",
+      "location": "剑南道巴蜀（催运丝绸生料兼稳江淮行商）",
       "status": "active",
       "rank": "聚丰绸缎庄大东家",
       "faction": "商业同盟",
       "first_chapter": 20,
-      "last_updated": 35
+      "last_updated": 41,
+      "notes": "年前亲赴剑南道巴蜀催运来年丝绸生料，留独女李清晏暂代执掌长安东西两市总号与十余处偏坊铺栈"
+    },
+    {
+      "id": "char_liqingyan",
+      "type": "character",
+      "name": "李清晏",
+      "location": "长安东市总栈/腊月廿六夜宿蓝田云阳庄东厢女客房",
+      "status": "active",
+      "rank": "聚丰绸缎庄少东家（暂代执掌长安总号）",
+      "faction": "商业同盟",
+      "first_chapter": 40,
+      "last_updated": 41,
+      "notes": "李宗元独女，心算老辣，携贴身老婢与总账房刘先生护盘；以9间坊巷空铺、30余辆常年轮休双骡重车双向回拉、千余染坊旧油桶铁箍与樊川瓦窑两千余节三寸灰陶筒与苏白签下《长安煤炉联营分利正契》（七三开、超万枚提三成半及优先参股）；Ch41以现铜及抵债账单吃下东市南角原聚义两座青砖大炭栈，并在总栈后院试烧熟焦炭摸行市引出工部虞部司与左校署急讯，腊月廿六夜亲赴云阳交割红契并留宿东厢客房"
+    },
+    {
+      "id": "char_lifu",
+      "type": "character",
+      "name": "李福",
+      "location": "长安东市聚丰总号",
+      "status": "active",
+      "rank": "聚丰绸缎庄大伙计",
+      "faction": "商业同盟",
+      "first_chapter": 21,
+      "last_updated": 40,
+      "notes": "Ch40领东市总账房刘先生随李清晏赴明德门替少东家认门"
+    },
+    {
+      "id": "char_liuzhangfang",
+      "type": "character",
+      "name": "刘账房",
+      "location": "长安东市云阳官炭聚丰总栈",
+      "status": "active",
+      "rank": "聚丰东市总号总账房",
+      "faction": "商业同盟",
+      "first_chapter": 40,
+      "last_updated": 41,
+      "notes": "随身核验十三坊铺栈底册并誊写正契；Ch41面对吴老匠师追问熟焦炭时咬死少府监大峪口前朝废炭官用自炼，半字未漏窑温与焖烧秘法"
     },
     {
       "id": "char_hushouli",
@@ -174,32 +213,31 @@
       "rank": "淮安郡王府老庄头",
       "faction": "淮安郡王府",
       "first_chapter": 29,
-      "last_updated": 38,
-      "notes": "核兑太府寺定银勘合、查明赵元福囤炭黑账，连夜赶往长安代订明德门外草市"
+      "last_updated": 40,
+      "notes": "Ch39领8辆空车先押现铜回蓝田调拨二批炉饼，前期并帮苏白打听城南瓦窑灰陶暗渠筒"
     },
     {
       "id": "char_zhangtiejiang",
       "type": "character",
       "name": "张老铁匠",
-      "location": "蓝田县云阳庄工坊",
+      "location": "渭南十二家分包铁铺/云阳庄",
       "status": "active",
       "rank": "渭南十二家分包铁匠领头",
       "faction": "关中百工分包联盟",
       "first_chapter": 35,
-      "last_updated": 38,
-      "notes": "亲验炼焦熟炭锻造五寸半水车大包箍不裂且韧性超柞木炭，订购30文/百斤焦炭"
+      "last_updated": 41,
+      "notes": "靠云阳百斤30文熟焦炭3昼夜打成首批200对五寸半熟铁大包箍与800件小夹片，零裂纹全数通过24道卡规于Ch41押回云阳交差"
     },
     {
       "id": "char_limuzuo",
       "type": "character",
       "name": "李木作",
-      "location": "蓝田县云阳庄工坊",
+      "location": "渭南",
       "status": "active",
       "rank": "渭南分包木作匠头",
       "faction": "关中百工分包联盟",
       "first_chapter": 35,
-      "last_updated": 38,
-      "notes": "立约只要每天供足两车银灰焦炭，元宵前交齐80架全套四千余件精钢铁箍与夹片"
+      "last_updated": 38
     },
     {
       "id": "char_liulaohan",
@@ -210,20 +248,7 @@
       "rank": "山神庙老石灰窑主",
       "faction": "终南山乡邻",
       "first_chapter": 36,
-      "last_updated": 38,
-      "notes": "按七成窑脚底价供生石灰块并组织大峪口青壮按3文/筐运煤下山"
-    },
-    {
-      "id": "char_zhaoyuanfu",
-      "type": "character",
-      "name": "赵元福",
-      "location": "长安东市聚义大炭行",
-      "status": "active",
-      "rank": "长安东市炭市霸王/聚义大炭行大东家",
-      "faction": "长安东市炭帮与博陵崔氏姻亲暗线",
-      "first_chapter": 38,
-      "last_updated": 38,
-      "notes": "平妻为崔氏旁房嫁女，抽十万贯联合五家包山炭庄囤断秦岭七成窑炭抬价至一贯半一石卡死云阳铁铺"
+      "last_updated": 41
     },
     {
       "id": "char_wulaojiang",
@@ -234,8 +259,71 @@
       "rank": "将作监左校署资深官匠",
       "faction": "将作监",
       "first_chapter": 33,
-      "last_updated": 35,
-      "notes": "第34-35章亲历通止卡规与学徒拼框后彻底折服"
+      "last_updated": 41,
+      "notes": "Ch34-35曾在云阳庄被苏白卡规与冷淬铁瓦折服；Ch41陪工部虞部司主事与左校署监作，提两副刚从渭南铁坊巡核收验的零裂纹大包箍样件摸进东市聚丰总栈后院敲验熟焦炭"
+    },
+    {
+      "id": "char_sunsicheng",
+      "type": "character",
+      "name": "孙市丞",
+      "location": "长安东市署",
+      "status": "active",
+      "rank": "正八品上太府寺东市署市丞",
+      "faction": "长安东市署",
+      "first_chapter": 39,
+      "last_updated": 40,
+      "notes": "被钱有财诱往明德门草市，遭苏白亮少府监正印、过所《武德令·关市令》及齐国公府亲随震退，当众掌掴并反押钱有财移送万年县衙"
+    },
+    {
+      "id": "char_liuer",
+      "type": "character",
+      "name": "柳二爷",
+      "location": "长安城南/终南山炭庄",
+      "status": "active",
+      "rank": "包山炭庄东家",
+      "faction": "终南山包山炭庄",
+      "first_chapter": 41,
+      "last_updated": 41,
+      "notes": "押六千石栗木炭在聚义行被欠三千六百贯窑脚；Ch41听破王记高息借据底细当场翻脸索欠，趁廿三夜把城外散栈未封入籍余炭折让聚丰保本脱身"
+    },
+    {
+      "id": "char_zhoudahuzi",
+      "type": "character",
+      "name": "周大胡子",
+      "location": "长安城南/终南山炭庄",
+      "status": "active",
+      "rank": "包山炭庄东家",
+      "faction": "终南山包山炭庄",
+      "first_chapter": 41,
+      "last_updated": 41,
+      "notes": "押三千石炭在聚义行被欠一千八百贯窑脚；Ch41联合柳二爷先一步将城外散栈余炭合计两千四百余石四成折让李清晏脱身"
+    },
+    {
+      "id": "char_zhaoyuanfu",
+      "type": "character",
+      "name": "赵元福",
+      "location": "长安东市（破产质库押契抵债）",
+      "status": "bankrupt",
+      "removed_after_chapter": 41,
+      "rank": "原长安东市聚义大炭行大东家",
+      "faction": "长安东市炭帮与博陵崔氏姻亲暗线",
+      "first_chapter": 38,
+      "last_updated": 41,
+      "notes": "号称十万贯实则自有4万余贯+王记柜坊高息借4万贯+赊五家炭庄1.4万余贯；Ch41在明德门被聚丰重车与旧铁箍陶管反杀并拆穿借贷底细，腊月廿四王记逼债官封后仓、三家窑主围讨、被迫350文贱卖潮炭至廿六傍晚催税限牒落定入质库押契抵债，东市两座总栈归云阳聚丰"
+    },
+    {
+      "id": "char_qianyoucai",
+      "type": "character",
+      "name": "钱有财",
+      "location": "长安万年县衙大牢（候审讯鞠）",
+      "status": "imprisoned",
+      "removed_after_chapter": 41,
+      "imprisoned_chapter": 40,
+      "rank": "原聚义大炭行精明管事",
+      "faction": "长安东市炭帮",
+      "first_chapter": 39,
+      "last_updated": 41,
+      "notes": "Ch39在明德门散布毒谣惨败并谎报军情诬陷少府监，Ch40被孙市丞反拧胳膊拖走移送万年县衙讯鞠问罪"
     },
     {
       "id": "char_cuimingzhe",
@@ -318,7 +406,8 @@
       "id": "loc_yunyang_workshop",
       "type": "location",
       "name": "云阳庄晒谷场工坊",
-      "last_updated": 35
+      "last_updated": 41,
+      "notes": "晒谷场扩建四丈见方大明纸大暖棚、百余山民石碾煤区、两座烧煤苇席烘干暖房，后坡闷窑焦炉扩砌至4座"
     },
     {
       "id": "loc_nanyuan_cliff",
@@ -336,29 +425,48 @@
       "id": "loc_zhongnan_coal",
       "type": "location",
       "name": "终南山北麓大峪口前朝废石炭矿窑",
-      "last_updated": 38
+      "last_updated": 41
     },
     {
       "id": "loc_shanshen_limekiln",
       "type": "location",
       "name": "终南山山神庙青白石崖石灰窑",
-      "last_updated": 38
+      "last_updated": 41
     },
     {
       "id": "loc_mingde_grass_market",
       "type": "location",
       "name": "长安明德门外朱雀大街南段草市宽坪",
-      "last_updated": 38
+      "last_updated": 41
+    },
+    {
+      "id": "loc_guannan_tavern",
+      "type": "location",
+      "name": "明德门外关南汤饼肆（二楼暖阁与后院大车厩）",
+      "last_updated": 40
+    },
+    {
+      "id": "loc_nine_wards_outlets",
+      "type": "location",
+      "name": "长安崇仁宣阳永崇延康义宁等九大坊巷聚丰寄售网点",
+      "last_updated": 41
+    },
+    {
+      "id": "loc_dongshi_jufeng_depot",
+      "type": "location",
+      "name": "长安东市南角云阳官炭聚丰总栈（原聚义两座青砖炭栈）",
+      "last_updated": 41
     },
     {
       "id": "fs_fb007_coal",
       "type": "foreshadow",
       "name": "FB-007 终南山毒石炭脱毒破炭荒",
       "planted_chapter": 35,
-      "target_chapter": 40,
-      "resolved": false,
-      "status": "active",
-      "description": "技术与产能部分已在Ch36-38圆满破局（制出不足半文成本十二孔蜂窝煤+烟囱泥炉及百斤三十文闷窑焦炭），剩余长安商战对撞待Ch39明德门草市彻底清算"
+      "target_chapter": 41,
+      "resolved": true,
+      "resolved_chapter": 41,
+      "status": "resolved",
+      "description": "Ch36-41已彻底闭环且拔高：十二孔无烟煤饼与冷铆弯脖灰陶烟管暖炉借聚丰九坊网点与双向重车铺满长安，三日净分32贯200文及两府百贯现钱定金，且熟焦炭助渭南交回首批200对零裂纹大包箍"
     },
     {
       "id": "fs_changan_coal_war",
@@ -366,9 +474,30 @@
       "name": "长安明德门外草市摆炉斗炭破局战",
       "planted_chapter": 38,
       "target_chapter": 41,
+      "resolved": true,
+      "resolved_chapter": 41,
+      "status": "resolved",
+      "description": "明德门十锅肉汤牛皮帐公鸡银针破毒谣、震退东市孙市丞、当众拆穿王记高息借据逼散周柳二家、三日内反手买断东市原聚义两座大炭栈完胜收官"
+    },
+    {
+      "id": "fs_fb008_coke_ministry",
+      "type": "foreshadow",
+      "name": "FB-008 东市试烧熟焦炭引来工部虞部司与将作监左校署录案追查",
+      "planted_chapter": 41,
+      "target_chapter": 48,
       "resolved": false,
       "status": "active",
-      "description": "苏白拟于次日辰时携三十只带烟囱暖泥炉与五千枚一文价无烟蜂窝煤直抵明德门外朱雀大街南段草市免费炖十锅白菜大肉汤烤火认门，正面对杀赵元福聚义大炭行十万贯高价囤炭"
+      "description": "Ch41东市总栈后院试烧百斤35至40文熟焦炭引动城内铁坊抢订，左校署吴老匠师携渭南零裂纹大包箍陪工部虞部司主事与左校署监作登门叩问，录山泽方位官名拟递进工部堂官与将作大匠案前，正式拉开焦炭军工升级与朝堂博弈线"
+    },
+    {
+      "id": "fs_fb009_qianyoucai_trial",
+      "type": "foreshadow",
+      "name": "FB-009 钱有财万年县衙讯鞠与东市崔明哲余党暗网清算",
+      "planted_chapter": 40,
+      "target_chapter": 48,
+      "resolved": false,
+      "status": "active",
+      "description": "钱有财在万年县衙候审讯鞠，可追出大峪口戒碑涂朱砂吓民、私悬官用封仓牌哄抬炭价及沈从敬清查崔明哲东市连襟姻亲线"
     },
     {
       "id": "fs_eighty_carts_quota",
@@ -378,7 +507,7 @@
       "target_chapter": 50,
       "resolved": false,
       "status": "active",
-      "description": "三日内凭勘合赴太府寺拨付首期五千贯定银，惊蛰前首批四十架双龙车必须落地转水，另附齐国公府5架与翼国公府10架预订"
+      "description": "惊蛰前首批四十架双龙车必须落地转水，Ch41渭南十二家铺已按时交回首批200对五寸半大包箍与800件夹片（总四千余件进逾四分之一），另附齐翼两府预订各200暖炉5万煤饼（首批已拉走50炉1万饼）及先前15架水车"
     },
     {
       "id": "fs_cui_court_trial",
@@ -388,7 +517,7 @@
       "target_chapter": 45,
       "resolved": false,
       "status": "active",
-      "description": "沈从敬押走崔明哲核查185贯与500两废车旧账，同时参奏政事堂宗老失察；雪夜囤炭疑有残余门阀或炭行势力反扑"
+      "description": "沈从敬押走崔明哲核查185贯与500两废车旧账并顺势清查东市连襟姻亲，参奏政事堂宗老失察余震尚待收束"
     },
     {
       "id": "fs_fb006_glass",
@@ -426,7 +555,7 @@
       "source": "char_subai",
       "target": "char_gaoquan",
       "since_chapter": 32,
-      "description": "永利总闸水涨复现后结盟，Ch35预付150贯订五架水车"
+      "description": "永利总闸水涨复现后结盟，Ch35订五架水车，Ch39再签100贯两百暖炉五万煤饼大单并于Ch41先兑50贯定钱"
     },
     {
       "id": "ally_subai_qinan",
@@ -434,7 +563,23 @@
       "source": "char_subai",
       "target": "char_qinan",
       "since_chapter": 32,
-      "description": "翼国公府千亩麦田水车联保，Ch35预付200贯宝钞订十架"
+      "description": "翼国公府千亩麦田水车联保，Ch35订十架水车，Ch39再签100贯两百暖炉五万煤饼大单并于Ch41先兑50贯定钱"
+    },
+    {
+      "id": "ally_liqingyan_subai",
+      "type": "ally",
+      "source": "char_liqingyan",
+      "target": "char_subai",
+      "since_chapter": 40,
+      "description": "签署《长安煤炉联营分利正契》七三开（超万枚提三成半并享扩盘优先垫本参股权），Ch41共同吃下东市两座青砖炭栈并与工部风声共同迎局"
+    },
+    {
+      "id": "associate_wulaojiang_subai",
+      "type": "associate",
+      "source": "char_wulaojiang",
+      "target": "char_subai",
+      "since_chapter": 34,
+      "description": "将作监左校署资深官匠，先折服于云阳卡规与冷淬铁瓦，Ch41顺渭南大包箍零裂纹及东市样焦追查至聚丰总栈"
     },
     {
       "id": "subordinate_zhouaniu_subai",
@@ -442,7 +587,7 @@
       "source": "char_zhouaniu",
       "target": "char_subai",
       "since_chapter": 21,
-      "description": "死心塌地负责卡规校验与工坊调度"
+      "description": "死心塌地负责卡规校验与工坊调度，Ch41统筹冷铆弯脖与640套暖炉扩产"
     },
     {
       "id": "ally_zhangtiejiang_subai",
@@ -450,7 +595,7 @@
       "source": "char_zhangtiejiang",
       "target": "char_subai",
       "since_chapter": 35,
-      "description": "渭南十二家标准铁箍分包同盟"
+      "description": "渭南十二家标准铁箍分包同盟，Ch41靠百斤30文熟焦炭率先交回200对大包箍及800夹片"
     },
     {
       "id": "enemy_cuimingzhe_subai",
@@ -466,7 +611,15 @@
       "source": "char_zhaoyuanfu",
       "target": "char_subai",
       "since_chapter": 38,
-      "description": "聚义大炭行东家联手五家包山炭庄十万贯囤断木炭企图卡死云阳铁铺与惊蛰死期"
+      "description": "聚义大炭行东家囤断木炭反扑，Ch41全面溃败质库押契抵债并丢失东市两大炭栈"
+    },
+    {
+      "id": "enemy_qianyoucai_subai",
+      "type": "enemy",
+      "source": "char_qianyoucai",
+      "target": "char_subai",
+      "since_chapter": 39,
+      "description": "聚义行管事在明德门散布硫毒谣言并谎报诬陷少府监，Ch40被孙市丞押送万年县衙候审"
     },
     {
       "id": "ally_liulaohan_subai",
@@ -474,7 +627,7 @@
       "source": "char_liulaohan",
       "target": "char_subai",
       "since_chapter": 36,
-      "description": "七成底价供生石灰并组织山民背运煤渣脱贫过冬"
+      "description": "七成底价供生石灰并组织百余大峪口山民轮班碾煤背运脱贫过冬"
     },
     {
       "id": "kin_zhaoyuanfu_cuimingzhe",

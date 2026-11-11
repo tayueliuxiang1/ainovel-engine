@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-10T08:33:20.136Z",
+  "updated_at": "2026-11-11T01:58:16.947Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-10T08:33:20.135Z",
-    "chapters_analyzed": 38,
-    "golden_window": "Ch21-Ch38",
-    "avg_cjk_per_chapter": 5124.89,
-    "avg_paragraphs": 76.39,
-    "avg_sentence_cjk": 53.47,
-    "avg_paragraph_cjk": 67.79,
+    "computed_at": "2026-11-11T01:58:16.947Z",
+    "chapters_analyzed": 41,
+    "golden_window": "Ch21-Ch41",
+    "avg_cjk_per_chapter": 5539.29,
+    "avg_paragraphs": 79.29,
+    "avg_sentence_cjk": 52.9,
+    "avg_paragraph_cjk": 69.99,
     "avg_dialogue_ratio": 0.38,
     "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.83
+    "avg_weak_adverb_per_1k": 0.71
   },
   "history": [
     {
@@ -368,6 +368,35 @@
         "tension_escalation"
       ],
       "note": "闷窑炼焦破铁箍难兼查明赵元福囤炭并备车杀向明德门草市"
+    },
+    {
+      "chapter": 39,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "明德门施汤牛皮帐破毒谣获两府百贯契迎市丞堵门"
+    },
+    {
+      "chapter": 40,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "conflict_thrill",
+        "bond_deepening"
+      ],
+      "note": "震退孙市丞联手李清晏改陶七三定契迎赵元福堵门"
+    },
+    {
+      "chapter": 41,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "bond_deepening",
+        "tension_escalation"
+      ],
+      "note": "破车行封锁拆高息死穴夺东市总栈分红敬母引工部查熟焦炭"
     }
   ]
 }
