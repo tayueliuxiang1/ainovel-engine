@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-19T05:43:53.062Z",
+  "updated_at": "2026-11-19T06:20:27.545Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-19T05:43:53.060Z",
-    "chapters_analyzed": 48,
-    "golden_window": "Ch21-Ch48",
-    "avg_cjk_per_chapter": 4966.07,
-    "avg_paragraphs": 77.5,
-    "avg_sentence_cjk": 46.99,
-    "avg_paragraph_cjk": 63.8,
+    "computed_at": "2026-11-19T06:20:27.544Z",
+    "chapters_analyzed": 51,
+    "golden_window": "Ch21-Ch51",
+    "avg_cjk_per_chapter": 4760.94,
+    "avg_paragraphs": 75.55,
+    "avg_sentence_cjk": 45.55,
+    "avg_paragraph_cjk": 62.55,
     "avg_dialogue_ratio": 0.37,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.53
+    "avg_weak_adverb_per_1k": 0.48
   },
   "history": [
     {
@@ -461,6 +461,33 @@
         "tension_escalation"
       ],
       "note": "轻装八十里急行军八车跨石坝提水破豪强解民变"
+    },
+    {
+      "chapter": 49,
+      "tier": "medium",
+      "event_types": [
+        "bond_deepening",
+        "faction_building"
+      ],
+      "note": "捷报飞入太极殿李世民掷碎崔氏暗折授苏白均水巡按两万贯专款"
+    },
+    {
+      "chapter": 50,
+      "tier": "fast",
+      "event_types": [
+        "tension_escalation",
+        "conflict_thrill"
+      ],
+      "note": "清峪河暗穴流沙塌方险情老卒砸桩托管倒虹吸涵管贯通"
+    },
+    {
+      "chapter": 51,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "world_painting"
+      ],
+      "note": "八百里秦川四十架神车全线通水李世民微服巡麦盛赞第一卷大圆满收官"
     }
   ]
 }

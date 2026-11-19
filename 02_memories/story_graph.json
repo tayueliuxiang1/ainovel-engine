@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 48,
-  "updated_at": "2026-11-19T05:42:21.916Z",
+  "last_updated_chapter": 51,
+  "updated_at": "2026-11-19T06:17:09.987Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -484,10 +484,11 @@
       "type": "foreshadow",
       "name": "FB-008 东市试烧熟焦炭引来工部虞部司与将作监左校署录案追查",
       "planted_chapter": 41,
-      "target_chapter": 48,
+      "target_chapter": 70,
       "resolved": false,
       "status": "active",
-      "description": "Ch41东市试烧走漏风声；Ch42刘敬之借官山封窑被破，吴老匠师反手敲定一万斤试炉官单并锁定开春岁修两千横刀万副重铠百万斤常备大单，熟焦炭正式升维切入大唐军械重工核心"
+      "description": "Ch41东市试烧走漏风声；Ch42刘敬之借官山封窑被破，吴老匠师反手敲定一万斤试炉官单并锁定开春岁修两千横刀万副重铠百万斤常备大单，熟焦炭正式升维切入大唐军械重工核心",
+      "notes": "跨卷大军工长线：将作监百万斤岁修长契与樊川八座倒焰焦炉，衔接第二卷十六卫万副重铠横刀大军工"
     },
     {
       "id": "fs_fb009_qianyoucai_trial",
@@ -495,9 +496,10 @@
       "name": "FB-009 钱有财万年县衙讯鞠与东市崔明哲余党暗网清算",
       "planted_chapter": 40,
       "target_chapter": 48,
-      "resolved": false,
-      "status": "active",
-      "description": "Ch40-41押送万年县；Ch42沈侍御史万年县审鞠突破，钱有财供出朱砂涂碑受聚义行指使，更牵出东市两处暗仓藏匿崔氏私铜黑铁违禁账目，沈御史率台吏差役亲往查封，门阀余孽加速收网"
+      "resolved": true,
+      "status": "resolved",
+      "description": "Ch40-41押送万年县；Ch42沈侍御史万年县审鞠突破，钱有财供出朱砂涂碑受聚义行指使，更牵出东市两处暗仓藏匿崔氏私铜黑铁违禁账目，沈御史率台吏差役亲往查封，门阀余孽加速收网",
+      "resolved_chapter": 44
     },
     {
       "id": "fs_eighty_carts_quota",
@@ -505,9 +507,11 @@
       "name": "少府监八十架抗旱水车官单交付",
       "planted_chapter": 35,
       "target_chapter": 50,
-      "resolved": false,
-      "status": "active",
-      "description": "惊蛰前首批四十架双龙车必须落地转水，Ch41渭南十二家铺已按时交回首批200对五寸半大包箍与800件夹片（总四千余件进逾四分之一），另附齐翼两府预订各200暖炉5万煤饼（首批已拉走50炉1万饼）及先前15架水车"
+      "resolved": true,
+      "status": "resolved",
+      "description": "惊蛰前首批四十架双龙车必须落地转水，Ch41渭南十二家铺已按时交回首批200对五寸半大包箍与800件夹片（总四千余件进逾四分之一），另附齐翼两府预订各200暖炉5万煤饼（首批已拉走50炉1万饼）及先前15架水车",
+      "resolved_chapter": 51,
+      "notes": "前四十架已于第51章全线落成通水合龙，立册为大唐永久官渠法器，第一卷大圆满收官"
     },
     {
       "id": "fs_cui_court_trial",
@@ -602,6 +606,44 @@
       "name": "富平石川河峡口",
       "region": "关中渭北",
       "notes": "上游天泉深潭被崔家筑两丈高石坝截断。八架双龙筒车站地立架跨坝提水"
+    },
+    {
+      "id": "char_li_shimin",
+      "type": "character",
+      "name": "李世民",
+      "location": "长安太极殿/渭北麦田",
+      "status": "active",
+      "rank": "大唐天子/太宗皇帝",
+      "faction": "大唐皇室/中枢核心",
+      "first_chapter": 49,
+      "last_updated": 51,
+      "notes": "第49章掷退崔氏借灾加税暗折；第51章微服巡视渭北麦田，亲拔嫩麦闻土香盛赞格物实学，特赐苏白紫袍金鱼袋、面圣赐座，托付十六卫甲仗重器大军工"
+    },
+    {
+      "id": "char_dai_zhou",
+      "type": "character",
+      "name": "戴胄",
+      "location": "长安户部/渭北麦田",
+      "status": "active",
+      "rank": "户部尚书",
+      "faction": "大唐中枢",
+      "first_chapter": 51,
+      "last_updated": 51,
+      "notes": "以象牙算筹精算四十架神车日汲水超九万石，省去二十万民夫劳役与十万贯国帑靡费，保全两百万石夏粮底盘"
+    },
+    {
+      "id": "loc_qingyuhe",
+      "type": "location",
+      "name": "三原清峪河漏斗滩",
+      "region": "关中渭北",
+      "notes": "喀斯特暗穴溶洞与流沙地貌。苏白设计大唐首条三叠沉沙快干灰陶地下倒虹吸涵管穿透险滩"
+    },
+    {
+      "id": "loc_qin_chuan",
+      "type": "location",
+      "name": "八百里秦川",
+      "region": "关中平原",
+      "notes": "四十架三丈巨型双龙筒车飞旋，两千四百竹筒喷涌长虹，百万亩冬麦足墒返青"
     }
   ],
   "edges": [
