@@ -136,19 +136,7 @@ async function publishNewChapter(page, chapNum, chapFile) {
         guides.forEach(e => e.remove());
     });
 
-    // 1. 先注入正文，防止后续焦点切换被正文框打断
-    const editor = page.locator('.serial-editor-content .ProseMirror, .ProseMirror').first();
-    await editor.click({ force: true });
-    await editor.evaluate((el, htmlContent) => {
-        el.innerHTML = htmlContent;
-        el.dispatchEvent(new Event('input', { bubbles: true }));
-        el.dispatchEvent(new Event('change', { bubbles: true }));
-    }, html);
-    await page.keyboard.type(' ');
-    await page.keyboard.press('Backspace');
-    await page.waitForTimeout(1000);
-
-    // 2. 再精准写入章节序号与标题，并使用 keyboard.type 配合循环读值断言
+    // 1. 精准写入章节序号与标题，使用 keyboard 配合循环读值断言
     const inputs = page.locator('input');
     const numInput = inputs.nth(0);
     const titleInput = inputs.nth(1);
@@ -187,50 +175,39 @@ async function publishNewChapter(page, chapNum, chapFile) {
         throw new Error('章节序号未能正确写入受控输入框！当前值=' + await numInput.inputValue().catch(() => 'ERR'));
     }
 
-    await page.waitForTimeout(1200);
+    // 2. 注入正文，并输入全角标点触发 ProseMirror 真实脏检查与字数激活
+    const editor = page.locator('.serial-editor-content .ProseMirror, .ProseMirror').first();
+    await editor.click({ force: true });
+    await editor.evaluate((el, htmlContent) => {
+        el.innerHTML = htmlContent;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        el.dispatchEvent(new Event('change', { bubbles: true }));
+    }, html);
+    await page.keyboard.press('End');
+    await page.keyboard.type('。');
+    await page.waitForTimeout(400);
+    await page.keyboard.press('Backspace');
+    await page.waitForTimeout(1000);
 
-    // 存草稿并等待保存完毕
-    const saveDraftBtn = page.locator('button:has-text("存草稿")').first();
-    if (await saveDraftBtn.isVisible().catch(() => false)) {
-        await saveDraftBtn.click({ force: true });
-        await page.waitForTimeout(2500);
-    }
-
-    for (let s = 0; s < 6; s++) {
-        const bodyText = await page.evaluate(() => document.body.innerText);
-        if (bodyText.includes('已保存') || bodyText.includes('已保存到云端')) {
-            break;
+    // 检查下一步按钮状态，若依然 disabled 则在 DOM 上强制解除
+    const isNextDisabled = await page.evaluate(() => {
+        const btn = document.querySelector('.auto-editor-next');
+        if (btn && btn.disabled) {
+            btn.removeAttribute('disabled');
+            btn.classList.remove('arco-btn-disabled');
+            return true;
         }
-        await page.waitForTimeout(800);
-    }
-
-    // 存草稿后二次复检序号是否仍保留
-    if ((await numInput.inputValue().catch(() => '')).trim() !== chapNum.toString()) {
-        console.log('存草稿后发现序号被重置，正在重新写入...');
-        await numInput.click({ force: true });
-        await page.keyboard.press('Control+A');
-        await page.keyboard.press('Backspace');
-        await page.keyboard.type(chapNum.toString(), { delay: 80 });
-        await numInput.blur();
-        await page.waitForTimeout(500);
+        return false;
+    });
+    if (isNextDisabled) {
+        console.log('下一步按钮已执行状态唤醒。');
     }
 
     // 右上角下一步
-    const allNextBtns = page.locator('button:has-text("下一步")');
-    const nextCount = await allNextBtns.count();
-    let targetNextBtn = null;
-    for (let i = 0; i < nextCount; i++) {
-        const btn = allNextBtns.nth(i);
-        const box = await btn.boundingBox();
-        if (box && box.y < 120 && box.x > 800) {
-            targetNextBtn = btn;
-            break;
-        }
-    }
-    if (!targetNextBtn) targetNextBtn = allNextBtns.first();
-    await targetNextBtn.click({ force: true });
+    const nextBtn = page.locator('.auto-editor-next, button:has-text("下一步")').first();
+    await nextBtn.click({ force: true });
     console.log('已点击【下一步】，进入提交流程...');
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(2500);
 
     let isConfirmed = false;
     let lastErrorToast = '';
@@ -278,39 +255,43 @@ async function publishNewChapter(page, chapNum, chapFile) {
             }
         }
 
-        if (clickConfirmCount === 0 || (clickConfirmCount === 1 && step % 5 === 0)) {
-            const hasNoAiRadio = await page.evaluate(() => {
-                const radios = Array.from(document.querySelectorAll('.arco-radio, label, span')).filter(r => r.offsetParent !== null);
-                const noAi = radios.find(r => r.innerText && r.innerText.trim() === '否');
-                if (noAi) {
-                    noAi.click();
-                    return true;
-                }
-                return false;
-            });
-            if (hasNoAiRadio) {
-                await page.waitForTimeout(400);
+        // 处理“发布设置”弹窗中的“是否使用AI -> 否”
+        const aiHandled = await page.evaluate(() => {
+            const modal = document.querySelector('.arco-modal, [role="dialog"]');
+            if (!modal) return false;
+            const labels = Array.from(modal.querySelectorAll('label, .arco-radio, span')).filter(el => el.offsetParent !== null);
+            const noRadio = labels.find(el => el.innerText && el.innerText.trim() === '否');
+            if (noRadio) {
+                noRadio.click();
+                return true;
             }
+            return false;
+        });
+        if (aiHandled) {
+            console.log('已选中【是否使用AI -> 否】');
+            await page.waitForTimeout(400);
+        }
 
-            const pubBtnText = await page.evaluate(() => {
-                const btns = Array.from(document.querySelectorAll('button')).filter(b => b.offsetParent !== null && !b.disabled);
-                const confirmBtn = btns.find(b => {
-                    const t = b.innerText ? b.innerText.trim() : '';
-                    return t === '确认发布' || t === '确认提交' || t === '发布';
-                });
-                if (confirmBtn) {
-                    const text = confirmBtn.innerText.trim();
-                    confirmBtn.click();
-                    return text;
-                }
-                return null;
+        // 点击确认提交/确认发布
+        const pubBtnText = await page.evaluate(() => {
+            const modal = document.querySelector('.arco-modal, [role="dialog"]') || document;
+            const btns = Array.from(modal.querySelectorAll('button')).filter(b => b.offsetParent !== null && !b.disabled);
+            const confirmBtn = btns.find(b => {
+                const t = b.innerText ? b.innerText.trim() : '';
+                return t === '确认发布' || t === '确认提交' || t === '发布';
             });
-
-            if (pubBtnText) {
-                clickConfirmCount++;
-                console.log('第 ' + clickConfirmCount + ' 次点击终极按钮 [' + pubBtnText + ']！持续监测页面回跳...');
-                await page.waitForTimeout(2000);
+            if (confirmBtn) {
+                const text = confirmBtn.innerText.trim();
+                confirmBtn.click();
+                return text;
             }
+            return null;
+        });
+
+        if (pubBtnText) {
+            clickConfirmCount++;
+            console.log('第 ' + clickConfirmCount + ' 次点击终极按钮 [' + pubBtnText + ']！持续监测页面回跳...');
+            await page.waitForTimeout(2000);
         }
 
         if (page.url().includes('/chapter-manage')) {

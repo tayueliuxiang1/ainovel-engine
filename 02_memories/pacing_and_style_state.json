@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-19T03:41:28.977Z",
+  "updated_at": "2026-11-19T04:33:37.254Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-19T03:41:28.977Z",
-    "chapters_analyzed": 42,
-    "golden_window": "Ch21-Ch42",
-    "avg_cjk_per_chapter": 5502.55,
-    "avg_paragraphs": 78.86,
-    "avg_sentence_cjk": 51.94,
-    "avg_paragraph_cjk": 69.88,
-    "avg_dialogue_ratio": 0.39,
+    "computed_at": "2026-11-19T04:33:37.253Z",
+    "chapters_analyzed": 45,
+    "golden_window": "Ch21-Ch45",
+    "avg_cjk_per_chapter": 5225.84,
+    "avg_paragraphs": 78.52,
+    "avg_sentence_cjk": 48.99,
+    "avg_paragraph_cjk": 66.56,
+    "avg_dialogue_ratio": 0.38,
     "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.68
+    "avg_weak_adverb_per_1k": 0.6
   },
   "history": [
     {
@@ -406,6 +406,34 @@
         "faction_building"
       ],
       "note": "虞部司封窑反被吴匠铁证击溃定下一万斤试炉军工大单"
+    },
+    {
+      "chapter": 43,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "将作监甲仗库大炉房焦炭白火包钢试刀拿下岁修百万斤军需长契"
+    },
+    {
+      "chapter": 44,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "御史台抄没崔氏东市暗仓两万斤黑铁刘敬之下狱平价划拨定策樊川八窑"
+    },
+    {
+      "chapter": 45,
+      "tier": "medium",
+      "event_types": [
+        "bond_deepening",
+        "world_painting",
+        "faction_building"
+      ],
+      "note": "除夕羊汤分红四千件铁构回庄四十架巨型筒车晒谷场合体三印合勘迎战大旱"
     }
   ]
 }

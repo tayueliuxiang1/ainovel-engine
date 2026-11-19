@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 42,
-  "updated_at": "2026-11-19T03:40:57.912Z",
+  "last_updated_chapter": 45,
+  "updated_at": "2026-11-19T04:32:32.966Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -12,7 +12,7 @@
       "rank": "正八品上少府监右尚署署令",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 41,
+      "last_updated": 45,
       "notes": "十六岁青衣少年，第39至41章明德门外摆十锅肉汤、牛皮帐银针公鸡破毒谣、凭少府监正印与武德令震退东市市丞、携手聚丰李清晏七三合营破34家车行封锁及十万贯伪局，三日净分32贯200文兼兑两府百贯现钱定金，入主东市总栈并夜邀李清晏主婢留宿云阳，同时准备应对工部与将作监追查熟焦炭"
     },
     {
@@ -24,7 +24,7 @@
       "rank": "从五品勋官上骑都尉/云阳庄庄主",
       "faction": "云阳苏氏",
       "first_chapter": 1,
-      "last_updated": 41,
+      "last_updated": 45,
       "notes": "明德门外亮免征木牌与旧横刀震退聚义打手，入主总账欢庆三坛西市新丰春酒"
     },
     {
@@ -48,7 +48,7 @@
       "rank": "工坊核心木作工头",
       "faction": "云阳苏氏",
       "first_chapter": 21,
-      "last_updated": 41,
+      "last_updated": 45,
       "notes": "统筹大峪口百余山民轮班石碾、苇席煤热烘干暖房、冷剪冷铆旧油桶铁箍与樊川陶管陶箅子，3天产出640套炉具，后坡焦炉扩砌至4座轮烧"
     },
     {
@@ -117,7 +117,7 @@
       "rank": "正五品上门下省给事中",
       "faction": "大唐朝廷中枢",
       "first_chapter": 34,
-      "last_updated": 35,
+      "last_updated": 45,
       "notes": "奉太极殿卯正封驳明旨实授苏白正八品上少府监右尚署署令"
     },
     {
@@ -129,7 +129,7 @@
       "rank": "从六品下御史台侍御史",
       "faction": "大唐朝廷御史台",
       "first_chapter": 34,
-      "last_updated": 41,
+      "last_updated": 45,
       "notes": "正顺着原水部员外郎崔明哲旧案清查长安东市连襟姻亲线"
     },
     {
@@ -330,14 +330,14 @@
       "type": "character",
       "name": "崔明哲",
       "location": "长安御史台大牢",
-      "status": "imprisoned",
-      "removed_after_chapter": 35,
+      "status": "removed",
+      "removed_after_chapter": 44,
       "imprisoned_chapter": 35,
       "rank": "原正五品下工部水部司员外郎(已拔袍夺印)",
       "faction": "博陵崔氏",
       "first_chapter": 21,
       "last_updated": 35,
-      "notes": "第35章因擅行未决之牒及牵涉旧案贪墨被侍御史沈从敬拔除绯袍锁押入御史台大牢"
+      "notes": "通汇货栈东窗事发前畏罪潜逃出关"
     },
     {
       "id": "char_cuifu",
