@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-19T04:33:37.254Z",
+  "updated_at": "2026-11-19T05:43:53.062Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-19T04:33:37.253Z",
-    "chapters_analyzed": 45,
-    "golden_window": "Ch21-Ch45",
-    "avg_cjk_per_chapter": 5225.84,
-    "avg_paragraphs": 78.52,
-    "avg_sentence_cjk": 48.99,
-    "avg_paragraph_cjk": 66.56,
-    "avg_dialogue_ratio": 0.38,
-    "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.6
+    "computed_at": "2026-11-19T05:43:53.060Z",
+    "chapters_analyzed": 48,
+    "golden_window": "Ch21-Ch48",
+    "avg_cjk_per_chapter": 4966.07,
+    "avg_paragraphs": 77.5,
+    "avg_sentence_cjk": 46.99,
+    "avg_paragraph_cjk": 63.8,
+    "avg_dialogue_ratio": 0.37,
+    "avg_ai_vocab_per_1k": 0.01,
+    "avg_weak_adverb_per_1k": 0.53
   },
   "history": [
     {
@@ -434,6 +434,33 @@
         "faction_building"
       ],
       "note": "除夕羊汤分红四千件铁构回庄四十架巨型筒车晒谷场合体三印合勘迎战大旱"
+    },
+    {
+      "chapter": 46,
+      "tier": "medium",
+      "event_types": [
+        "tension_escalation",
+        "world_painting"
+      ],
+      "note": "惊蛰前破冰出征渭北五里铺破除妖巫抵黑石滩勘测"
+    },
+    {
+      "chapter": 47,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "梢埽压石沉箱束水攻沙四车提水漫灌三万亩旱麦"
+    },
+    {
+      "chapter": 48,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "轻装八十里急行军八车跨石坝提水破豪强解民变"
     }
   ]
 }

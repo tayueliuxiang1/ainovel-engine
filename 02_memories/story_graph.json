@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 45,
-  "updated_at": "2026-11-19T04:32:32.966Z",
+  "last_updated_chapter": 48,
+  "updated_at": "2026-11-19T05:42:21.916Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -515,9 +515,11 @@
       "name": "崔明哲御史台审讯与政事堂崔氏宗老余震",
       "planted_chapter": 35,
       "target_chapter": 45,
-      "resolved": false,
-      "status": "active",
-      "description": "沈从敬押走崔明哲核查185贯与500两废车旧账并顺势清查东市连襟姻亲，参奏政事堂宗老失察余震尚待收束"
+      "resolved": true,
+      "status": "resolved",
+      "description": "沈从敬押走崔明哲核查185贯与500两废车旧账并顺势清查东市连襟姻亲，参奏政事堂宗老失察余震尚待收束",
+      "resolved_chapter": 44,
+      "notes": "第44章沈从敬突击查抄东市通汇茶麻行，起获两万斤官铁与私铸钱模，刘敬之锁送大理寺，暗仓清查收束"
     },
     {
       "id": "fs_fb006_glass",
@@ -550,6 +552,56 @@
       "first_chapter": 42,
       "last_updated": 42,
       "notes": "Ch42持公牒抵云阳庄欲以官山私采查封焦炉索取配方，遭苏白以门下省抗旱御活诏抗辩、吴老匠师携零裂纹包箍痛斥及生煤炸炉揭穿；后闻沈侍御史查封崔氏东市暗仓慌忙遁走"
+    },
+    {
+      "id": "char_du_chuke",
+      "type": "character",
+      "name": "杜楚客",
+      "location": "高陵县黑石滩",
+      "status": "active",
+      "rank": "高陵县令（从六品深绿官袍）",
+      "faction": "关畿地方良吏",
+      "first_chapter": 46,
+      "last_updated": 47,
+      "notes": "杜如晦之弟。精干亢烈，亲赴黑石滩抗旱，见水车提水救活三万亩麦苗后长跪痛哭谢恩"
+    },
+    {
+      "id": "char_li_daoyan",
+      "type": "character",
+      "name": "李道彦",
+      "location": "富平县石川河",
+      "status": "active",
+      "rank": "富平县令",
+      "faction": "淮安王府旁支宗室",
+      "first_chapter": 48,
+      "last_updated": 48,
+      "notes": "淮安王府旁支宗室。石川河大捷后拔刀查抄崔半城庄院，追缴退还万民地契"
+    },
+    {
+      "id": "char_cui_bancheng",
+      "type": "character",
+      "name": "崔半城",
+      "location": "富平县石川河",
+      "status": "resolved",
+      "rank": "崔氏京兆分房庄头",
+      "faction": "博陵崔氏京兆分房",
+      "first_chapter": 48,
+      "last_updated": 48,
+      "notes": "修高石大坝霸占天泉深潭断水逼买良田地契，被苏白八架神车跨坝提水彻底摧毁垄断，瘫软伏法"
+    },
+    {
+      "id": "loc_heishitan",
+      "type": "location",
+      "name": "高陵黑石滩",
+      "region": "关中渭北",
+      "notes": "泾水峡口乱石深槽，两丈八尺高差。苏白下木杩槎挂沉箱束水攻沙，四架双龙筒车立于此"
+    },
+    {
+      "id": "loc_shichuanhe",
+      "type": "location",
+      "name": "富平石川河峡口",
+      "region": "关中渭北",
+      "notes": "上游天泉深潭被崔家筑两丈高石坝截断。八架双龙筒车站地立架跨坝提水"
     }
   ],
   "edges": [
