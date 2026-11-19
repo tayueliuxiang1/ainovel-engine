@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 41,
-  "updated_at": "2026-11-11T09:55:00+08:00",
+  "last_updated_chapter": 42,
+  "updated_at": "2026-11-19T03:40:57.912Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -259,8 +259,8 @@
       "rank": "将作监左校署资深官匠",
       "faction": "将作监",
       "first_chapter": 33,
-      "last_updated": 41,
-      "notes": "Ch34-35曾在云阳庄被苏白卡规与冷淬铁瓦折服；Ch41陪工部虞部司主事与左校署监作，提两副刚从渭南铁坊巡核收验的零裂纹大包箍样件摸进东市聚丰总栈后院敲验熟焦炭"
+      "last_updated": 42,
+      "notes": "Ch34-35曾在云阳庄被苏白卡规与冷淬铁瓦折服；Ch41循试烧风声察看熟焦炭；Ch42携渭南一千二百件零裂纹包箍样件亲至云阳庄验铁，当众卡规套核重锤鸣如洪钟反戈怒斥刘敬之，为将作监岁修横刀重铠当场敲定一万斤试炉焦炭小单（进账3贯800文）并锁定百万斤常备军需（值380贯）"
     },
     {
       "id": "char_sunsicheng",
@@ -487,7 +487,7 @@
       "target_chapter": 48,
       "resolved": false,
       "status": "active",
-      "description": "Ch41东市总栈后院试烧百斤35至40文熟焦炭引动城内铁坊抢订，左校署吴老匠师携渭南零裂纹大包箍陪工部虞部司主事与左校署监作登门叩问，录山泽方位官名拟递进工部堂官与将作大匠案前，正式拉开焦炭军工升级与朝堂博弈线"
+      "description": "Ch41东市试烧走漏风声；Ch42刘敬之借官山封窑被破，吴老匠师反手敲定一万斤试炉官单并锁定开春岁修两千横刀万副重铠百万斤常备大单，熟焦炭正式升维切入大唐军械重工核心"
     },
     {
       "id": "fs_fb009_qianyoucai_trial",
@@ -497,7 +497,7 @@
       "target_chapter": 48,
       "resolved": false,
       "status": "active",
-      "description": "钱有财在万年县衙候审讯鞠，可追出大峪口戒碑涂朱砂吓民、私悬官用封仓牌哄抬炭价及沈从敬清查崔明哲东市连襟姻亲线"
+      "description": "Ch40-41押送万年县；Ch42沈侍御史万年县审鞠突破，钱有财供出朱砂涂碑受聚义行指使，更牵出东市两处暗仓藏匿崔氏私铜黑铁违禁账目，沈御史率台吏差役亲往查封，门阀余孽加速收网"
     },
     {
       "id": "fs_eighty_carts_quota",
@@ -538,6 +538,18 @@
       "resolved": false,
       "status": "planned",
       "description": "北征突厥军工后勤线远期伏笔"
+    },
+    {
+      "id": "char_liu_jingzhi",
+      "type": "character",
+      "name": "刘敬之",
+      "location": "长安工部虞部司",
+      "status": "active",
+      "rank": "工部虞部司从六品员外郎",
+      "faction": "工部/博陵崔氏门生",
+      "first_chapter": 42,
+      "last_updated": 42,
+      "notes": "Ch42持公牒抵云阳庄欲以官山私采查封焦炉索取配方，遭苏白以门下省抗旱御活诏抗辩、吴老匠师携零裂纹包箍痛斥及生煤炸炉揭穿；后闻沈侍御史查封崔氏东市暗仓慌忙遁走"
     }
   ],
   "edges": [
