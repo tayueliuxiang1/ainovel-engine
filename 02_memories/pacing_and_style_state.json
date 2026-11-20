@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-19T06:20:27.545Z",
+  "updated_at": "2026-11-19T09:29:32.547Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-19T06:20:27.544Z",
-    "chapters_analyzed": 51,
-    "golden_window": "Ch21-Ch51",
-    "avg_cjk_per_chapter": 4760.94,
-    "avg_paragraphs": 75.55,
-    "avg_sentence_cjk": 45.55,
-    "avg_paragraph_cjk": 62.55,
-    "avg_dialogue_ratio": 0.37,
+    "computed_at": "2026-11-19T09:29:32.545Z",
+    "chapters_analyzed": 54,
+    "golden_window": "Ch21-Ch54",
+    "avg_cjk_per_chapter": 4559.24,
+    "avg_paragraphs": 75.44,
+    "avg_sentence_cjk": 43.75,
+    "avg_paragraph_cjk": 59.96,
+    "avg_dialogue_ratio": 0.36,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.48
+    "avg_weak_adverb_per_1k": 0.44
   },
   "history": [
     {
@@ -488,6 +488,33 @@
         "world_painting"
       ],
       "note": "八百里秦川四十架神车全线通水李世民微服巡麦盛赞第一卷大圆满收官"
+    },
+    {
+      "chapter": 52,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "樊川码头八座卧式倒焰焦炉合龙出焦出油打通水陆煤焦大动脉"
+    },
+    {
+      "chapter": 53,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "修德坊纯阳白火铸包钢横刀生擒黑狼卫死士试切三十札重铠入木两寸"
+    },
+    {
+      "chapter": 54,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "两仪殿国宴一刀斩断突厥天狼金错刀李世民敕设大唐军械营造司拜总监造"
     }
   ]
 }
