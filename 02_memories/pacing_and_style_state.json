@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-20T08:12:53.128Z",
+  "updated_at": "2026-11-20T08:42:01.619Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-20T08:12:53.127Z",
-    "chapters_analyzed": 63,
-    "golden_window": "Ch21-Ch63",
-    "avg_cjk_per_chapter": 4119.16,
-    "avg_paragraphs": 73.56,
-    "avg_sentence_cjk": 40.63,
-    "avg_paragraph_cjk": 55.24,
+    "computed_at": "2026-11-20T08:42:01.618Z",
+    "chapters_analyzed": 66,
+    "golden_window": "Ch21-Ch66",
+    "avg_cjk_per_chapter": 4013.43,
+    "avg_paragraphs": 72.98,
+    "avg_sentence_cjk": 39.85,
+    "avg_paragraph_cjk": 54.16,
     "avg_dialogue_ratio": 0.34,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.49
+    "avg_weak_adverb_per_1k": 0.54
   },
   "history": [
     {
@@ -596,6 +596,33 @@
         "faction_building"
       ],
       "note": "水力慢磨青石磨台研磨抛光物镜目镜装配黄铜单筒千里神镜承天门御试震撼天子李世民下达五百具密令"
+    },
+    {
+      "chapter": 64,
+      "tier": "medium",
+      "event_types": [
+        "tension_escalation",
+        "conflict_thrill"
+      ],
+      "note": "两仪殿户部尚书戴胄算尽大唐国仓十万人马日耗五千余石八百里戈壁两轮旧车仅撑二百里死穴苏白当殿立军令状造四轮神舟大车"
+    },
+    {
+      "chapter": 65,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "conflict_thrill"
+      ],
+      "note": "军械营造司后院铸铁转盘铰接四轮大车叠合板簧颠簸大试碎石深坑如履平地两轮旧车断轴翻车大获全胜"
+    },
+    {
+      "chapter": 66,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "承天门校场御前试车载重七万斤精粮水囊八马飞驰密闭水囊滴水不漏破解大漠断水绝境李世民拔剑敕造五千辆神舟大车"
     }
   ]
 }
