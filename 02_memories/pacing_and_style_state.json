@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-20T07:06:44.381Z",
+  "updated_at": "2026-11-20T07:46:47.001Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-20T07:06:44.380Z",
-    "chapters_analyzed": 57,
-    "golden_window": "Ch21-Ch57",
-    "avg_cjk_per_chapter": 4383.92,
-    "avg_paragraphs": 74.78,
-    "avg_sentence_cjk": 42.48,
-    "avg_paragraph_cjk": 58.04,
-    "avg_dialogue_ratio": 0.35,
+    "computed_at": "2026-11-20T07:46:46.994Z",
+    "chapters_analyzed": 60,
+    "golden_window": "Ch21-Ch60",
+    "avg_cjk_per_chapter": 4219.02,
+    "avg_paragraphs": 73.88,
+    "avg_sentence_cjk": 41.43,
+    "avg_paragraph_cjk": 56.33,
+    "avg_dialogue_ratio": 0.34,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.4
+    "avg_weak_adverb_per_1k": 0.37
   },
   "history": [
     {
@@ -542,6 +542,33 @@
         "tension_escalation"
       ],
       "note": "禁军校场试铠轻量新明光铠抗破甲箭惊艳马蹄铁李世民下达三月北伐死令"
+    },
+    {
+      "chapter": 58,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "大峪口盘山泥道翻浆陷车三层嵌石硬道与绝壁重力铁索道破除能源运力锁喉"
+    },
+    {
+      "chapter": 59,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "浐水四坊流水装配流水线大成老卒带徒首月交付千领新铠三千横刀三万铁蹄"
+    },
+    {
+      "chapter": 60,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "灵州大捷八百玄甲破阵营正面凿穿突厥前锋阵斩阿史那步真两万敌军溃逃天子拔刀北伐"
     }
   ]
 }
