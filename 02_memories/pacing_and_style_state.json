@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-20T07:46:47.001Z",
+  "updated_at": "2026-11-20T08:12:53.128Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-20T07:46:46.994Z",
-    "chapters_analyzed": 60,
-    "golden_window": "Ch21-Ch60",
-    "avg_cjk_per_chapter": 4219.02,
-    "avg_paragraphs": 73.88,
-    "avg_sentence_cjk": 41.43,
-    "avg_paragraph_cjk": 56.33,
+    "computed_at": "2026-11-20T08:12:53.127Z",
+    "chapters_analyzed": 63,
+    "golden_window": "Ch21-Ch63",
+    "avg_cjk_per_chapter": 4119.16,
+    "avg_paragraphs": 73.56,
+    "avg_sentence_cjk": 40.63,
+    "avg_paragraph_cjk": 55.24,
     "avg_dialogue_ratio": 0.34,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.37
+    "avg_weak_adverb_per_1k": 0.49
   },
   "history": [
     {
@@ -569,6 +569,33 @@
         "faction_building"
       ],
       "note": "灵州大捷八百玄甲破阵营正面凿穿突厥前锋阵斩阿史那步真两万敌军溃逃天子拔刀北伐"
+    },
+    {
+      "chapter": 61,
+      "tier": "slow",
+      "event_types": [
+        "world_painting",
+        "bond_deepening"
+      ],
+      "note": "关中麦熟大丰收灵州凯旋百姓抚神铠落泪苏白省亲吃新麦大饼冷淘老卒指点大漠视野痛点"
+    },
+    {
+      "chapter": 62,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "tension_escalation"
+      ],
+      "note": "陶瓦窑绝密试制白石英酸洗纯碱生石灰配比与波斯黑砂高温脱色千三百度白火熔出无色玻璃圆坯"
+    },
+    {
+      "chapter": 63,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "水力慢磨青石磨台研磨抛光物镜目镜装配黄铜单筒千里神镜承天门御试震撼天子李世民下达五百具密令"
     }
   ]
 }
