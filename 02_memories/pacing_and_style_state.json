@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-19T09:29:32.547Z",
+  "updated_at": "2026-11-20T07:06:44.381Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-19T09:29:32.545Z",
-    "chapters_analyzed": 54,
-    "golden_window": "Ch21-Ch54",
-    "avg_cjk_per_chapter": 4559.24,
-    "avg_paragraphs": 75.44,
-    "avg_sentence_cjk": 43.75,
-    "avg_paragraph_cjk": 59.96,
-    "avg_dialogue_ratio": 0.36,
+    "computed_at": "2026-11-20T07:06:44.380Z",
+    "chapters_analyzed": 57,
+    "golden_window": "Ch21-Ch57",
+    "avg_cjk_per_chapter": 4383.92,
+    "avg_paragraphs": 74.78,
+    "avg_sentence_cjk": 42.48,
+    "avg_paragraph_cjk": 58.04,
+    "avg_dialogue_ratio": 0.35,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.44
+    "avg_weak_adverb_per_1k": 0.4
   },
   "history": [
     {
@@ -515,6 +515,33 @@
         "faction_building"
       ],
       "note": "两仪殿国宴一刀斩断突厥天狼金错刀李世民敕设大唐军械营造司拜总监造"
+    },
+    {
+      "chapter": 55,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "bond_deepening"
+      ],
+      "note": "延寿坊大唐军械营造司开衙立司核清兵部旧底定下水力四联重锤方案"
+    },
+    {
+      "chapter": 56,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "world_painting"
+      ],
+      "note": "浐水水力四联重锻锤轰鸣试机半柱香压实包钢冲切铁范日产万枚札片"
+    },
+    {
+      "chapter": 57,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "tension_escalation"
+      ],
+      "note": "禁军校场试铠轻量新明光铠抗破甲箭惊艳马蹄铁李世民下达三月北伐死令"
     }
   ]
 }
