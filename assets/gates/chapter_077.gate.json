@@ -1,0 +1,58 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_077.md",
+  "chapter_name": "chapter_077.md",
+  "chapter_number": 77,
+  "checked_at": "2026-11-21T08:46:17.230Z",
+  "file_mtime_ms": 1795250692220.3706,
+  "file_sha256": "00b913a2410b129a2cd570b6265b3b1ce473ee6a24d30cd8ee2dfc4615c15b7c",
+  "total_chars": 3184,
+  "line_count": 100,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 8,
+    "weak_adverb_density_per_1k": 2.61,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 2
+      },
+      {
+        "adverb": "渐渐",
+        "count": 2
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "悄悄",
+        "count": 1
+      },
+      {
+        "adverb": "隐隐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2816,
+    "paragraph_count": 49,
+    "sentence_count": 80,
+    "avg_sentence_cjk": 35.2,
+    "avg_paragraph_cjk": 57.47,
+    "dialogue_ratio": 0.1058
+  }
+}

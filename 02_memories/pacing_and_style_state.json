@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-21T08:34:52.041Z",
+  "updated_at": "2026-11-21T08:50:24.626Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-21T08:34:52.040Z",
-    "chapters_analyzed": 75,
-    "golden_window": "Ch21-Ch75",
-    "avg_cjk_per_chapter": 3783.07,
-    "avg_paragraphs": 71.56,
-    "avg_sentence_cjk": 38.18,
-    "avg_paragraph_cjk": 51.95,
-    "avg_dialogue_ratio": 0.32,
+    "computed_at": "2026-11-21T08:50:24.625Z",
+    "chapters_analyzed": 78,
+    "golden_window": "Ch21-Ch78",
+    "avg_cjk_per_chapter": 3742.19,
+    "avg_paragraphs": 70.66,
+    "avg_sentence_cjk": 37.93,
+    "avg_paragraph_cjk": 52.13,
+    "avg_dialogue_ratio": 0.31,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.59
+    "avg_weak_adverb_per_1k": 0.66
   },
   "history": [
     {
@@ -704,6 +704,33 @@
         "faction_building"
       ],
       "note": "极寒骤遇极热诱发物理剧烈爆裂百丈冰崖轰然崩塌梁猛八百玄甲自缺口突入横刀削断弯刀斩首破阵薛万彻迂回包抄凿穿恶阳岭门户李靖进逼定襄狼庭"
+    },
+    {
+      "chapter": 76,
+      "tier": "medium",
+      "event_types": [
+        "bond_deepening",
+        "faction_building"
+      ],
+      "note": "定襄城外五百大车连环结城颉利遣使捧降表汗印行缓兵诡谋执失思力目睹唐军修配车水磨开刃换防滑蹄铁火酒缝合伤卒深感可怕自持力李靖将计就计夜定奔袭"
+    },
+    {
+      "chapter": 77,
+      "tier": "medium",
+      "event_types": [
+        "crisis_escalation",
+        "world_painting"
+      ],
+      "note": "阴山北麓大雾锁山零下二十度苏定方先锋探路苏白率八十辆神舟轻车浸油麻布包轮消音登孤峰架消光微调神镜穿雾侦察梁猛攀岩摸哨大车锁死葫芦口"
+    },
+    {
+      "chapter": 78,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "车城大门洞开梁猛八百玄甲破阵正面凿穿两千金狼卫挑断三丈狼纛颉利换装单骑逃窜苏白千里镜三里外锁定金狼马鞍张宝相包抄黑石槽生擒颉利东突厥彻底覆灭"
     }
   ]
 }
