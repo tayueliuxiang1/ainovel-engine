@@ -1,0 +1,42 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_074.md",
+  "chapter_name": "chapter_074.md",
+  "chapter_number": 74,
+  "checked_at": "2026-11-21T08:29:11.978Z",
+  "file_mtime_ms": 1795249504685.6035,
+  "file_sha256": "01a12db75349cf238221026114350745fbf7846c1b6d94eacf05226e25c99a19",
+  "total_chars": 2577,
+  "line_count": 119,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 2,
+    "weak_adverb_density_per_1k": 0.82,
+    "weak_adverb_hits": [
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "深深",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2220,
+    "paragraph_count": 59,
+    "sentence_count": 78,
+    "avg_sentence_cjk": 28.46,
+    "avg_paragraph_cjk": 37.63,
+    "dialogue_ratio": 0.1419
+  }
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-21T07:36:20.179Z",
+  "updated_at": "2026-11-21T08:34:52.041Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-21T07:36:20.175Z",
-    "chapters_analyzed": 72,
-    "golden_window": "Ch21-Ch72",
-    "avg_cjk_per_chapter": 3865.44,
-    "avg_paragraphs": 72.12,
-    "avg_sentence_cjk": 38.66,
-    "avg_paragraph_cjk": 52.74,
-    "avg_dialogue_ratio": 0.33,
-    "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.58
+    "computed_at": "2026-11-21T08:34:52.040Z",
+    "chapters_analyzed": 75,
+    "golden_window": "Ch21-Ch75",
+    "avg_cjk_per_chapter": 3783.07,
+    "avg_paragraphs": 71.56,
+    "avg_sentence_cjk": 38.18,
+    "avg_paragraph_cjk": 51.95,
+    "avg_dialogue_ratio": 0.32,
+    "avg_ai_vocab_per_1k": 0.01,
+    "avg_weak_adverb_per_1k": 0.59
   },
   "history": [
     {
@@ -677,6 +677,33 @@
         "faction_building"
       ],
       "note": "神舟车城首尾相扣结成五尺防箭女墙叠合板簧化解撞击移动野战修配车十息开刃换蹄铁战地救护营火酒冲创十息缝合梁猛八百玄甲破阵杀敌千二百级首战大捷"
+    },
+    {
+      "chapter": 73,
+      "tier": "medium",
+      "event_types": [
+        "crisis_escalation",
+        "faction_building"
+      ],
+      "note": "阴山脚下突降白灾气温骤降滴水成冰车釭轴瓦冻结抱死苏白研制耐零下三十度防冻重脂膏破除死穴生漆水囊浮棍防胀裂李靖中军决议白灾奇袭"
+    },
+    {
+      "chapter": 74,
+      "tier": "medium",
+      "event_types": [
+        "crisis_escalation",
+        "world_painting"
+      ],
+      "note": "恶阳岭下李靖亲率三千精骑兵临关下突厥据十丈冰石坚壁狂言苏白千里神镜洞察冰水相变膨胀应力弱点抛射车冷锻螺旋矛破应力生石灰千度白火引燃煤焦油"
+    },
+    {
+      "chapter": 75,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "极寒骤遇极热诱发物理剧烈爆裂百丈冰崖轰然崩塌梁猛八百玄甲自缺口突入横刀削断弯刀斩首破阵薛万彻迂回包抄凿穿恶阳岭门户李靖进逼定襄狼庭"
     }
   ]
 }
