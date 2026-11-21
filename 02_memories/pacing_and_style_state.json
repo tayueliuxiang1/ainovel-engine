@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-20T08:42:01.619Z",
+  "updated_at": "2026-11-21T00:58:03.820Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-20T08:42:01.618Z",
-    "chapters_analyzed": 66,
-    "golden_window": "Ch21-Ch66",
-    "avg_cjk_per_chapter": 4013.43,
-    "avg_paragraphs": 72.98,
-    "avg_sentence_cjk": 39.85,
-    "avg_paragraph_cjk": 54.16,
+    "computed_at": "2026-11-21T00:58:03.810Z",
+    "chapters_analyzed": 69,
+    "golden_window": "Ch21-Ch69",
+    "avg_cjk_per_chapter": 3955,
+    "avg_paragraphs": 73.02,
+    "avg_sentence_cjk": 39.09,
+    "avg_paragraph_cjk": 53.38,
     "avg_dialogue_ratio": 0.34,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.54
+    "avg_weak_adverb_per_1k": 0.58
   },
   "history": [
     {
@@ -623,6 +623,33 @@
         "faction_building"
       ],
       "note": "承天门校场御前试车载重七万斤精粮水囊八马飞驰密闭水囊滴水不漏破解大漠断水绝境李世民拔剑敕造五千辆神舟大车"
+    },
+    {
+      "chapter": 67,
+      "tier": "medium",
+      "event_types": [
+        "world_painting",
+        "bond_deepening"
+      ],
+      "note": "长安初秋云阳小院羊肉暖锅家常温情周长贵老伤发痈点破战地伤兵六成死于化脓苏白打制红铜双层天锅蒸馏六十五度火酒"
+    },
+    {
+      "chapter": 68,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "延寿坊后堂太医令甄立言束手无策苏白以火酒冲创桑皮线分层缝合治愈灵州濒死伤兵医官震撼下拜天子下旨立随军救护营"
+    },
+    {
+      "chapter": 69,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "营司偏院研制熟麦牛羊油高能行军干粮砖破行军炊烟死穴二百辆移动野战修配车大成开远门大校场十万铁骑北伐总誓师"
     }
   ]
 }

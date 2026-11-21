@@ -1,0 +1,46 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_067.md",
+  "chapter_name": "chapter_067.md",
+  "chapter_number": 67,
+  "checked_at": "2026-11-21T00:51:08.484Z",
+  "file_mtime_ms": 1795222264185.1917,
+  "file_sha256": "b0a98b61927838662f24cbb210499181353d1b1210197a890ea4da6b5ac8e022",
+  "total_chars": 4181,
+  "line_count": 155,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 5,
+    "weak_adverb_density_per_1k": 1.25,
+    "weak_adverb_hits": [
+      {
+        "adverb": "轻轻",
+        "count": 3
+      },
+      {
+        "adverb": "隐隐",
+        "count": 1
+      },
+      {
+        "adverb": "渐渐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 3617,
+    "paragraph_count": 77,
+    "sentence_count": 125,
+    "avg_sentence_cjk": 28.94,
+    "avg_paragraph_cjk": 46.97,
+    "dialogue_ratio": 0.2657
+  }
+}
