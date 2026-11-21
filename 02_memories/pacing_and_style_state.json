@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-21T08:50:24.626Z",
+  "updated_at": "2026-11-21T09:03:49.816Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-21T08:50:24.625Z",
-    "chapters_analyzed": 78,
-    "golden_window": "Ch21-Ch78",
-    "avg_cjk_per_chapter": 3742.19,
-    "avg_paragraphs": 70.66,
-    "avg_sentence_cjk": 37.93,
-    "avg_paragraph_cjk": 52.13,
-    "avg_dialogue_ratio": 0.31,
+    "computed_at": "2026-11-21T09:03:49.815Z",
+    "chapters_analyzed": 81,
+    "golden_window": "Ch21-Ch81",
+    "avg_cjk_per_chapter": 3679.43,
+    "avg_paragraphs": 69.64,
+    "avg_sentence_cjk": 37.63,
+    "avg_paragraph_cjk": 52.06,
+    "avg_dialogue_ratio": 0.32,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.66
+    "avg_weak_adverb_per_1k": 0.73
   },
   "history": [
     {
@@ -731,6 +731,33 @@
         "faction_building"
       ],
       "note": "车城大门洞开梁猛八百玄甲破阵正面凿穿两千金狼卫挑断三丈狼纛颉利换装单骑逃窜苏白千里镜三里外锁定金狼马鞍张宝相包抄黑石槽生擒颉利东突厥彻底覆灭"
+    },
+    {
+      "chapter": 79,
+      "tier": "medium",
+      "event_types": [
+        "bond_deepening",
+        "faction_building"
+      ],
+      "note": "两仪殿接获八百里捷报李世民长笑拔剑斩案雪三年便桥之耻戴胄核算大账战损减八成国库反增庞大牧场敕封苏白正五品上将作少监"
+    },
+    {
+      "chapter": 80,
+      "tier": "medium",
+      "event_types": [
+        "world_painting",
+        "faction_building"
+      ],
+      "note": "初春朱雀门前献俘大典颉利囚服长跪万国使臣朝贺共尊大唐天下共主八百玄甲与两百神舟大车受阅营造司升格中枢工署苏白领大权"
+    },
+    {
+      "chapter": 81,
+      "tier": "slow",
+      "event_types": [
+        "bond_deepening",
+        "faction_building"
+      ],
+      "note": "延寿坊百工署推行全国部件互换性与卡规制度李清晏携两万四千贯煤焦分红核算苏白还乡云阳庄省亲分红绘大运河齿轮联动明轮机动战船图样"
     }
   ]
 }
