@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-21T00:58:03.820Z",
+  "updated_at": "2026-11-21T07:36:20.179Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,15 +13,15 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-21T00:58:03.810Z",
-    "chapters_analyzed": 69,
-    "golden_window": "Ch21-Ch69",
-    "avg_cjk_per_chapter": 3955,
-    "avg_paragraphs": 73.02,
-    "avg_sentence_cjk": 39.09,
-    "avg_paragraph_cjk": 53.38,
-    "avg_dialogue_ratio": 0.34,
-    "avg_ai_vocab_per_1k": 0.01,
+    "computed_at": "2026-11-21T07:36:20.175Z",
+    "chapters_analyzed": 72,
+    "golden_window": "Ch21-Ch72",
+    "avg_cjk_per_chapter": 3865.44,
+    "avg_paragraphs": 72.12,
+    "avg_sentence_cjk": 38.66,
+    "avg_paragraph_cjk": 52.74,
+    "avg_dialogue_ratio": 0.33,
+    "avg_ai_vocab_per_1k": 0.02,
     "avg_weak_adverb_per_1k": 0.58
   },
   "history": [
@@ -650,6 +650,33 @@
         "faction_building"
       ],
       "note": "营司偏院研制熟麦牛羊油高能行军干粮砖破行军炊烟死穴二百辆移动野战修配车大成开远门大校场十万铁骑北伐总誓师"
+    },
+    {
+      "chapter": 70,
+      "tier": "medium",
+      "event_types": [
+        "world_painting",
+        "bond_deepening"
+      ],
+      "note": "陇原初冬落雪大军出萧关瓦亭险隘翻浆烂泥两轮旧车折辕四轮神舟转盘大车平稳如浮舟干粮砖零炊烟急行军灵州将帅汇合"
+    },
+    {
+      "chapter": 71,
+      "tier": "medium",
+      "event_types": [
+        "crisis_escalation",
+        "conflict_thrill"
+      ],
+      "note": "瀚海鸣沙大漠黄沙蔽日执失思力驱牛羊束荆拖行设疑兵沙梁暗伏三千锐矢苏白登残烽燧架重型消光神镜穿透十里沙尘暴洞察敌情变阵占高岗"
+    },
+    {
+      "chapter": 72,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "神舟车城首尾相扣结成五尺防箭女墙叠合板簧化解撞击移动野战修配车十息开刃换蹄铁战地救护营火酒冲创十息缝合梁猛八百玄甲破阵杀敌千二百级首战大捷"
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_071.md",
+  "chapter_name": "chapter_071.md",
+  "chapter_number": 71,
+  "checked_at": "2026-11-21T07:28:12.959Z",
+  "file_mtime_ms": 1795246086095.4873,
+  "file_sha256": "d274b4d4a03875ab91d1f0da24b9fbf0258bab2489967cfe3cf91fa652fb8278",
+  "total_chars": 2723,
+  "line_count": 109,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [
+    "去AI高频词轻微命中 1 处：好似"
+  ],
+  "ai_trace": {
+    "ai_vocab_count": 1,
+    "ai_vocab_density_per_1k": 0.38,
+    "ai_vocab_hits": [
+      {
+        "phrase": "好似",
+        "count": 1,
+        "reason": "高频比喻词（若非方言口语，叙述中尽量少用）"
+      }
+    ],
+    "weak_adverb_count": 1,
+    "weak_adverb_density_per_1k": 0.38,
+    "weak_adverb_hits": [
+      {
+        "adverb": "隐隐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2372,
+    "paragraph_count": 54,
+    "sentence_count": 73,
+    "avg_sentence_cjk": 32.49,
+    "avg_paragraph_cjk": 43.93,
+    "dialogue_ratio": 0.2011
+  }
+}
