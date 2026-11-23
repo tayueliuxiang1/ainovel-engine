@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-23T00:53:52.999Z",
+  "updated_at": "2026-11-23T04:41:01.935Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-23T00:53:52.997Z",
-    "chapters_analyzed": 84,
-    "golden_window": "Ch21-Ch84",
-    "avg_cjk_per_chapter": 3632.47,
-    "avg_paragraphs": 69.11,
-    "avg_sentence_cjk": 37.25,
-    "avg_paragraph_cjk": 51.84,
-    "avg_dialogue_ratio": 0.32,
+    "computed_at": "2026-11-23T04:41:01.935Z",
+    "chapters_analyzed": 87,
+    "golden_window": "Ch21-Ch87",
+    "avg_cjk_per_chapter": 3586.22,
+    "avg_paragraphs": 68.15,
+    "avg_sentence_cjk": 37.13,
+    "avg_paragraph_cjk": 51.97,
+    "avg_dialogue_ratio": 0.31,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.73
+    "avg_weak_adverb_per_1k": 0.74
   },
   "history": [
     {
@@ -785,6 +785,34 @@
         "faction_building"
       ],
       "note": "神武号四轮明轮巨舰逼临三门峡数万纤夫官吏观望三十二老卒底舱齐踩万钧激流中单舷差速甩尾半尺避开鹰嘴暗礁一炷香破险逆浪两百里抵潼关"
+    },
+    {
+      "chapter": 85,
+      "tier": "mid",
+      "event_types": [
+        "institutional_advance",
+        "faction_building"
+      ],
+      "note": "洛阳含嘉仓百舸争渡乱象苏白铁律立船检定额公差令淘汰危船力拒私弊竖公牌勘定平陆故道建广济龙渊船坞开启大唐水运工业化"
+    },
+    {
+      "chapter": 86,
+      "tier": "mid",
+      "event_types": [
+        "technology_breakthrough",
+        "engineering_construction"
+      ],
+      "note": "平陆黄河故道借落差建巨型水轮驱动千斤飞轮与往复排锯一炷香切十二长板双道干船坞斜楔自紧生铁水闸旱拼龙骨消除内应力工期缩至十二日三千纤夫转岗首批百艘大舰开工"
+    },
+    {
+      "chapter": 87,
+      "tier": "fast",
+      "event_types": [
+        "commerce_breakthrough",
+        "faction_building",
+        "macro_strategic"
+      ],
+      "note": "百艘神武明轮巨舰一个月出坞全量转运两百万石春漕满载关中重器南下八日穿千里运河直达扬州瓜洲彻底击碎江南士族垄断李袭誉跪迎官坞全量推行干船坞法度大运河经济大循环确立"
     }
   ]
 }
