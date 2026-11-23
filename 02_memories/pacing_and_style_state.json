@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-23T04:41:01.935Z",
+  "updated_at": "2026-11-23T06:22:20.573Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-23T04:41:01.935Z",
-    "chapters_analyzed": 87,
-    "golden_window": "Ch21-Ch87",
-    "avg_cjk_per_chapter": 3586.22,
-    "avg_paragraphs": 68.15,
-    "avg_sentence_cjk": 37.13,
-    "avg_paragraph_cjk": 51.97,
+    "computed_at": "2026-11-23T06:22:20.570Z",
+    "chapters_analyzed": 90,
+    "golden_window": "Ch21-Ch90",
+    "avg_cjk_per_chapter": 3542.44,
+    "avg_paragraphs": 67.23,
+    "avg_sentence_cjk": 37.04,
+    "avg_paragraph_cjk": 52.11,
     "avg_dialogue_ratio": 0.31,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.74
+    "avg_weak_adverb_per_1k": 0.76
   },
   "history": [
     {
@@ -813,6 +813,35 @@
         "macro_strategic"
       ],
       "note": "百艘神武明轮巨舰一个月出坞全量转运两百万石春漕满载关中重器南下八日穿千里运河直达扬州瓜洲彻底击碎江南士族垄断李袭誉跪迎官坞全量推行干船坞法度大运河经济大循环确立"
+    },
+    {
+      "chapter": 88,
+      "tier": "mid",
+      "event_types": [
+        "world_painting",
+        "technology_breakthrough"
+      ],
+      "note": "瓜洲初夏物候与江都船坊巡视实测长江八尺潮汐落差与拦门沙网格化绘制等深线图燕尾滑道配自锁冷锻丝杠创制可升降明轮釭座总成解决切水深度难题"
+    },
+    {
+      "chapter": 89,
+      "tier": "fast",
+      "event_types": [
+        "technology_breakthrough",
+        "engineering_construction",
+        "commerce_breakthrough"
+      ],
+      "note": "针对长江南北车马搬运两日与私渡盘剥痛点苏白督造大唐首艘千石双体贯通式定澜号四轮明轮轮渡前后铰链引桥四十辆大车不卸货一炷香入舱两炷香横穿十里大江过江运费暴跌九成"
+    },
+    {
+      "chapter": 90,
+      "tier": "fast",
+      "event_types": [
+        "institutional_advance",
+        "faction_building",
+        "macro_strategic"
+      ],
+      "note": "扬州江淮百工公会以水运对照大账慑服吴郡陆氏等世家大族赵崇率八千弟兄全量归附颁布三大造船所规制与工分定额簿太宗御批密诏兼领巡抚使工部专职南北大动脉定局开启铁轨新篇"
     }
   ]
 }
