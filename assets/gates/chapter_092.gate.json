@@ -1,0 +1,42 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_092.md",
+  "chapter_name": "chapter_092.md",
+  "chapter_number": 92,
+  "checked_at": "2026-11-23T06:54:24.578Z",
+  "file_mtime_ms": 1795416581873.9407,
+  "file_sha256": "6fbe91c968f1eb84af50beed012a32fc3bfa7c439a8fa7b9e93a863d99d14611",
+  "total_chars": 2912,
+  "line_count": 99,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 2,
+    "weak_adverb_density_per_1k": 0.71,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 1
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2538,
+    "paragraph_count": 49,
+    "sentence_count": 78,
+    "avg_sentence_cjk": 32.54,
+    "avg_paragraph_cjk": 51.8,
+    "dialogue_ratio": 0.2593
+  }
+}

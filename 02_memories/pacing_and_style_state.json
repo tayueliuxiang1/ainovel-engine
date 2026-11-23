@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-23T06:22:20.573Z",
+  "updated_at": "2026-11-23T07:04:07.138Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,14 +13,14 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-23T06:22:20.570Z",
-    "chapters_analyzed": 90,
-    "golden_window": "Ch21-Ch90",
-    "avg_cjk_per_chapter": 3542.44,
-    "avg_paragraphs": 67.23,
-    "avg_sentence_cjk": 37.04,
-    "avg_paragraph_cjk": 52.11,
-    "avg_dialogue_ratio": 0.31,
+    "computed_at": "2026-11-23T07:04:07.137Z",
+    "chapters_analyzed": 93,
+    "golden_window": "Ch21-Ch93",
+    "avg_cjk_per_chapter": 3498.95,
+    "avg_paragraphs": 66.4,
+    "avg_sentence_cjk": 36.82,
+    "avg_paragraph_cjk": 52.18,
+    "avg_dialogue_ratio": 0.32,
     "avg_ai_vocab_per_1k": 0.01,
     "avg_weak_adverb_per_1k": 0.76
   },
@@ -842,6 +842,35 @@
         "macro_strategic"
       ],
       "note": "扬州江淮百工公会以水运对照大账慑服吴郡陆氏等世家大族赵崇率八千弟兄全量归附颁布三大造船所规制与工分定额簿太宗御批密诏兼领巡抚使工部专职南北大动脉定局开启铁轨新篇"
+    },
+    {
+      "chapter": 91,
+      "tier": "mid",
+      "event_types": [
+        "world_painting",
+        "technology_breakthrough"
+      ],
+      "note": "四月下旬自江淮返洛阳工棚夜话共食汤饼复盘两京八百里陆路泥泞陷车之物理症结提出碎石道砟排水老松浸油枕木木芯包钢凹槽轨与三分斜面内凸缘轮圈方案定下铁轨规制试铺三里"
+    },
+    {
+      "chapter": 92,
+      "tier": "fast",
+      "event_types": [
+        "technology_breakthrough",
+        "engineering_construction",
+        "commerce_breakthrough"
+      ],
+      "note": "洛阳东郊三里试验段铺设合龙首列六连平板大车以熟皮缓冲铁环串联高锡青铜对开釭瓦注入熟羊脂重脂膏两匹关中挽马运四万五千斤物资飞驰戴胄算盘核算年省两百万贯运费当场盖印拨十万贯"
+    },
+    {
+      "chapter": 93,
+      "tier": "fast",
+      "event_types": [
+        "technology_breakthrough",
+        "engineering_construction",
+        "macro_strategic"
+      ],
+      "note": "崤函古道铁门关八度险坡攻坚中轨铺设冷锻生铁梯形齿轨配车底青铜负角止退棘爪创制单向棘轮防溜系统坡顶设铸铁定滑轮与减速绞盘实现重力对拉平衡绝壁热胀冷缩破岩两端胜利合龙太宗朱批格物致知实干兴邦"
     }
   ]
 }
