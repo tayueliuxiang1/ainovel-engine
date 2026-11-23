@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-23T07:04:07.138Z",
+  "updated_at": "2026-11-23T08:27:29.389Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-23T07:04:07.137Z",
-    "chapters_analyzed": 93,
-    "golden_window": "Ch21-Ch93",
-    "avg_cjk_per_chapter": 3498.95,
-    "avg_paragraphs": 66.4,
-    "avg_sentence_cjk": 36.82,
-    "avg_paragraph_cjk": 52.18,
-    "avg_dialogue_ratio": 0.32,
+    "computed_at": "2026-11-23T08:27:03.706Z",
+    "chapters_analyzed": 96,
+    "golden_window": "Ch21-Ch96",
+    "avg_cjk_per_chapter": 3468.2,
+    "avg_paragraphs": 65.92,
+    "avg_sentence_cjk": 36.62,
+    "avg_paragraph_cjk": 52.09,
+    "avg_dialogue_ratio": 0.31,
     "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.76
+    "avg_weak_adverb_per_1k": 0.79
   },
   "history": [
     {
@@ -871,6 +871,35 @@
         "macro_strategic"
       ],
       "note": "崤函古道铁门关八度险坡攻坚中轨铺设冷锻生铁梯形齿轨配车底青铜负角止退棘爪创制单向棘轮防溜系统坡顶设铸铁定滑轮与减速绞盘实现重力对拉平衡绝壁热胀冷缩破岩两端胜利合龙太宗朱批格物致知实干兴邦"
+    },
+    {
+      "chapter": 94,
+      "tier": "mid",
+      "event_types": [
+        "technology_breakthrough",
+        "engineering_construction"
+      ],
+      "note": "灞桥编组站创制实心生铁滚珠环槽大车调头转盘与带自重铸铁重锤双向自锁尖轨道岔实现列车无缝极速调头编组进库"
+    },
+    {
+      "chapter": 95,
+      "tier": "fast",
+      "event_types": [
+        "engineering_construction",
+        "macro_strategic",
+        "bonding"
+      ],
+      "note": "东渭桥三层悬臂木骨栈桥与双联滑轮转臂吊杆合龙五十石粮食船舱直吊铁轨车水陆双龙会师未央长安粮价平抑至六文钱FB-010大收官"
+    },
+    {
+      "chapter": 96,
+      "tier": "mid",
+      "event_types": [
+        "technology_breakthrough",
+        "macro_strategic",
+        "world_painting"
+      ],
+      "note": "太极宫密诏转向大洋苏白亲赴登州水城攻克海蛆噬木与狂浪折断龙骨难题白铜薄皮水密隔舱管网配平抗浪浮动明轮硬帆复合平海号试航斩浪"
     }
   ]
 }

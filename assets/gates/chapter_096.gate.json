@@ -1,0 +1,58 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_096.md",
+  "chapter_name": "chapter_096.md",
+  "chapter_number": 96,
+  "checked_at": "2026-11-23T08:09:40.239Z",
+  "file_mtime_ms": 1795421357653.4773,
+  "file_sha256": "f77255eb41ff4bbe0eeaa2741ed54380118b56a1c10691f82ec8eac46d9e63b7",
+  "total_chars": 3634,
+  "line_count": 125,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [
+    "去AI高频词轻微命中 1 处：好似"
+  ],
+  "ai_trace": {
+    "ai_vocab_count": 1,
+    "ai_vocab_density_per_1k": 0.29,
+    "ai_vocab_hits": [
+      {
+        "phrase": "好似",
+        "count": 1,
+        "reason": "高频比喻词（若非方言口语，叙述中尽量少用）"
+      }
+    ],
+    "weak_adverb_count": 7,
+    "weak_adverb_density_per_1k": 2,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 3
+      },
+      {
+        "adverb": "缓缓",
+        "count": 2
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      },
+      {
+        "adverb": "悄然",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 3209,
+    "paragraph_count": 62,
+    "sentence_count": 113,
+    "avg_sentence_cjk": 28.4,
+    "avg_paragraph_cjk": 51.76,
+    "dialogue_ratio": 0
+  }
+}
