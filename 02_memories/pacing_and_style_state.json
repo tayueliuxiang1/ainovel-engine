@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-21T09:03:49.816Z",
+  "updated_at": "2026-11-23T00:53:52.999Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,13 +13,13 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-21T09:03:49.815Z",
-    "chapters_analyzed": 81,
-    "golden_window": "Ch21-Ch81",
-    "avg_cjk_per_chapter": 3679.43,
-    "avg_paragraphs": 69.64,
-    "avg_sentence_cjk": 37.63,
-    "avg_paragraph_cjk": 52.06,
+    "computed_at": "2026-11-23T00:53:52.997Z",
+    "chapters_analyzed": 84,
+    "golden_window": "Ch21-Ch84",
+    "avg_cjk_per_chapter": 3632.47,
+    "avg_paragraphs": 69.11,
+    "avg_sentence_cjk": 37.25,
+    "avg_paragraph_cjk": 51.84,
     "avg_dialogue_ratio": 0.32,
     "avg_ai_vocab_per_1k": 0.01,
     "avg_weak_adverb_per_1k": 0.73
@@ -758,6 +758,33 @@
         "faction_building"
       ],
       "note": "延寿坊百工署推行全国部件互换性与卡规制度李清晏携两万四千贯煤焦分红核算苏白还乡云阳庄省亲分红绘大运河齿轮联动明轮机动战船图样"
+    },
+    {
+      "chapter": 82,
+      "tier": "medium",
+      "event_types": [
+        "crisis_escalation",
+        "faction_building"
+      ],
+      "note": "三门峡春汛大涨连沉十二艘官漕两百万石粮草阻于洛阳戴胄仓皇求援苏白以流体力学解析断绳机理绘明轮漕舰图样立下七日破险军令状"
+    },
+    {
+      "chapter": 83,
+      "tier": "medium",
+      "event_types": [
+        "faction_building",
+        "world_painting"
+      ],
+      "note": "浐水造船工坊七十二炉连轴赶工王木匠精研十二度倾斜弧形水叶赵二叔锻打十字曲轴与刮油槽青铜釭瓦试验小艇试航逆水十五里借倒挡十息避礁"
+    },
+    {
+      "chapter": 84,
+      "tier": "fast",
+      "event_types": [
+        "conflict_thrill",
+        "faction_building"
+      ],
+      "note": "神武号四轮明轮巨舰逼临三门峡数万纤夫官吏观望三十二老卒底舱齐踩万钧激流中单舷差速甩尾半尺避开鹰嘴暗礁一炷香破险逆浪两百里抵潼关"
     }
   ]
 }
