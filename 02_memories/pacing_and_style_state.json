@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-24T07:23:16.828Z",
+  "updated_at": "2026-11-24T08:24:12.843Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,13 +13,13 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-24T07:23:16.827Z",
-    "chapters_analyzed": 102,
-    "golden_window": "Ch21-Ch102",
-    "avg_cjk_per_chapter": 3396.27,
-    "avg_paragraphs": 65.04,
-    "avg_sentence_cjk": 36.33,
-    "avg_paragraph_cjk": 51.7,
+    "computed_at": "2026-11-24T08:24:12.842Z",
+    "chapters_analyzed": 105,
+    "golden_window": "Ch21-Ch105",
+    "avg_cjk_per_chapter": 3412.09,
+    "avg_paragraphs": 65.48,
+    "avg_sentence_cjk": 36.23,
+    "avg_paragraph_cjk": 51.6,
     "avg_dialogue_ratio": 0.29,
     "avg_ai_vocab_per_1k": 0.02,
     "avg_weak_adverb_per_1k": 0.83
@@ -960,8 +960,38 @@
         "macro_strategic"
       ],
       "note": "登州反谍明矾隐形暗记设伏生擒高句丽死士，秦岭炉甘石炼锌配反射熔铜竖炉破原料垄断，水陆并进征辽东军令下达"
+    },
+    {
+      "chapter": 103,
+      "tier": "medium",
+      "event_types": [
+        "world_painting",
+        "chemical_engineering",
+        "anti_corruption"
+      ],
+      "note": "苏白视察莱州湾盐场，四级泥滩梯级日晒与石灰草木灰脱钙镁产出极品雪花精盐，锁拿贪官卢怀古平抑军盐"
+    },
+    {
+      "chapter": 104,
+      "tier": "fast",
+      "event_types": [
+        "naval_engineering",
+        "weapon_test",
+        "interpersonal"
+      ],
+      "note": "首批八百料主力舰镇海号逆七级逆风出坞，动水水网配平抗横摇，升降明轮破冰飞驰，旋风抛石机碎石笋折服程名振"
+    },
+    {
+      "chapter": 105,
+      "tier": "fast",
+      "event_types": [
+        "counter_espionage",
+        "mechanical_innovation",
+        "macro_strategic"
+      ],
+      "note": "提审金道胜洞悉大同江锁江链与暗桩，研发水下高速破索滚剪与扫海犁，受领平壤道总监军敕命与天子剑符，三十艘战舰誓师出征"
     }
   ],
-  "current_chapter": 102,
-  "last_updated_chapter": 102
+  "current_chapter": 105,
+  "last_updated_chapter": 105
 }
