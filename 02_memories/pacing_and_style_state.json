@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-24T08:24:12.843Z",
+  "updated_at": "2026-11-24T08:53:52.438Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-24T08:24:12.842Z",
-    "chapters_analyzed": 105,
-    "golden_window": "Ch21-Ch105",
-    "avg_cjk_per_chapter": 3412.09,
-    "avg_paragraphs": 65.48,
-    "avg_sentence_cjk": 36.23,
-    "avg_paragraph_cjk": 51.6,
+    "computed_at": "2026-11-24T08:53:52.437Z",
+    "chapters_analyzed": 108,
+    "golden_window": "Ch21-Ch108",
+    "avg_cjk_per_chapter": 3410.92,
+    "avg_paragraphs": 66.09,
+    "avg_sentence_cjk": 36.15,
+    "avg_paragraph_cjk": 51.22,
     "avg_dialogue_ratio": 0.29,
     "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.83
+    "avg_weak_adverb_per_1k": 0.86
   },
   "history": [
     {
@@ -990,8 +990,38 @@
         "macro_strategic"
       ],
       "note": "提审金道胜洞悉大同江锁江链与暗桩，研发水下高速破索滚剪与扫海犁，受领平壤道总监军敕命与天子剑符，三十艘战舰誓师出征"
+    },
+    {
+      "chapter": 106,
+      "tier": "medium",
+      "event_types": [
+        "naval_operations",
+        "world_painting",
+        "technical_navigation"
+      ],
+      "note": "八十艘战舰横渡辽海，推行羊脂生姜防冻与麦脂精盐自持规制，平流浓雾中八音阶号角声波定距盲航避开暗礁"
+    },
+    {
+      "chapter": 107,
+      "tier": "fast",
+      "event_types": [
+        "naval_combat",
+        "mechanical_breakthrough",
+        "fortification_breach"
+      ],
+      "note": "大同江口椒岛水峡，两万斤入水扫海重犁深入泥沙一丈连根拔除两千四百根倒刺毒桩，水下包钢滚剪两息斩断三道九环生铁锁江巨链"
+    },
+    {
+      "chapter": 108,
+      "tier": "fast",
+      "event_types": [
+        "siege_warfare",
+        "chemical_fire_combat",
+        "tactical_assault"
+      ],
+      "note": "白铜锁甲抗猛火油，五舰万向旋风抛石机齐射生石灰焦油双爆弹轰碎高崖木寨，八丈自锁齿轨跳桥强渡登岸斩杀高福，大同江门户洞开直逼平壤"
     }
   ],
-  "current_chapter": 105,
-  "last_updated_chapter": 105
+  "current_chapter": 108,
+  "last_updated_chapter": 108
 }

@@ -1,0 +1,54 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_107.md",
+  "chapter_name": "chapter_107.md",
+  "chapter_number": 107,
+  "checked_at": "2026-11-24T08:44:18.288Z",
+  "file_mtime_ms": 1795509834614.1362,
+  "file_sha256": "a0226ed3624e206329a5ebf1a264e6fb364b7e17b0cc7ebebe91d19ea4d1f2fe",
+  "total_chars": 3756,
+  "line_count": 167,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 9,
+    "weak_adverb_density_per_1k": 2.52,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 2
+      },
+      {
+        "adverb": "缓缓",
+        "count": 2
+      },
+      {
+        "adverb": "深深",
+        "count": 2
+      },
+      {
+        "adverb": "隐隐",
+        "count": 2
+      },
+      {
+        "adverb": "徐徐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 3255,
+    "paragraph_count": 83,
+    "sentence_count": 100,
+    "avg_sentence_cjk": 32.55,
+    "avg_paragraph_cjk": 39.22,
+    "dialogue_ratio": 0.1601
+  }
+}
