@@ -79,7 +79,7 @@ async function main() {
             const pad = String(i).padStart(3, '0');
             const f = path.join(__dirname, '..', '03_chapters', 'chapter_' + pad + '.md');
             const lines = fs.readFileSync(f, 'utf8').split(/\r?\n/);
-            const localTitle = lines[0].replace(/^#\s{0,}第[一二三四五六七八九十百千0-9\s]+章\s{0,}/, '').trim();
+            const localTitle = lines[0].replace(/^#\s{0,}第[零一二三四五六七八九十百千0-9\s]+章\s{0,}/, '').trim();
             const localBody = lines.filter(p => p.trim() && !p.trim().startsWith('#') && !p.includes('---')).join('');
             const localLen = localBody.length;
 

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-24T07:01:34.916Z",
+  "updated_at": "2026-11-24T07:23:16.828Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-24T07:01:34.915Z",
-    "chapters_analyzed": 99,
-    "golden_window": "Ch21-Ch99",
-    "avg_cjk_per_chapter": 3431.13,
-    "avg_paragraphs": 65.43,
-    "avg_sentence_cjk": 36.49,
-    "avg_paragraph_cjk": 51.94,
-    "avg_dialogue_ratio": 0.3,
+    "computed_at": "2026-11-24T07:23:16.827Z",
+    "chapters_analyzed": 102,
+    "golden_window": "Ch21-Ch102",
+    "avg_cjk_per_chapter": 3396.27,
+    "avg_paragraphs": 65.04,
+    "avg_sentence_cjk": 36.33,
+    "avg_paragraph_cjk": 51.7,
+    "avg_dialogue_ratio": 0.29,
     "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.81
+    "avg_weak_adverb_per_1k": 0.83
   },
   "history": [
     {
@@ -930,6 +930,38 @@
         "political_court"
       ],
       "note": "庙岛建补给水寨与三丈六尺花岗岩常明灯塔绘制渤海等深牵星海图太宗敕建海船营造司与大唐皇家格物学堂工科入官学"
+    },
+    {
+      "chapter": 100,
+      "tier": "medium",
+      "event_types": [
+        "daily_social",
+        "institutional_reform",
+        "interpersonal"
+      ],
+      "note": "苏白携旨省亲蓝田老院炭火吃面，盘点家底不买私产立大义塾与安济坊，邀周阿牛王木匠赵二叔入京任少府监教习官"
+    },
+    {
+      "chapter": 101,
+      "tier": "fast",
+      "event_types": [
+        "ideological_debate",
+        "institutional_reform",
+        "technical_breakthrough"
+      ],
+      "note": "皇家格物学堂杜守礼发难，苏白以螺纹测微尺、截面力学与三视图长对正高平齐宽相等三试立威，房玄龄定调实学入官学正朔"
+    },
+    {
+      "chapter": 102,
+      "tier": "fast",
+      "event_types": [
+        "military_counter_espionage",
+        "metallurgical_innovation",
+        "macro_strategic"
+      ],
+      "note": "登州反谍明矾隐形暗记设伏生擒高句丽死士，秦岭炉甘石炼锌配反射熔铜竖炉破原料垄断，水陆并进征辽东军令下达"
     }
-  ]
+  ],
+  "current_chapter": 102,
+  "last_updated_chapter": 102
 }

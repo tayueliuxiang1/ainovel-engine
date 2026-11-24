@@ -88,7 +88,7 @@ async function publishNewChapter(page, chapNum, chapFile) {
     }
 
     const lines = rawContent.split(/\r?\n/);
-    const chapTitle = lines[0].replace(/^#\s{0,}第[一二三四五六七八九十百千0-9\s]+章\s{0,}/, '').trim();
+    const chapTitle = lines[0].replace(/^#\s{0,}第[零一二三四五六七八九十百千0-9\s]+章\s{0,}/, '').trim();
     const paragraphs = lines.map(p => p.trim()).filter(p => !p.startsWith('#') && !p.includes('---') && p !== '');
     const html = paragraphs.map(p => '<p>' + p + '</p>').join('');
 
