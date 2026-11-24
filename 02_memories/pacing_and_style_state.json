@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-23T08:27:29.389Z",
+  "updated_at": "2026-11-24T07:01:34.916Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-23T08:27:03.706Z",
-    "chapters_analyzed": 96,
-    "golden_window": "Ch21-Ch96",
-    "avg_cjk_per_chapter": 3468.2,
-    "avg_paragraphs": 65.92,
-    "avg_sentence_cjk": 36.62,
-    "avg_paragraph_cjk": 52.09,
-    "avg_dialogue_ratio": 0.31,
-    "avg_ai_vocab_per_1k": 0.01,
-    "avg_weak_adverb_per_1k": 0.79
+    "computed_at": "2026-11-24T07:01:34.915Z",
+    "chapters_analyzed": 99,
+    "golden_window": "Ch21-Ch99",
+    "avg_cjk_per_chapter": 3431.13,
+    "avg_paragraphs": 65.43,
+    "avg_sentence_cjk": 36.49,
+    "avg_paragraph_cjk": 51.94,
+    "avg_dialogue_ratio": 0.3,
+    "avg_ai_vocab_per_1k": 0.02,
+    "avg_weak_adverb_per_1k": 0.81
   },
   "history": [
     {
@@ -900,6 +900,36 @@
         "world_painting"
       ],
       "note": "太极宫密诏转向大洋苏白亲赴登州水城攻克海蛆噬木与狂浪折断龙骨难题白铜薄皮水密隔舱管网配平抗浪浮动明轮硬帆复合平海号试航斩浪"
+    },
+    {
+      "chapter": 97,
+      "tier": "mid",
+      "event_types": [
+        "technology_breakthrough",
+        "world_painting",
+        "bonding"
+      ],
+      "note": "蓬莱水城值房收云阳庄家书与厚棉袍研制双轴重力自平衡环架水罗盘十二档牵星板与嵌熟羊脂测深铜砣"
+    },
+    {
+      "chapter": 98,
+      "tier": "fast",
+      "event_types": [
+        "crisis_combat",
+        "technology_breakthrough",
+        "engineering_construction"
+      ],
+      "note": "平海号庙岛南峡遭遇白毛风迷雾逆潮白铜锁甲御石不穿水网隔舱配平回正合轮差速甩尾避开黑礁进驻沙门岛"
+    },
+    {
+      "chapter": 99,
+      "tier": "fast",
+      "event_types": [
+        "macro_strategic",
+        "engineering_construction",
+        "political_court"
+      ],
+      "note": "庙岛建补给水寨与三丈六尺花岗岩常明灯塔绘制渤海等深牵星海图太宗敕建海船营造司与大唐皇家格物学堂工科入官学"
     }
   ]
 }
