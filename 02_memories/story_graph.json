@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 114,
-  "updated_at": "2026-11-27T05:18:49.060Z",
+  "last_updated_chapter": 117,
+  "updated_at": "2026-11-27T05:29:48.372Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -1076,12 +1076,12 @@
       "type": "character",
       "name": "渊盖苏文",
       "location": "平壤内城",
-      "status": "active",
+      "status": "captured",
       "rank": "高句丽大莫离支/实权摄政",
       "faction": "高句丽莫离支政权",
       "first_chapter": 112,
-      "last_updated": 114,
-      "notes": "第112章斩杀主和派大臣篡夺军政大权；第114章在大同门督战被大唐重锤与江水倒灌破城，弃外郭退守内城。"
+      "last_updated": 117,
+      "notes": "第112章斩杀主和派大臣篡夺军政大权；第114章在大同门督战被大唐重锤与江水倒灌破城，弃外郭退守内城。；第117章在平壤内城被高建武兵变生擒，锁解铁槛车押赴长安。"
     },
     {
       "id": "fs_fb013_pingyang_inner_city",
@@ -1089,11 +1089,36 @@
       "name": "FB-013 平壤内城围歼与高句丽平定大决战",
       "planted_chapter": 114,
       "target_chapter": 120,
-      "resolved": false,
-      "status": "in_progress",
+      "resolved": true,
+      "status": "resolved",
       "description": "平壤外郭与大同门告破，渊盖苏文退守平壤内城王宫。苏白以大同门水路引运粮战舰直抵内城码头，协同李世绩辽东道主力对平壤内城发起最终攻坚与政权归降。",
-      "last_updated": 114,
-      "notes": "第114章大同门水路打通，大唐水陆两军会师决战拉开帷幕。"
+      "last_updated": 117,
+      "notes": "第114章大同门水路打通，大唐水陆两军会师决战拉开帷幕。；第115-117章开仓施粥抚定民心，阿基米德提水螺杆引江水冰胀裂塌内城巨石墙，南北主力胜利会师，渊盖苏文被擒，荣留王献玺降唐，平壤战役与全书辽东大决战圆满闭环胜利大成。",
+      "resolution_chapter": 117
+    },
+    {
+      "id": "char_li_shiji",
+      "type": "character",
+      "name": "李世绩",
+      "location": "平壤城大同门",
+      "status": "active",
+      "rank": "检校司空/辽东道行军大总管/英国公",
+      "faction": "大唐朝廷行军主力",
+      "first_chapter": 117,
+      "last_updated": 117,
+      "notes": "第117章率两万玄甲重骑抵平壤北面，与苏白程名振水陆会师，受降高句丽国主，盛赞苏白工科水师立国第一奇功。"
+    },
+    {
+      "id": "char_gaojianwu",
+      "type": "character",
+      "name": "高建武",
+      "location": "平壤内城正阳门外",
+      "status": "surrendered",
+      "rank": "高句丽荣留王/国主",
+      "faction": "高句丽降表阵营",
+      "first_chapter": 117,
+      "last_updated": 117,
+      "notes": "第117章在平壤内城墙塌后发动兵变生擒渊盖苏文，肉袒出降献五百年山川图经与黄金国玺。"
     }
   ],
   "edges": [
@@ -1397,6 +1422,22 @@
       "target": "char_gaotubo",
       "since_chapter": 113,
       "description": "第113章梁猛率八百玄甲破阵营反击夜袭，斩杀敌将高突勃。"
+    },
+    {
+      "id": "rel_lishiji_subai",
+      "type": "strategic_alliance",
+      "source": "char_li_shiji",
+      "target": "char_subai",
+      "since_chapter": 117,
+      "description": "第117章大唐辽东道主力与水陆行军在平壤胜利会师，共同受降高句丽，筹划战后辽东重工化大经略。"
+    },
+    {
+      "id": "rel_subai_gaojianwu",
+      "type": "subjugation",
+      "source": "char_subai",
+      "target": "char_gaojianwu",
+      "since_chapter": 117,
+      "description": "第117章高建武向大唐受降，苏白审阅其献上的海东山川舆图并锁定辽东铁矿基石。"
     }
   ]
 }

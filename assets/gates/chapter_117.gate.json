@@ -1,0 +1,46 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_117.md",
+  "chapter_name": "chapter_117.md",
+  "chapter_number": 117,
+  "checked_at": "2026-11-27T05:28:57.760Z",
+  "file_mtime_ms": 1795757331347.4426,
+  "file_sha256": "09d941d7bed9b11c59aecf8c982cfd045e260e791622ed0f5465ed0cb7c9ccf2",
+  "total_chars": 2820,
+  "line_count": 106,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 5,
+    "weak_adverb_density_per_1k": 1.85,
+    "weak_adverb_hits": [
+      {
+        "adverb": "轻轻",
+        "count": 2
+      },
+      {
+        "adverb": "静静",
+        "count": 2
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2455,
+    "paragraph_count": 52,
+    "sentence_count": 78,
+    "avg_sentence_cjk": 31.47,
+    "avg_paragraph_cjk": 47.21,
+    "dialogue_ratio": 0
+  }
+}
