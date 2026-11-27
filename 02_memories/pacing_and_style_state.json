@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated_at": "2026-11-24T09:14:08.058Z",
+  "updated_at": "2026-11-27T05:19:00.448Z",
   "config": {
     "cooldowns": {
       "conflict_thrill": 2,
@@ -13,16 +13,16 @@
     "max_consecutive_conflict": 2
   },
   "style_baseline": {
-    "computed_at": "2026-11-24T09:14:08.057Z",
-    "chapters_analyzed": 111,
-    "golden_window": "Ch21-Ch111",
-    "avg_cjk_per_chapter": 3395.2,
-    "avg_paragraphs": 65.6,
-    "avg_sentence_cjk": 36,
-    "avg_paragraph_cjk": 51.41,
-    "avg_dialogue_ratio": 0.28,
+    "computed_at": "2026-11-27T05:19:00.446Z",
+    "chapters_analyzed": 114,
+    "golden_window": "Ch21-Ch114",
+    "avg_cjk_per_chapter": 3371.35,
+    "avg_paragraphs": 65.28,
+    "avg_sentence_cjk": 35.82,
+    "avg_paragraph_cjk": 51.34,
+    "avg_dialogue_ratio": 0.27,
     "avg_ai_vocab_per_1k": 0.02,
-    "avg_weak_adverb_per_1k": 0.85
+    "avg_weak_adverb_per_1k": 0.87
   },
   "history": [
     {

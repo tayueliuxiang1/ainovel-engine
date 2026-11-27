@@ -1,0 +1,54 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_113.md",
+  "chapter_name": "chapter_113.md",
+  "chapter_number": 113,
+  "checked_at": "2026-11-27T05:16:46.904Z",
+  "file_mtime_ms": 1795756600364.5508,
+  "file_sha256": "1d296a5c6061b94642e76f7461a85652794049ea05f6c34a99fea3f47cff4a31",
+  "total_chars": 3190,
+  "line_count": 136,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 5,
+    "weak_adverb_density_per_1k": 1.65,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 1
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      },
+      {
+        "adverb": "悄然",
+        "count": 1
+      },
+      {
+        "adverb": "深深",
+        "count": 1
+      },
+      {
+        "adverb": "渐渐",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2793,
+    "paragraph_count": 67,
+    "sentence_count": 95,
+    "avg_sentence_cjk": 29.4,
+    "avg_paragraph_cjk": 41.69,
+    "dialogue_ratio": 0
+  }
+}

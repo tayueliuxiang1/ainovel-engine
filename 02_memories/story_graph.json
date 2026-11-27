@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated_chapter": 111,
-  "updated_at": "2026-11-24T09:12:16.460Z",
+  "last_updated_chapter": 114,
+  "updated_at": "2026-11-27T05:18:49.060Z",
   "nodes": [
     {
       "id": "char_subai",
@@ -1042,11 +1042,58 @@
       "name": "FB-012 平壤城水道攻坚与大同门决战体系",
       "planted_chapter": 111,
       "target_chapter": 115,
+      "resolved": true,
+      "status": "resolved",
+      "description": "大唐水师八十艘主力战舰直扣平壤城大同门外三十里，直面高句丽五百年国都外郭防线。苏白将利用水军重型器械、水银爆燃、破水门水下绞车与涵闸水力破城法，叩响平壤城门，配合辽东陆路大军形成战略合围。",
+      "last_updated": 114,
+      "notes": "第111章战舰列阵平壤大同门外，苏白展开平壤水道防御图，决战大幕拉开。；第112-114章实测水门门轴应力，以双体伸缩飞桥与三千六百斤包钢重锤轰碎主门轴，引江水倒灌，破阵营攻克平壤城大同门，插上大唐战旗，大同门攻坚决战圆满闭环。",
+      "resolution_chapter": 114
+    },
+    {
+      "id": "loc_pingyang_datongmen",
+      "type": "location",
+      "name": "平壤城大同门水关",
+      "location": "高句丽王都平壤南面正门",
+      "status": "captured",
+      "first_chapter": 112,
+      "last_updated": 114,
+      "notes": "高句丽五百年王都平壤城南面水陆重关，设三道泄水涵闸，第114章被苏白指挥双体铸铁飞桥与三千六百斤包钢重锤轰碎生铁门轴彻底攻克。"
+    },
+    {
+      "id": "char_gaotubo",
+      "type": "character",
+      "name": "高突勃",
+      "location": "绫罗岛大营外石滩",
+      "status": "killed",
+      "rank": "高句丽折冲郎将/渊盖苏文心腹",
+      "faction": "高句丽莫离支政权",
+      "first_chapter": 113,
+      "last_updated": 113,
+      "notes": "第113章率五千精骑死士雪夜偷袭绫罗岛大营，遭神舟大车自锁车城与连发钢弩重创，被梁猛一刀贯胸斩杀。"
+    },
+    {
+      "id": "char_yuangaisuwen",
+      "type": "character",
+      "name": "渊盖苏文",
+      "location": "平壤内城",
+      "status": "active",
+      "rank": "高句丽大莫离支/实权摄政",
+      "faction": "高句丽莫离支政权",
+      "first_chapter": 112,
+      "last_updated": 114,
+      "notes": "第112章斩杀主和派大臣篡夺军政大权；第114章在大同门督战被大唐重锤与江水倒灌破城，弃外郭退守内城。"
+    },
+    {
+      "id": "fs_fb013_pingyang_inner_city",
+      "type": "foreshadow",
+      "name": "FB-013 平壤内城围歼与高句丽平定大决战",
+      "planted_chapter": 114,
+      "target_chapter": 120,
       "resolved": false,
       "status": "in_progress",
-      "description": "大唐水师八十艘主力战舰直扣平壤城大同门外三十里，直面高句丽五百年国都外郭防线。苏白将利用水军重型器械、水银爆燃、破水门水下绞车与涵闸水力破城法，叩响平壤城门，配合辽东陆路大军形成战略合围。",
-      "last_updated": 111,
-      "notes": "第111章战舰列阵平壤大同门外，苏白展开平壤水道防御图，决战大幕拉开。"
+      "description": "平壤外郭与大同门告破，渊盖苏文退守平壤内城王宫。苏白以大同门水路引运粮战舰直抵内城码头，协同李世绩辽东道主力对平壤内城发起最终攻坚与政权归降。",
+      "last_updated": 114,
+      "notes": "第114章大同门水路打通，大唐水陆两军会师决战拉开帷幕。"
     }
   ],
   "edges": [
@@ -1334,6 +1381,22 @@
       "target": "char_yuan_jingtu",
       "since_chapter": 109,
       "description": "第109-111章苏白以减震人字盾、叠片弹簧钢臂三弓床弩、飞轮合金圆锯艇与水下定向爆震筒彻底瓦解渊净土之羊角岛防线。"
+    },
+    {
+      "id": "rel_subai_datongmen",
+      "type": "military_siege",
+      "source": "char_subai",
+      "target": "loc_pingyang_datongmen",
+      "since_chapter": 112,
+      "description": "第112-114章苏白实测大同门应力极限，研造双体伸缩铸铁飞桥与重型包钢冲锤攻破水门。"
+    },
+    {
+      "id": "rel_liangmeng_gaotubo",
+      "type": "elimination",
+      "source": "char_liangmeng",
+      "target": "char_gaotubo",
+      "since_chapter": 113,
+      "description": "第113章梁猛率八百玄甲破阵营反击夜袭，斩杀敌将高突勃。"
     }
   ]
 }

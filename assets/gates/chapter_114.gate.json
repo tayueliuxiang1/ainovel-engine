@@ -1,0 +1,46 @@
+{
+  "chapter_file": "C:\\Users\\Administrator\\.gemini\\antigravity\\scratch\\ainovel-engine\\03_chapters\\chapter_114.md",
+  "chapter_name": "chapter_114.md",
+  "chapter_number": 114,
+  "checked_at": "2026-11-27T05:18:01.715Z",
+  "file_mtime_ms": 1795756676256.967,
+  "file_sha256": "f05d3c4246e968fa9f3067906b52dabd6ed9ef9ea9f7c13e9f49fc21b2f42b32",
+  "total_chars": 2702,
+  "line_count": 108,
+  "passed": true,
+  "strict_passed": true,
+  "errors": [],
+  "warnings": [],
+  "notices": [],
+  "ai_trace": {
+    "ai_vocab_count": 0,
+    "ai_vocab_density_per_1k": 0,
+    "ai_vocab_hits": [],
+    "weak_adverb_count": 3,
+    "weak_adverb_density_per_1k": 1.16,
+    "weak_adverb_hits": [
+      {
+        "adverb": "微微",
+        "count": 1
+      },
+      {
+        "adverb": "缓缓",
+        "count": 1
+      },
+      {
+        "adverb": "轻轻",
+        "count": 1
+      }
+    ],
+    "paragraph_unique_ratio": 1,
+    "max_paragraph_repeat": 1
+  },
+  "style_metrics": {
+    "total_cjk_chars": 2363,
+    "paragraph_count": 53,
+    "sentence_count": 79,
+    "avg_sentence_cjk": 29.91,
+    "avg_paragraph_cjk": 44.58,
+    "dialogue_ratio": 0
+  }
+}
